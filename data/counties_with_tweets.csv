@@ -1,16 +1,16 @@
 fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,twitter_active_last60,facebookYN,facebookNotes,notes,district,user_id,tweet,date,time,link,year,month,day
 1001,Autauga County,Al,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1003,Baldwin County,AL,Alabama,baldwinema,1,Emergency Management Agency,Yes,Yes,1,Active,EmergManage,NA,2457581465,#Hurricane Season Countdown - 6 days remaining.  This important skill will help keep you prepared for all disasters: • Have the skills to assess the situation quickly and to take effective action to protect yourself. Decide to stay or change location.   https://t.co/XfRx379mx0  https://t.co/fwJSiWrLAU,11/24/2021,13:30:17,https://twitter.com/BaldwinEMA/status/1463575715719352321,2021,11,24
+1003,Baldwin County,AL,Alabama,baldwinema,1,Emergency Management Agency,Yes,Yes,1,Active,NA,NA,2457581465,#Hurricane Season Countdown - 6 days remaining.  This important skill will help keep you prepared for all disasters: • Have the skills to assess the situation quickly and to take effective action to protect yourself. Decide to stay or change location.   https://t.co/XfRx379mx0  https://t.co/fwJSiWrLAU,11/24/2021,13:30:17,https://twitter.com/BaldwinEMA/status/1463575715719352321,2021,11,24
 1005,Barbour County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1007,Bibb County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1009,Blount County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1011,Bullock County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1013,Butler County,AL,Alabama,butlerco_ema,1,Emergency Management Agency,Yes,No,1,Active,EmergManage,NA,9.59E+17,https://t.co/zkwiBhHArE,5/31/2020,18:19:21,https://twitter.com/butlerco_ema/status/1267219140114292737,2020,5,31
-1015,Calhoun County,AL,Alabama,bereadycalhoun,1,DoubleCheck,No,No,1,Active,EmergManage,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1013,Butler County,AL,Alabama,butlerco_ema,1,Emergency Management Agency,Yes,No,1,Active,NA,NA,9.59E+17,https://t.co/zkwiBhHArE,5/31/2020,18:19:21,https://twitter.com/butlerco_ema/status/1267219140114292737,2020,5,31
+1015,Calhoun County,AL,Alabama,bereadycalhoun,1,DoubleCheck,No,No,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1017,Chambers County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1019,Cherokee County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1021,Chilton County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1023,Choctaw County,AL,Alabama,choctawema,1,DoubleCheck,No,No,1,Active,EmergManage,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1023,Choctaw County,AL,Alabama,choctawema,1,DoubleCheck,No,No,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1025,Clarke County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1027,Clay County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1029,Cleburne County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -23,7 +23,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 1043,Cullman County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1045,Dale County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1047,Dallas County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1049,DeKalb County,AL,Alabama,dekalb_co_ema,1,NA,Yes,Yes,1,Active,EmergManage,NA,414072411,DeKalb County Activities Building will be closed to the public for the remainder of the week due to multiple cases of COVID-19 illnesses.,11/22/2021,20:03:34,https://twitter.com/DeKalb_Co_EMA/status/1462949913944379394,2021,11,22
+1049,DeKalb County,AL,Alabama,dekalb_co_ema,1,NA,Yes,Yes,1,Active,NA,NA,414072411,DeKalb County Activities Building will be closed to the public for the remainder of the week due to multiple cases of COVID-19 illnesses.,11/22/2021,20:03:34,https://twitter.com/DeKalb_Co_EMA/status/1462949913944379394,2021,11,22
 1051,Elmore County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1053,Escambia County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1055,Etowah County,AL,Alabama,NA,0,NA,NA,NA,1,Active,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -87,7 +87,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 2188,Northwest Arctic Borough,AK,Alaska,NA,0,NA,NA,NA,0,NA,CountyGeneral,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2195,Petersburg Borough,AK,Alaska,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2198,Prince of Wales-Hyder Census Area,AK,Alaska,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-2220,Sitka City and Borough,AK,Alaska,NA,0,NA,NA,NA,1,Inactive (2016),NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2220,Sitka City and Borough,AK,Alaska,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2230,Skagway Municipality,AK,Alaska,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2240,Southeast Fairbanks Census Area,AK,Alaska,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2261,Valdez-Cordova Census Area,AK,Alaska,cityofvaldezak,1,DoubleCheck,No,No,1,Active,Outdated-Add District,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -106,12 +106,12 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 4015,Mohave County,AZ,Arizona,mohaveinfo,1,DoubleCheck,No,No,1,Active,Outdated-Add District,NA,NA,NA,NA,NA,NA,NA,NA,NA
 4017,Navajo County,AZ,Arizona,ncphsd,1,DoubleCheck,No,No,1,Active,CountyGeneral,NA,NA,NA,NA,NA,NA,NA,NA,NA
 4019,Pima County,AZ,Arizona,pchd,1,NA,Yes,Yes,1,Active,NA,NA,18508569,"Naloxone doesn’t just reverse the effects of an opioid overdose when it’s happening, it gives that person a second chance at life that they might not have had otherwise.  https://t.co/sN1klY5fmZ  https://t.co/MxjElxvmzN",11/24/2021,14:03:00,https://twitter.com/pchd/status/1463583949687439362,2021,11,24
-4021,Pinal County,AZ,Arizona,pinalhealth,1,NA,Yes,Yes,0,No Page,NA,NA,7.76E+17,A Thanksgiving message from our Public Health Director:  https://t.co/2zj9d9zIDp,11/24/2021,16:35:39,https://twitter.com/pinalhealth/status/1463622364223000577,2021,11,24
-4023,Santa Cruz County,AZ,Arizona,santacruzaz,1,NA,Yes,Yes,0,No Page,CountyGeneral,NA,2364620611,"COMMUNICABLE DISEASE INVESTIGATOR: Qualified members of the public are encouraged to apply for the following position by submitting a completed Santa Cruz County employment application (now required), resume/curriculum vitae and a letter of interest…  https://t.co/pC4C3PxgQq",11/23/2021,18:56:02,https://twitter.com/santacruzaz/status/1463295308104802305,2021,11,23
+4021,Pinal County,AZ,Arizona,pinalhealth,1,NA,Yes,Yes,0,NA,NA,NA,7.76E+17,A Thanksgiving message from our Public Health Director:  https://t.co/2zj9d9zIDp,11/24/2021,16:35:39,https://twitter.com/pinalhealth/status/1463622364223000577,2021,11,24
+4023,Santa Cruz County,AZ,Arizona,santacruzaz,1,NA,Yes,Yes,0,NA,CountyGeneral,NA,2364620611,"COMMUNICABLE DISEASE INVESTIGATOR: Qualified members of the public are encouraged to apply for the following position by submitting a completed Santa Cruz County employment application (now required), resume/curriculum vitae and a letter of interest…  https://t.co/pC4C3PxgQq",11/23/2021,18:56:02,https://twitter.com/santacruzaz/status/1463295308104802305,2021,11,23
 4025,Yavapai County,AZ,Arizona,yavapaihealth,1,NA,Yes,No,1,Active,NA,NA,55385884,Yavapai County Community Health Services maintains their website and Facebook page. For up the minute information visit  https://t.co/ZuYQOVRNVL or  https://t.co/EpDoFp6eJI,3/31/2020,11:47:25,https://twitter.com/YavapaiHealth/status/1245014845193211910,2020,3,31
 4027,Yuma County,AZ,Arizona,yumacountyaz,1,NA,Yes,Yes,1,Active,CountyGeneral,NA,8.45E+17,"Los funcionarios de salud del condado de Yuma confirman 21 nuevos casos de COVID-19 y *2 nuevas muertes, lo que eleva el total de casos a 42,526.  https://t.co/y87ofKqZTf  https://t.co/r4r2AftCb9",11/23/2021,17:05:02,https://twitter.com/yumacountyaz/status/1463267370651164685,2021,11,23
 5001,Arkansas County,AR,Arkansas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5003,Ashley County,AR,Arkansas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5003,Ashley County,AR,Arkansas,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 5005,Baxter County,AR,Arkansas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 5007,Benton County,AR,Arkansas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 5009,Boone County,AR,Arkansas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1002,23 +1002,23 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 21013,Bell County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21015,Boone County,KY,Kentucky,nkyhealth,1,NA,Yes,Yes,1,NA,NA,Northern Kentucky Health Department,318448920,"NKY Health will be closed Thursday, Nov. 25, and Friday, Nov. 26 in observance of the Thanksgiving holiday. We will reopen on Monday, Nov. 29 at 8 am. We are thankful for your support and wish you a happy and healthy Thanksgiving.  https://t.co/XWsJAkbNyW",11/24/2021,16:00:02,https://twitter.com/nkyhealth/status/1463613402836840454,2021,11,24
 21017,Bourbon County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21019,Boyd County,KY,Kentucky,abchdky,1,NA,Yes,Yes,NA,NA,NA,NA,3086709286,"We currently have 5 open J&amp;J Covid -19 vaccination appointments Thursday, Nov. 18th.  visit  https://t.co/SYpwheB73B for other vaccination options",11/17/2021,10:17:27,https://twitter.com/abchdky/status/1460990472206311428,2021,11,17
-21021,Boyle County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21019,Boyd County,KY,Kentucky,abchdky,1,NA,Yes,Yes,1,NA,NA,NA,3086709286,"We currently have 5 open J&amp;J Covid -19 vaccination appointments Thursday, Nov. 18th.  visit  https://t.co/SYpwheB73B for other vaccination options",11/17/2021,10:17:27,https://twitter.com/abchdky/status/1460990472206311428,2021,11,17
+21021,Boyle County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21023,Bracken County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21025,Breathitt County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21027,Breckinridge County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21029,Bullitt County,KY,Kentucky,bullittkyhealth,1,NA,Yes,Yes,NA,NA,NA,NA,3221825086,Let’s talk turkey! Unsafe handling and inadequate cooking are the most common issues that lead to poultry-associated food-borne disease outbreaks.  Make sure your Thanksgiving dinner is safe and delicious—tips from the US Department of Agriculture Agricultural Research Service.  https://t.co/WH8HkxoZgQ,11/24/2021,14:02:06,https://twitter.com/BullittKYHealth/status/1463583722251472896,2021,11,24
+21029,Bullitt County,KY,Kentucky,bullittkyhealth,1,NA,Yes,Yes,1,NA,NA,NA,3221825086,Let’s talk turkey! Unsafe handling and inadequate cooking are the most common issues that lead to poultry-associated food-borne disease outbreaks.  Make sure your Thanksgiving dinner is safe and delicious—tips from the US Department of Agriculture Agricultural Research Service.  https://t.co/WH8HkxoZgQ,11/24/2021,14:02:06,https://twitter.com/BullittKYHealth/status/1463583722251472896,2021,11,24
 21031,Butler County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
 21033,Caldwell County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21035,Calloway County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21037,Campbell County,KY,Kentucky,nkyhealth,1,NA,Yes,Yes,1,NA,NA,Northern Kentucky Health Department,318448920,"NKY Health will be closed Thursday, Nov. 25, and Friday, Nov. 26 in observance of the Thanksgiving holiday. We will reopen on Monday, Nov. 29 at 8 am. We are thankful for your support and wish you a happy and healthy Thanksgiving.  https://t.co/XWsJAkbNyW",11/24/2021,16:00:02,https://twitter.com/nkyhealth/status/1463613402836840454,2021,11,24
 21039,Carlisle County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Purchase District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
-21041,Carroll County,KY,Kentucky,trdhd,1,NA,Yes,No,NA,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
-21043,Carter County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21041,Carroll County,KY,Kentucky,trdhd,1,NA,Yes,No,1,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
+21043,Carter County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21045,Casey County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21047,Christian County,KY,Kentucky,cchd_hoptownky,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21049,Clark County,KY,Kentucky,cchealthdept,1,NA,Yes,No,NA,NA,NA,NA,59203140,https://t.co/GSMJSMhyHu,7/27/2020,14:26:42,https://twitter.com/CCHealthDept/status/1287816702101721095,2020,7,27
-21051,Clay County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21047,Christian County,KY,Kentucky,cchd_hoptownky,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21049,Clark County,KY,Kentucky,cchealthdept,1,NA,Yes,No,1,NA,NA,NA,59203140,https://t.co/GSMJSMhyHu,7/27/2020,14:26:42,https://twitter.com/CCHealthDept/status/1287816702101721095,2020,7,27
+21051,Clay County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Cumberland Valley Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21053,Clinton County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
 21055,Crittenden County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21057,Cumberland County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
@@ -1026,36 +1026,36 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 21061,Edmonson County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
 21063,Elliott County,KY,Kentucky,NA,1,DoubleCheck,No,No,1,NA,NA,Gateway District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21065,Estill County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21067,Fayette County,KY,Kentucky,lfchd,1,NA,Yes,Yes,NA,NA,NA,NA,39805456,"Here’s a recipe for a healthy #Thanksgiving! Share this to help keep your family, especially those at high risk from COVID-19, as safe as possible.  #LexDoThis  https://t.co/mrMsGfq4aa",11/24/2021,10:15:00,https://twitter.com/LFCHD/status/1463526571663310858,2021,11,24
-21069,Fleming County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21067,Fayette County,KY,Kentucky,lfchd,1,NA,Yes,Yes,1,NA,NA,NA,39805456,"Here’s a recipe for a healthy #Thanksgiving! Share this to help keep your family, especially those at high risk from COVID-19, as safe as possible.  #LexDoThis  https://t.co/mrMsGfq4aa",11/24/2021,10:15:00,https://twitter.com/LFCHD/status/1463526571663310858,2021,11,24
+21069,Fleming County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21071,Floyd County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21073,Franklin County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21075,Fulton County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Purchase District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
-21077,Gallatin County,KY,Kentucky,trdhd,1,NA,Yes,No,NA,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
-21079,Garrard County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21077,Gallatin County,KY,Kentucky,trdhd,1,NA,Yes,No,1,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
+21079,Garrard County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21081,Grant County,KY,Kentucky,nkyhealth,1,NA,Yes,Yes,1,NA,NA,Northern Kentucky Health Department,318448920,"NKY Health will be closed Thursday, Nov. 25, and Friday, Nov. 26 in observance of the Thanksgiving holiday. We will reopen on Monday, Nov. 29 at 8 am. We are thankful for your support and wish you a happy and healthy Thanksgiving.  https://t.co/XWsJAkbNyW",11/24/2021,16:00:02,https://twitter.com/nkyhealth/status/1463613402836840454,2021,11,24
-21083,Graves County,KY,Kentucky,graveshealth,1,Outdated-Add District,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21085,Grayson County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21083,Graves County,KY,Kentucky,graveshealth,1,Outdated-Add District,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21085,Grayson County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21087,Green County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21089,Greenup County,KY,Kentucky,greenuphealth,1,NA,Yes,Yes,NA,NA,NA,NA,461239746,"Listening to ""Special Hours for Thanksgiving! / Deer are on the Move and Dangerous! / Rising Covid 19 Numbers / Masks at School? / Vaccines in the Community / And More!  11-23-21"" at   https://t.co/RSp6jgz5pT",11/23/2021,14:51:17,https://twitter.com/GreenupHealth/status/1463233713542770688,2021,11,23
+21089,Greenup County,KY,Kentucky,greenuphealth,1,NA,Yes,Yes,1,NA,NA,NA,461239746,"Listening to ""Special Hours for Thanksgiving! / Deer are on the Move and Dangerous! / Rising Covid 19 Numbers / Masks at School? / Vaccines in the Community / And More!  11-23-21"" at   https://t.co/RSp6jgz5pT",11/23/2021,14:51:17,https://twitter.com/GreenupHealth/status/1463233713542770688,2021,11,23
 21091,Hancock County,KY,Kentucky,grdhd,1,NA,No,No,1,NA,Outdated-Twitter,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
 21093,Hardin County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21095,Harlan County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21097,Harrison County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,NA,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
+21097,Harrison County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,1,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
 21099,Hart County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
 21101,Henderson County,KY,Kentucky,grdhd,1,NA,No,No,1,NA,Outdated-Twitter,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
 21103,Henry County,KY,Kentucky,ncdistrict,1,NA,Yes,Yes,1,NA,NA,North Central District Health Department - Kentucky,2875172679,Covid-19 Weekly Update  10/15/2021 #ncdhd  https://t.co/anPNaTIPYS,10/15/2021,14:16:16,https://twitter.com/NCDistrict/status/1449076676202274824,2021,10,15
 21105,Hickman County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Purchase District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21107,Hopkins County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21109,Jackson County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21111,Jefferson County,KY,Kentucky,loumetrohealth,1,NA,Yes,Yes,NA,NA,NA,NA,1117413841,"Turkey and its juice can be contaminated with germs that can make you and your family sick.  Follow the steps  https://t.co/n65pd306yP to safely store, thaw, handle, and cook your turkey. #ThanksgivingDinner #Turkey  https://t.co/cwactNt6uz",11/24/2021,12:29:00,https://twitter.com/LouMetroHealth/status/1463560293561163782,2021,11,24
-21113,Jessamine County,KY,Kentucky,jchd_ky,1,NA,Yes,No,NA,NA,NA,NA,2902326143,"Narcan is available to anyone in the community, no questions asked. You can come see us for training and a free Narcan kit whenever our doors are open. 💜💜💜 #EndOverdose #OverdoseAware #IOAD2020   https://t.co/WXHg7kmbiV via @YouTube",8/31/2020,10:39:31,https://twitter.com/JCHD_KY/status/1300443103527161856,2020,8,31
+21109,Jackson County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Cumberland Valley Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
+21111,Jefferson County,KY,Kentucky,loumetrohealth,1,NA,Yes,Yes,0,NA,NA,NA,1117413841,"Turkey and its juice can be contaminated with germs that can make you and your family sick.  Follow the steps  https://t.co/n65pd306yP to safely store, thaw, handle, and cook your turkey. #ThanksgivingDinner #Turkey  https://t.co/cwactNt6uz",11/24/2021,12:29:00,https://twitter.com/LouMetroHealth/status/1463560293561163782,2021,11,24
+21113,Jessamine County,KY,Kentucky,jchd_ky,1,NA,Yes,No,1,NA,NA,NA,2902326143,"Narcan is available to anyone in the community, no questions asked. You can come see us for training and a free Narcan kit whenever our doors are open. 💜💜💜 #EndOverdose #OverdoseAware #IOAD2020   https://t.co/WXHg7kmbiV via @YouTube",8/31/2020,10:39:31,https://twitter.com/JCHD_KY/status/1300443103527161856,2020,8,31
 21115,Johnson County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21117,Kenton County,KY,Kentucky,nkyhealth,1,NA,Yes,Yes,1,NA,NA,Northern Kentucky Health Department,318448920,"NKY Health will be closed Thursday, Nov. 25, and Friday, Nov. 26 in observance of the Thanksgiving holiday. We will reopen on Monday, Nov. 29 at 8 am. We are thankful for your support and wish you a happy and healthy Thanksgiving.  https://t.co/XWsJAkbNyW",11/24/2021,16:00:02,https://twitter.com/nkyhealth/status/1463613402836840454,2021,11,24
 21119,Knott County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
-21121,Knox County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21121,Knox County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21123,Larue County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
-21125,Laurel County,KY,Kentucky,laurelcohealth,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21125,Laurel County,KY,Kentucky,laurelcohealth,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21127,Lawrence County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21129,Lee County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
 21131,Leslie County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
@@ -1068,115 +1068,115 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 21145,McCracken County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Purchase District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21147,McCreary County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
 21149,McLean County,KY,Kentucky,grdhd,1,NA,No,No,1,NA,Outdated-Twitter,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
-21151,Madison County,KY,Kentucky,madisoncountyhd,1,NA,Yes,Yes,NA,NA,NA,NA,705226724,https://t.co/ywIVWjMX6A,11/22/2021,12:05:04,https://twitter.com/MadisonCountyHD/status/1462829494159425542,2021,11,22
+21151,Madison County,KY,Kentucky,madisoncountyhd,1,NA,Yes,Yes,1,NA,NA,NA,705226724,https://t.co/ywIVWjMX6A,11/22/2021,12:05:04,https://twitter.com/MadisonCountyHD/status/1462829494159425542,2021,11,22
 21153,Magoffin County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21155,Marion County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21157,Marshall County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21159,Martin County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21161,Mason County,KY,Kentucky,mason_health,1,DoubleCheck,No,No,NA,NA,Outdated-Add District,Buffalo Trace District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
+21159,Martin County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21161,Mason County,KY,Kentucky,mason_health,1,DoubleCheck,No,No,1,NA,Outdated-Add District,Buffalo Trace District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21163,Meade County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21165,Menifee County,KY,Kentucky,gdhd_org,1,NA,No,No,1,NA,NA,Gateway District Health Department - Kentucky,370174296,Gateway District Health Department now has a Twitter account! Follow us for your public health information.,9/8/2011,12:10:05,https://twitter.com/gdhd_org/status/111833694284693504,2011,9,8
-21167,Mercer County,KY,Kentucky,mercercountyhd,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21167,Mercer County,KY,Kentucky,mercercountyhd,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21169,Metcalfe County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
-21171,Monroe County,KY,Kentucky,monroekyhd,1,NA,No,No,NA,NA,NA,NA,1689005340,A special thank you to local firefighters for teaching fire safety today to 5th grade students! It is important to have a fire escape plan and to know your family meeting place!   https://t.co/e2ag3W8GD0 #ReadyKids@Readygov!  https://t.co/X5jb90qA7J,5/16/2019,15:12:24,https://twitter.com/monroekyhd/status/1129102315972173824,2019,5,16
+21171,Monroe County,KY,Kentucky,monroekyhd,1,NA,No,No,1,NA,NA,NA,1689005340,A special thank you to local firefighters for teaching fire safety today to 5th grade students! It is important to have a fire escape plan and to know your family meeting place!   https://t.co/e2ag3W8GD0 #ReadyKids@Readygov!  https://t.co/X5jb90qA7J,5/16/2019,15:12:24,https://twitter.com/monroekyhd/status/1129102315972173824,2019,5,16
 21173,Montgomery County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21175,Morgan County,KY,Kentucky,gdhd_org,1,NA,No,No,1,NA,NA,Gateway District Health Department - Kentucky,370174296,Gateway District Health Department now has a Twitter account! Follow us for your public health information.,9/8/2011,12:10:05,https://twitter.com/gdhd_org/status/111833694284693504,2011,9,8
-21177,Muhlenberg County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21177,Muhlenberg County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21179,Nelson County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
-21181,Nicholas County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,NA,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
+21181,Nicholas County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,1,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
 21183,Ohio County,KY,Kentucky,grdhd,1,NA,No,No,1,NA,Outdated-Twitter,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
 21185,Oldham County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21187,Owen County,KY,Kentucky,trdhd,1,NA,Yes,No,NA,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
+21187,Owen County,KY,Kentucky,trdhd,1,NA,Yes,No,1,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
 21189,Owsley County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
-21191,Pendleton County,KY,Kentucky,trdhd,1,NA,Yes,No,NA,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
+21191,Pendleton County,KY,Kentucky,trdhd,1,NA,Yes,No,1,NA,NA,Three Rivers District Health Department - Kentucky,125362867,"TRDHD District Director, Dr. Georgia Heise, presented to the Interim Joint Committee on Local Gov’t today on the effect of the 2021 Special Legislative Session and it's impact on Public Health across KY. We are so thankful for Dr. Heise's leadership during the COVID-19 pandemic.  https://t.co/KlRMPWsBy9",9/21/2021,15:51:47,https://twitter.com/TRDHD/status/1440403403025256450,2021,9,21
 21193,Perry County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
-21195,Pike County,KY,Kentucky,pikecountyhd,1,NA,Yes,No,NA,NA,NA,NA,2609641297,WIC Farmer's Market Summer Voucher Program  https://t.co/g2iRx4TH1s,8/12/2021,14:17:54,https://twitter.com/PikeCountyHD/status/1425884264223191041,2021,8,12
+21195,Pike County,KY,Kentucky,pikecountyhd,1,NA,Yes,No,1,NA,NA,NA,2609641297,WIC Farmer's Market Summer Voucher Program  https://t.co/g2iRx4TH1s,8/12/2021,14:17:54,https://twitter.com/PikeCountyHD/status/1425884264223191041,2021,8,12
 21197,Powell County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21199,Pulaski County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21201,Robertson County,KY,Kentucky,mason_health,1,DoubleCheck,No,No,NA,NA,Outdated-Add District,Buffalo Trace District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
-21203,Rockcastle County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21201,Robertson County,KY,Kentucky,mason_health,1,DoubleCheck,No,No,1,NA,Outdated-Add District,Buffalo Trace District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
+21203,Rockcastle County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,Cumberland Valley Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21205,Rowan County,KY,Kentucky,gdhd_org,1,NA,No,No,1,NA,NA,Gateway District Health Department - Kentucky,370174296,Gateway District Health Department now has a Twitter account! Follow us for your public health information.,9/8/2011,12:10:05,https://twitter.com/gdhd_org/status/111833694284693504,2011,9,8
 21207,Russell County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21209,Scott County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,NA,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
+21209,Scott County,KY,Kentucky,wedcohealth,1,NA,Yes,Yes,1,NA,NA,WEDCO District Health Department - Kentucky,2373804991,Check out these safety tips on how to prepare your #Holiday Turkey.  https://t.co/qcu3ZjjZIq via @CDCgov,11/19/2021,13:15:11,https://twitter.com/wedcohealth/status/1461759976117096452,2021,11,19
 21211,Shelby County,KY,Kentucky,ncdistrict,1,NA,Yes,Yes,1,NA,NA,North Central District Health Department - Kentucky,2875172679,Covid-19 Weekly Update  10/15/2021 #ncdhd  https://t.co/anPNaTIPYS,10/15/2021,14:16:16,https://twitter.com/NCDistrict/status/1449076676202274824,2021,10,15
 21213,Simpson County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
 21215,Spencer County,KY,Kentucky,ncdistrict,1,NA,Yes,Yes,1,NA,NA,North Central District Health Department - Kentucky,2875172679,Covid-19 Weekly Update  10/15/2021 #ncdhd  https://t.co/anPNaTIPYS,10/15/2021,14:16:16,https://twitter.com/NCDistrict/status/1449076676202274824,2021,10,15
 21217,Taylor County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21219,Todd County,KY,Kentucky,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21219,Todd County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21221,Trigg County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21223,Trimble County,KY,Kentucky,ncdistrict,1,NA,Yes,Yes,1,NA,NA,North Central District Health Department - Kentucky,2875172679,Covid-19 Weekly Update  10/15/2021 #ncdhd  https://t.co/anPNaTIPYS,10/15/2021,14:16:16,https://twitter.com/NCDistrict/status/1449076676202274824,2021,10,15
-21225,Union County,KY,Kentucky,grdhd,1,Outdated-Add District,No,No,NA,NA,NA,NA,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
+21225,Union County,KY,Kentucky,grdhd,1,Outdated-Add District,No,No,1,NA,NA,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
 21227,Warren County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
 21229,Washington County,KY,Kentucky,lincolntrailhd,1,DoubleCheck,No,No,1,NA,NA,Lincoln Trail District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21231,Wayne County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
-21233,Webster County,KY,Kentucky,grdhd,1,Outdated-Add District,No,No,NA,NA,NA,NA,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
-21235,Whitley County,KY,Kentucky,healthwhitley,1,NA,Yes,Yes,NA,NA,NA,NA,1.40E+18,"Even without the added stress of COVID-19, anxiety and depression often spike during the holiday season.  Simple gestures like a call, text, or holiday card can go a long way in bringing some joy to those that may need it.  https://t.co/M4xRHboWzb",11/24/2021,11:30:17,https://twitter.com/HealthWhitley/status/1463545515950415873,2021,11,24
+21233,Webster County,KY,Kentucky,grdhd,1,Outdated-Add District,No,No,1,NA,NA,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
+21235,Whitley County,KY,Kentucky,healthwhitley,1,NA,Yes,Yes,1,NA,NA,NA,1.40E+18,"Even without the added stress of COVID-19, anxiety and depression often spike during the holiday season.  Simple gestures like a call, text, or holiday card can go a long way in bringing some joy to those that may need it.  https://t.co/M4xRHboWzb",11/24/2021,11:30:17,https://twitter.com/HealthWhitley/status/1463545515950415873,2021,11,24
 21237,Wolfe County,KY,Kentucky,krdhd,1,NA,Yes,No,1,NA,NA,Kentucky River District Health Department,9.71E+17,https://t.co/s9C20oewHc,9/17/2021,21:23:31,https://twitter.com/KRDHD/status/1439037335342092295,2021,9,17
-21239,Woodford County,KY,Kentucky,healthwoodford,1,NA,Yes,Yes,NA,NA,NA,NA,1.39E+18,"Due to the holiday week, the Health Department will have special hours this week:  • 8 a.m.- 4:30 p.m. Monday • 8 a.m.- 4:30 p.m. Tuesday • 8 a.m.- 3 p.m. Wednesday • CLOSED Thursday/Friday.  https://t.co/xr01RFz3zH",11/22/2021,9:01:22,https://twitter.com/HealthWoodford/status/1462783264624717829,2021,11,22
-22001,Acadia Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22003,Allen Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21239,Woodford County,KY,Kentucky,healthwoodford,1,NA,Yes,Yes,1,NA,NA,NA,1.39E+18,"Due to the holiday week, the Health Department will have special hours this week:  • 8 a.m.- 4:30 p.m. Monday • 8 a.m.- 4:30 p.m. Tuesday • 8 a.m.- 3 p.m. Wednesday • CLOSED Thursday/Friday.  https://t.co/xr01RFz3zH",11/22/2021,9:01:22,https://twitter.com/HealthWoodford/status/1462783264624717829,2021,11,22
+22001,Acadia Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22003,Allen Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 22005,Ascension Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22007,Assumption Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22009,Avoyelles Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22011,Beauregard Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22013,Bienville Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22015,Bossier Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22017,Caddo Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22019,Calcasieu Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22021,Caldwell Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22023,Cameron Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22025,Catahoula Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22027,Claiborne Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22029,Concordia Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22031,De Soto Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22033,East Baton Rouge Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22035,East Carroll Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22037,East Feliciana Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22039,Evangeline Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22041,Franklin Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22043,Grant Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22045,Iberia Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22047,Iberville Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22049,Jackson Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22051,Jefferson Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22053,Jefferson Davis Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22055,Lafayette Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22057,Lafourche Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22059,La Salle Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22061,Lincoln Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22063,Livingston Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22065,Madison Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22067,Morehouse Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22069,Natchitoches Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22071,Orleans Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22073,Ouachita Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22075,Plaquemines Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22077,Pointe Coupee Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22079,Rapides Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22081,Red River Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22083,Richland Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22085,Sabine Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22087,St. Bernard Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22089,St. Charles Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22091,St. Helena Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22093,St. James Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22095,St. John the Baptist Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22097,St. Landry Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22099,St. Martin Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22101,St. Mary Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22103,St. Tammany Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22105,Tangipahoa Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22107,Tensas Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22109,Terrebonne Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22111,Union Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22113,Vermilion Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22115,Vernon Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22117,Washington Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22119,Webster Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22121,West Baton Rouge Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22123,West Carroll Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22125,West Feliciana Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22127,Winn Parish,LA,Louisiana,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22007,Assumption Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22009,Avoyelles Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22011,Beauregard Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22013,Bienville Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22015,Bossier Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22017,Caddo Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22019,Calcasieu Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22021,Caldwell Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22023,Cameron Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22025,Catahoula Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22027,Claiborne Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22029,Concordia Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22031,De Soto Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22033,East Baton Rouge Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22035,East Carroll Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22037,East Feliciana Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22039,Evangeline Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22041,Franklin Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22043,Grant Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22045,Iberia Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22047,Iberville Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22049,Jackson Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22051,Jefferson Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22053,Jefferson Davis Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22055,Lafayette Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22057,Lafourche Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22059,La Salle Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22061,Lincoln Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22063,Livingston Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22065,Madison Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22067,Morehouse Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22069,Natchitoches Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22071,Orleans Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22073,Ouachita Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22075,Plaquemines Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22077,Pointe Coupee Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22079,Rapides Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22081,Red River Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22083,Richland Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22085,Sabine Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22087,St. Bernard Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22089,St. Charles Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22091,St. Helena Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22093,St. James Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22095,St. John the Baptist Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22097,St. Landry Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22099,St. Martin Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22101,St. Mary Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22103,St. Tammany Parish,LA,Louisiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22105,Tangipahoa Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22107,Tensas Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22109,Terrebonne Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22111,Union Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22113,Vermilion Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22115,Vernon Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22117,Washington Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22119,Webster Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22121,West Baton Rouge Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22123,West Carroll Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22125,West Feliciana Parish,LA,Louisiana,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22127,Winn Parish,LA,Louisiana,NA,0,NA,NA,NA,1,Outdated,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 23001,Androscoggin County,ME,Maine,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 23003,Aroostook County,ME,Maine,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 23005,Cumberland County,ME,Maine,NA,0,NA,NA,NA,1,NA,Portland,NA,NA,NA,NA,NA,NA,NA,NA,NA
