@@ -2246,107 +2246,107 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 41067,Washington County,OR,Oregon,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 41069,Wheeler County,OR,Oregon,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 41071,Yamhill County,OR,Oregon,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42001,Adams County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42003,Allegheny County,PA,Pennsylvania,healthallegheny,1,NA,Yes,Yes,NA,NA,NA,NA,1.23E+18,* There will be no 24-hour update tomorrow as staff observe the Thanksgiving holiday. A 48-hour update will be issued on Friday.,11/24/2021,12:01:57,https://twitter.com/HealthAllegheny/status/1463553485689999360,2021,11,24
+42001,Adams County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42003,Allegheny County,PA,Pennsylvania,healthallegheny,1,NA,Yes,Yes,1,NA,NA,NA,1.23E+18,* There will be no 24-hour update tomorrow as staff observe the Thanksgiving holiday. A 48-hour update will be issued on Friday.,11/24/2021,12:01:57,https://twitter.com/HealthAllegheny/status/1463553485689999360,2021,11,24
 42005,Armstrong County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42007,Beaver County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42009,Bedford County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42011,Berks County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42013,Blair County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42015,Bradford County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42017,Bucks County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42019,Butler County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42021,Cambria County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42023,Cameron County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42025,Carbon County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42027,Centre County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42029,Chester County,PA,Pennsylvania,chescohealth,1,NA,Yes,Yes,NA,NA,NA,NA,16329609,"Feasting with family is part of many holiday celebrations! Especially Thanksgiving! Follow tips from the @CDC to help prevent food poisoning, or foodborne illness, during the holidays:  https://t.co/qaz94vz0Xx  https://t.co/suul4vHePP",11/23/2021,12:58:38,https://twitter.com/ChescoHealth/status/1463205363155623943,2021,11,23
-42031,Clarion County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42033,Clearfield County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42035,Clinton County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42037,Columbia County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42039,Crawford County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42041,Cumberland County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42043,Dauphin County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42045,Delaware County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42047,Elk County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42049,Erie County,PA,Pennsylvania,eriepahealth,1,NA,Yes,Yes,NA,NA,NA,NA,4568763382,Press briefing on COVID-19 updates    https://t.co/t6k355kjTu,11/24/2021,14:55:28,https://twitter.com/EriePAHealth/status/1463597155508228106,2021,11,24
-42051,Fayette County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42053,Forest County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42055,Franklin County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42057,Fulton County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42059,Greene County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42061,Huntingdon County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42063,Indiana County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42065,Jefferson County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42067,Juniata County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42069,Lackawanna County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42071,Lancaster County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42073,Lawrence County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42075,Lebanon County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42077,Lehigh County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42079,Luzerne County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42081,Lycoming County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42083,McKean County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42085,Mercer County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42087,Mifflin County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42089,Monroe County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42091,Montgomery County,PA,Pennsylvania,montco_ph,1,NA,Yes,Yes,NA,NA,NA,NA,1.24E+18,"The Testing Positivity Rate for Montgomery County has decreased to 4%. Source: UT Health, School of Public Health",11/24/2021,18:24:40,https://twitter.com/MontCo_PH/status/1463649802684616709,2021,11,24
-42093,Montour County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42095,Northampton County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42097,Northumberland County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42099,Perry County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42101,Philadelphia County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42103,Pike County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42105,Potter County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42107,Schuylkill County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42109,Snyder County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42111,Somerset County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42113,Sullivan County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42115,Susquehanna County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42117,Tioga County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42119,Union County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42121,Venango County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42123,Warren County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42125,Washington County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42127,Wayne County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42129,Westmoreland County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42131,Wyoming County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42133,York County,PA,Pennsylvania,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42007,Beaver County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42009,Bedford County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42011,Berks County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42013,Blair County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42015,Bradford County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42017,Bucks County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42019,Butler County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42021,Cambria County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42023,Cameron County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42025,Carbon County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42027,Centre County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42029,Chester County,PA,Pennsylvania,chescohealth,1,NA,Yes,Yes,1,NA,NA,NA,16329609,"Feasting with family is part of many holiday celebrations! Especially Thanksgiving! Follow tips from the @CDC to help prevent food poisoning, or foodborne illness, during the holidays:  https://t.co/qaz94vz0Xx  https://t.co/suul4vHePP",11/23/2021,12:58:38,https://twitter.com/ChescoHealth/status/1463205363155623943,2021,11,23
+42031,Clarion County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42033,Clearfield County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42035,Clinton County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42037,Columbia County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42039,Crawford County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42041,Cumberland County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42043,Dauphin County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42045,Delaware County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42047,Elk County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42049,Erie County,PA,Pennsylvania,eriepahealth,1,NA,Yes,Yes,1,NA,NA,NA,4568763382,Press briefing on COVID-19 updates    https://t.co/t6k355kjTu,11/24/2021,14:55:28,https://twitter.com/EriePAHealth/status/1463597155508228106,2021,11,24
+42051,Fayette County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42053,Forest County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42055,Franklin County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42057,Fulton County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42059,Greene County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42061,Huntingdon County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42063,Indiana County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42065,Jefferson County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42067,Juniata County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42069,Lackawanna County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42071,Lancaster County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42073,Lawrence County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42075,Lebanon County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42077,Lehigh County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42079,Luzerne County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42081,Lycoming County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42083,McKean County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42085,Mercer County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42087,Mifflin County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42089,Monroe County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42091,Montgomery County,PA,Pennsylvania,montco_ph,1,NA,Yes,Yes,1,NA,NA,NA,1.24E+18,"The Testing Positivity Rate for Montgomery County has decreased to 4%. Source: UT Health, School of Public Health",11/24/2021,18:24:40,https://twitter.com/MontCo_PH/status/1463649802684616709,2021,11,24
+42093,Montour County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42095,Northampton County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42097,Northumberland County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42099,Perry County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42101,Philadelphia County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42103,Pike County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42105,Potter County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42107,Schuylkill County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42109,Snyder County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42111,Somerset County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42113,Sullivan County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42115,Susquehanna County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42117,Tioga County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42119,Union County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42121,Venango County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42123,Warren County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42125,Washington County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42127,Wayne County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42129,Westmoreland County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42131,Wyoming County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+42133,York County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44001,Bristol County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44003,Kent County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44005,Newport County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44007,Providence County,RI,Rhode Island,providencechc,1,DoubleCheck,No,No,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44009,Washington County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45001,Abbeville County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45003,Aiken County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45003,Aiken County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45005,Allendale County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45007,Anderson County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45007,Anderson County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45009,Bamberg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45011,Barnwell County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45013,Beaufort County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45015,Berkeley County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45017,Calhoun County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45019,Charleston County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45021,Cherokee County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45021,Cherokee County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45023,Chester County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45025,Chesterfield County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45025,Chesterfield County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45027,Clarendon County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45029,Colleton County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45031,Darlington County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45033,Dillon County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45031,Darlington County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45033,Dillon County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45035,Dorchester County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45037,Edgefield County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45037,Edgefield County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45039,Fairfield County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45041,Florence County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45041,Florence County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45043,Georgetown County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45045,Greenville County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45045,Greenville County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45047,Greenwood County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45049,Hampton County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45051,Horry County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45053,Jasper County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45053,Jasper County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45055,Kershaw County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45057,Lancaster County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45057,Lancaster County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45059,Laurens County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45061,Lee County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45063,Lexington County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2355,13 +2355,13 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 45069,Marlboro County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45071,Newberry County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45073,Oconee County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45075,Orangeburg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45075,Orangeburg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45077,Pickens County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45079,Richland County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45081,Saluda County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45083,Spartanburg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45085,Sumter County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45087,Union County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45079,Richland County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45081,Saluda County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45083,Spartanburg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45085,Sumter County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45087,Union County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45089,Williamsburg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45091,York County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 46003,Aurora County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2823,140 +2823,140 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 50023,Washington County,VT,Vermont,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 50025,Windham County,VT,Vermont,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 50027,Windsor County,VT,Vermont,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51001,Accomack County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51003,Albemarle County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51005,Alleghany County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51007,Amelia County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51009,Amherst County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51011,Appomattox County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51013,Arlington County,VA,Virginia,arlingtondhs,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51015,Augusta County,VA,Virginia,augustahealthva,1,NA,Yes,Yes,NA,NA,NA,NA,946029018,"Thank you to Amy Ghaemmaghami, Outpatient Behavioral Health Coordinator, for talking with @WHSV_StephanieP about mental health awareness during the holidays.  https://t.co/9iKfuF10Ws",11/24/2021,9:01:15,https://twitter.com/AugustaHealthVA/status/1463508010593095680,2021,11,24
-51017,Bath County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51019,Bedford County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51021,Bland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51023,Botetourt County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51025,Brunswick County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51027,Buchanan County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51029,Buckingham County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51031,Campbell County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51033,Caroline County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51035,Carroll County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51036,Charles City County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51037,Charlotte County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51041,Chesterfield County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51043,Clarke County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51045,Craig County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51047,Culpeper County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51049,Cumberland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51051,Dickenson County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51053,Dinwiddie County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51057,Essex County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51059,Fairfax County,VA,Virginia,fairfaxhealth,1,NA,Yes,Yes,NA,NA,NA,NA,117134352,Some reminders about staying safe from COVID-19 as you prepare to celebrate Thanksgiving:  https://t.co/OwUdAp9XgD  https://t.co/ufOiruUaFz,11/24/2021,18:10:02,https://twitter.com/fairfaxhealth/status/1463646120429633536,2021,11,24
-51061,Fauquier County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51063,Floyd County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51065,Fluvanna County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51067,Franklin County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51069,Frederick County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51071,Giles County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51073,Gloucester County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51075,Goochland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51077,Grayson County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51079,Greene County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51081,Greensville County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51083,Halifax County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51085,Hanover County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51087,Henrico County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51089,Henry County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51091,Highland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51093,Isle of Wight County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51095,James City County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51097,King and Queen County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51099,King George County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51101,King William County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51103,Lancaster County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51105,Lee County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51107,Loudoun County,VA,Virginia,loudouncohealth,1,NA,Yes,Yes,NA,NA,NA,NA,242339104,Both the Loudoun County COVID info hotline and the vaccination clinic will be closed starting at 1pm on Wednesday November 24th for Thanksgiving weekend. Happy Thanksgiving!  https://t.co/9z6Y6V3Q1d,11/23/2021,17:38:00,https://twitter.com/LoudounCoHealth/status/1463275667928272900,2021,11,23
-51109,Louisa County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51111,Lunenburg County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51113,Madison County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51115,Mathews County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51117,Mecklenburg County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51119,Middlesex County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51121,Montgomery County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51125,Nelson County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51127,New Kent County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51131,Northampton County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51133,Northumberland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51135,Nottoway County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51137,Orange County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51139,Page County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51141,Patrick County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51143,Pittsylvania County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51145,Powhatan County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51147,Prince Edward County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51149,Prince George County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51153,Prince William County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51155,Pulaski County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51157,Rappahannock County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51159,Richmond County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51161,Roanoke County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51163,Rockbridge County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51165,Rockingham County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51167,Russell County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51169,Scott County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51171,Shenandoah County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51173,Smyth County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51175,Southampton County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51177,Spotsylvania County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51179,Stafford County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51181,Surry County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51183,Sussex County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51185,Tazewell County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51187,Warren County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51191,Washington County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51193,Westmoreland County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51195,Wise County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51197,Wythe County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51199,York County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51510,Alexandria city,VA,Virginia,alexandriavagov,1,NA,Yes,Yes,NA,NA,CountyGeneral,NA,29287545,"@GiggsyTheCorgi It's hard to tell from your photo what area of FB this is or how you arrived at it, but it looks to be out of our control. It's not a view of the main APD Facebook page that we're seeing when not logged in either. Are you able to share a more complete screenshot or URL?",11/24/2021,15:30:29,https://twitter.com/AlexandriaVAGov/status/1463605966793056260,2021,11,24
-51515,Bedford city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51520,Bristol city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51530,Buena Vista city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51540,Charlottesville city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51550,Chesapeake city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51570,Colonial Heights city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51580,Covington city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51590,Danville city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51595,Emporia city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51600,Fairfax city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51610,Falls Church city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51620,Franklin city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51630,Fredericksburg city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51640,Galax city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51650,Hampton city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51660,Harrisonburg city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51670,Hopewell city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51678,Lexington city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51680,Lynchburg city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51683,Manassas city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51685,Manassas Park city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51690,Martinsville city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51700,Newport News city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51710,Norfolk city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51720,Norton city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51730,Petersburg city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51735,Poquoson city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51740,Portsmouth city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51750,Radford city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51760,Richmond city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51770,Roanoke city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51775,Salem city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51790,Staunton city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51800,Suffolk city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51810,Virginia Beach city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51820,Waynesboro city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51830,Williamsburg city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51840,Winchester city,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51001,Accomack County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Eastern Shore Health Department - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51003,Albemarle County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51005,Alleghany County,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51007,Amelia County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51009,Amherst County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Virginia Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51011,Appomattox County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Virginia Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51013,Arlington County,VA,Virginia,arlingtondhs,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51015,Augusta County,VA,Virginia,augustahealthva,1,NA,Yes,Yes,1,NA,NA,Central Shenandoah Health District - Virginia,946029018,"Thank you to Amy Ghaemmaghami, Outpatient Behavioral Health Coordinator, for talking with @WHSV_StephanieP about mental health awareness during the holidays.  https://t.co/9iKfuF10Ws",11/24/2021,9:01:15,https://twitter.com/AugustaHealthVA/status/1463508010593095680,2021,11,24
+51017,Bath County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51019,Bedford County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Virginia Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51021,Bland County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51023,Botetourt County,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51025,Brunswick County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Southside Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51027,Buchanan County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Cumberland Plateau Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51029,Buckingham County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51031,Campbell County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Virginia Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51033,Caroline County,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51035,Carroll County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51036,Charles City County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chickahominy Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51037,Charlotte County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51041,Chesterfield County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chesterfield Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51043,Clarke County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51045,Craig County,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51047,Culpeper County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51049,Cumberland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51051,Dickenson County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Cumberland Plateau Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51053,Dinwiddie County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51057,Essex County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51059,Fairfax County,VA,Virginia,fairfaxhealth,1,NA,Yes,Yes,1,NA,NA,NA,117134352,Some reminders about staying safe from COVID-19 as you prepare to celebrate Thanksgiving:  https://t.co/OwUdAp9XgD  https://t.co/ufOiruUaFz,11/24/2021,18:10:02,https://twitter.com/fairfaxhealth/status/1463646120429633536,2021,11,24
+51061,Fauquier County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51063,Floyd County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51065,Fluvanna County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51067,Franklin County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51069,Frederick County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51071,Giles County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51073,Gloucester County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51075,Goochland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chickahominy Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51077,Grayson County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51079,Greene County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51081,Greensville County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51083,Halifax County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Southside Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51085,Hanover County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chickahominy Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51087,Henrico County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51089,Henry County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51091,Highland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51093,Isle of Wight County,VA,Virginia,NA,0,NA,NA,NA,0,NA,NA,Western Tidewater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51095,James City County,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51097,King and Queen County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51099,King George County,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51101,King William County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51103,Lancaster County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51105,Lee County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51107,Loudoun County,VA,Virginia,loudouncohealth,1,NA,Yes,Yes,1,NA,NA,NA,242339104,Both the Loudoun County COVID info hotline and the vaccination clinic will be closed starting at 1pm on Wednesday November 24th for Thanksgiving weekend. Happy Thanksgiving!  https://t.co/9z6Y6V3Q1d,11/23/2021,17:38:00,https://twitter.com/LoudounCoHealth/status/1463275667928272900,2021,11,23
+51109,Louisa County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51111,Lunenburg County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51113,Madison County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51115,Mathews County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51117,Mecklenburg County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Southside Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51119,Middlesex County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51121,Montgomery County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51125,Nelson County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51127,New Kent County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chickahominy Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51131,Northampton County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Eastern Shore Health Department - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51133,Northumberland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51135,Nottoway County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51137,Orange County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51139,Page County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51141,Patrick County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51143,Pittsylvania County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Pittsylvania-Danville Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51145,Powhatan County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chesterfield Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51147,Prince Edward County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51149,Prince George County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51153,Prince William County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Prince William Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51155,Pulaski County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51157,Rappahannock County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51159,Richmond County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51161,Roanoke County,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51163,Rockbridge County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51165,Rockingham County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51167,Russell County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Cumberland Plateau Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51169,Scott County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51171,Shenandoah County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51173,Smyth County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51175,Southampton County,VA,Virginia,NA,0,NA,NA,NA,0,NA,NA,Western Tidewater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51177,Spotsylvania County,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51179,Stafford County,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51181,Surry County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51183,Sussex County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51185,Tazewell County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Cumberland Plateau Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51187,Warren County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51191,Washington County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51193,Westmoreland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51195,Wise County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51197,Wythe County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51199,York County,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51510,Alexandria city,VA,Virginia,alexandriavagov,1,NA,Yes,Yes,1,NA,CountyGeneral,NA,29287545,"@GiggsyTheCorgi It's hard to tell from your photo what area of FB this is or how you arrived at it, but it looks to be out of our control. It's not a view of the main APD Facebook page that we're seeing when not logged in either. Are you able to share a more complete screenshot or URL?",11/24/2021,15:30:29,https://twitter.com/AlexandriaVAGov/status/1463605966793056260,2021,11,24
+51515,Bedford city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51520,Bristol city,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51530,Buena Vista city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51540,Charlottesville city,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51550,Chesapeake city,VA,Virginia,cheshealthdept,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51570,Colonial Heights city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Chesterfield Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51580,Covington city,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51590,Danville city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Pittsylvania-Danville Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51595,Emporia city,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51600,Fairfax city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51610,Falls Church city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51620,Franklin city,VA,Virginia,NA,0,NA,NA,NA,0,NA,NA,Western Tidewater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51630,Fredericksburg city,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51640,Galax city,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51650,Hampton city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51660,Harrisonburg city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51670,Hopewell city,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51678,Lexington city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51680,Lynchburg city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Virginia Health District,NA,NA,NA,NA,NA,NA,NA,NA
+51683,Manassas city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Prince William Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51685,Manassas Park city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Prince William Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51690,Martinsville city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51700,Newport News city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51710,Norfolk city,VA,Virginia,norfolkdph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51720,Norton city,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51730,Petersburg city,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51735,Poquoson city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51740,Portsmouth city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51750,Radford city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51760,Richmond city,VA,Virginia,richmondcity_hd,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51770,Roanoke city,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51775,Salem city,VA,Virginia,healthyrcahd,1,NA,NA,NA,1,NA,NA,Roanoke City and Alleghany Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51790,Staunton city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51800,Suffolk city,VA,Virginia,NA,0,NA,NA,NA,0,NA,NA,Western Tidewater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51810,Virginia Beach city,VA,Virginia,vbdph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+51820,Waynesboro city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51830,Williamsburg city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51840,Winchester city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 53001,Adams County,WA,Washington,adamscountyihcs,1,DoubleCheck,No,No,1,NA,Outdated-Add District,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53003,Asotin County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53005,Benton County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
