@@ -1197,7 +1197,6 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 24003,Anne Arundel County,MD,Maryland,aahealth,1,NA,Yes,Yes,1,NA,NA,NA,29259173,Here are more Tips for a Safe &amp; #HealthyThanksgiving:  https://t.co/QMpRDVklbQ  -   #Thanksgiving2021 #Thanksgiving  #holiday #holidayseason #HappyThanksgiving #COVID19  #StaySafeAnneArundel,11/24/2021,14:18:34,https://twitter.com/AAHealth/status/1463587867515658241,2021,11,24
 24005,Baltimore County,MD,Maryland,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 24009,Calvert County,MD,Maryland,calverthealth,1,NA,Yes,Yes,1,NA,NA,NA,78973718,"For those who decide to receive a Covid booster or begin their first Covid vaccination, please keep in mind that it is safe to have a flu shot administered at the same time.  The Calvert County Health Department staff wish everyone a happy and healthy Thanksgiving!",11/22/2021,14:00:32,https://twitter.com/CalvertHealth/status/1462858554109415424,2021,11,22
-24009,Calvert County,MD,Maryland,calverthealth,1,NA,Yes,Yes,1,NA,NA,NA,78973718,"This better ensures that you and your loved ones are able to receive the immediate care they need for heart attacks, strokes, car crashes, appendicitis, and cancer.",11/22/2021,14:00:32,https://twitter.com/CalvertHealth/status/1462858551903227906,2021,11,22
 24011,Caroline County,MD,Maryland,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 24013,Carroll County,MD,Maryland,carrollhealthmd,1,NA,Yes,No,1,NA,NA,NA,8.87E+17,"We're looking for a part-time Deputy Health/Chief Medical Officer to work with our health services, clinical policies, and health planning.  Must have a degree in and a license to practice medicine in Maryland and a public health degree or experience.  https://t.co/m0I6BKMUHR  https://t.co/CKJRIDKNj0",7/19/2021,16:12:03,https://twitter.com/CarrollHealthMD/status/1417215681557254151,2021,7,19
 24015,Cecil County,MD,Maryland,cecilcohealth,1,NA,Yes,Yes,1,NA,NA,NA,271972834,"Daily COVID-19 Data Update for Nov. 20, 2021. Definitions: The 7-day positivity rate reflects the seven-day moving average of each day's positivity percentage. The 7-day case rate reflects the seven-day moving average of each day's case rate per 100,000 population.""  https://t.co/44meZ2o7Uk",11/24/2021,8:53:21,https://twitter.com/CecilCoHealth/status/1463506024049037313,2021,11,24
@@ -2318,497 +2317,496 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 44005,Newport County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44007,Providence County,RI,Rhode Island,providencechc,1,DoubleCheck,No,No,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 44009,Washington County,RI,Rhode Island,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45001,Abbeville County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45001,Abbeville County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45003,Aiken County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45005,Allendale County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45005,Allendale County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45007,Anderson County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45009,Bamberg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45011,Barnwell County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45013,Beaufort County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45015,Berkeley County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45017,Calhoun County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45019,Charleston County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45009,Bamberg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45011,Barnwell County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45013,Beaufort County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45015,Berkeley County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45017,Calhoun County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45019,Charleston County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45021,Cherokee County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45023,Chester County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45023,Chester County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45025,Chesterfield County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45027,Clarendon County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45029,Colleton County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45027,Clarendon County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45029,Colleton County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45031,Darlington County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45033,Dillon County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45035,Dorchester County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45035,Dorchester County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45037,Edgefield County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45039,Fairfield County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45039,Fairfield County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45041,Florence County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45043,Georgetown County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45043,Georgetown County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45045,Greenville County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45047,Greenwood County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45049,Hampton County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45051,Horry County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45047,Greenwood County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45049,Hampton County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45051,Horry County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45053,Jasper County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45055,Kershaw County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45055,Kershaw County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45057,Lancaster County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45059,Laurens County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45061,Lee County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45063,Lexington County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45065,McCormick County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45067,Marion County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45069,Marlboro County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45071,Newberry County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45073,Oconee County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45059,Laurens County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45061,Lee County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45063,Lexington County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45065,McCormick County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45067,Marion County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45069,Marlboro County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45071,Newberry County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45073,Oconee County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45075,Orangeburg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45077,Pickens County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45077,Pickens County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45079,Richland County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45081,Saluda County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45083,Spartanburg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45085,Sumter County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45087,Union County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45089,Williamsburg County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45091,York County,SC,South Carolina,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46003,Aurora County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46005,Beadle County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46007,Bennett County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46009,Bon Homme County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46011,Brookings County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46013,Brown County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46015,Brule County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46017,Buffalo County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46019,Butte County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46021,Campbell County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46023,Charles Mix County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46025,Clark County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46027,Clay County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46029,Codington County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46031,Corson County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46033,Custer County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46035,Davison County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46037,Day County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46039,Deuel County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46041,Dewey County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46043,Douglas County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46045,Edmunds County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46047,Fall River County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46049,Faulk County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46051,Grant County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46053,Gregory County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46055,Haakon County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46057,Hamlin County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46059,Hand County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46061,Hanson County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46063,Harding County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46065,Hughes County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46067,Hutchinson County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46069,Hyde County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46071,Jackson County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46073,Jerauld County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46075,Jones County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46077,Kingsbury County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46079,Lake County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46081,Lawrence County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46083,Lincoln County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46085,Lyman County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46087,McCook County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46089,McPherson County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46091,Marshall County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46093,Meade County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46095,Mellette County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46097,Miner County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46099,Minnehaha County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46101,Moody County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46102,Oglala Lakota County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46103,Pennington County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46105,Perkins County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46107,Potter County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46109,Roberts County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46111,Sanborn County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46115,Spink County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46117,Stanley County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46119,Sully County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46121,Todd County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46123,Tripp County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46125,Turner County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46127,Union County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46129,Walworth County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46135,Yankton County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-46137,Ziebach County,SD,South Dakota,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47001,Anderson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47003,Bedford County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47005,Benton County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47007,Bledsoe County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47009,Blount County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47011,Bradley County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47013,Campbell County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47015,Cannon County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47017,Carroll County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47019,Carter County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47021,Cheatham County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47023,Chester County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47025,Claiborne County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47027,Clay County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47029,Cocke County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47031,Coffee County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47033,Crockett County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47035,Cumberland County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47037,Davidson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47039,Decatur County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47041,DeKalb County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47043,Dickson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47045,Dyer County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47047,Fayette County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47049,Fentress County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47051,Franklin County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47053,Gibson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47055,Giles County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47057,Grainger County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47059,Greene County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47061,Grundy County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47063,Hamblen County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47065,Hamilton County,TN,Tennessee,hamiltonhealth,1,NA,Yes,Yes,NA,NA,NA,NA,80338148,"**FOR IMMEDIATE RELEASE** November 24, 2021  Hamilton County Health Department to Begin Administering Booster Shots for Anyone Age 18+, No Appointment Necessary  Link:  https://t.co/1sAVS8rpVh  https://t.co/lsjafC4wHc",11/24/2021,12:52:36,https://twitter.com/HamiltonHealth/status/1463566235610849283,2021,11,24
-47067,Hancock County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47069,Hardeman County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47071,Hardin County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47073,Hawkins County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47075,Haywood County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47077,Henderson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47079,Henry County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47081,Hickman County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47083,Houston County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47085,Humphreys County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47087,Jackson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47089,Jefferson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47091,Johnson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47093,Knox County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47095,Lake County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47097,Lauderdale County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47099,Lawrence County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47101,Lewis County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47103,Lincoln County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47105,Loudon County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47107,McMinn County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47109,McNairy County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47111,Macon County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47113,Madison County,TN,Tennessee,jmcrhealthdept,1,NA,Yes,Yes,NA,NA,NA,NA,1.05E+18,"#CoronavirusUpdate: As of 10 a.m. today, we now have 18,562 confirmed cases of #COVID19 in Madison County—up 53 since Wednesday, Nov. 17, 2021.   📍 17,893 Recovered 📍 46 Not Recovered 📍 88 Better 📍 220 Unknown 📍 315 Deaths 📍 354 Active Cases (including unknowns)  https://t.co/Mt0St9rp4F",11/24/2021,11:05:54,https://twitter.com/JMCRHealthDept/status/1463539383634640899,2021,11,24
-47115,Marion County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47117,Marshall County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47119,Maury County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47121,Meigs County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47123,Monroe County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47125,Montgomery County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47127,Moore County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47129,Morgan County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47131,Obion County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47133,Overton County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47135,Perry County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47137,Pickett County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47139,Polk County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47141,Putnam County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47143,Rhea County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47145,Roane County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47147,Robertson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47149,Rutherford County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47151,Scott County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47153,Sequatchie County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47155,Sevier County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47157,Shelby County,TN,Tennessee,shelbytnhealth,1,NA,Yes,Yes,NA,NA,NA,NA,488793283,"In observance of the Thanksgiving holiday, the Shelby County Health Department will not provide the COVID-19 update Thursday, November 25 through Sunday, November 28. We will resume the update Monday, November 29.  https://t.co/1TekwNT2eH",11/24/2021,17:00:43,https://twitter.com/ShelbyTNHealth/status/1463628675451179009,2021,11,24
-47159,Smith County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47161,Stewart County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47163,Sullivan County,TN,Tennessee,sullivanhealth,1,NA,Yes,Yes,NA,NA,NA,NA,65088327,THE BOOSTER VACCINATIONS ARE AVAILABLE TO EVERYONE 18 AND UP!  CALL US AT (423) 279-2777 TO SCHEDULE! ☎️   or  Visit  https://t.co/w0xA79As2P to book your COVID-19 shot today! 📲,11/24/2021,15:30:23,https://twitter.com/SullivanHealth/status/1463605940771557385,2021,11,24
-47165,Sumner County,TN,Tennessee,healthysumner,1,NA,Yes,No,NA,NA,NA,NA,9.49E+17,Way to go @SumnerCoCSH!,8/20/2021,22:21:28,https://twitter.com/HealthySumner/status/1428905060587737089,2021,8,20
-47167,Tipton County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47169,Trousdale County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47171,Unicoi County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47173,Union County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47175,Van Buren County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47177,Warren County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47179,Washington County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47181,Wayne County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47183,Weakley County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47185,White County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47187,Williamson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-47189,Wilson County,TN,Tennessee,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48001,Anderson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48003,Andrews County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48005,Angelina County,TX,Texas,acchdus,1,NA,Yes,Yes,NA,NA,NA,NA,9.18E+17,https://t.co/snjdBiYPfl,11/23/2021,20:16:06,https://twitter.com/acchdus/status/1463315456870203398,2021,11,23
-48007,Aransas County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48009,Archer County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48011,Armstrong County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45089,Williamsburg County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45091,York County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46003,Aurora County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46005,Beadle County,SD,South Dakota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46007,Bennett County,SD,South Dakota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46009,Bon Homme County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46011,Brookings County,SD,South Dakota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46013,Brown County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46015,Brule County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46017,Buffalo County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46019,Butte County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46021,Campbell County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46023,Charles Mix County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46025,Clark County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46027,Clay County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46029,Codington County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46031,Corson County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46033,Custer County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46035,Davison County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46037,Day County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46039,Deuel County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46041,Dewey County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46043,Douglas County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46045,Edmunds County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46047,Fall River County,SD,South Dakota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46049,Faulk County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46051,Grant County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46053,Gregory County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46055,Haakon County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46057,Hamlin County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46059,Hand County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46061,Hanson County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46063,Harding County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46065,Hughes County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46067,Hutchinson County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46069,Hyde County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46071,Jackson County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46073,Jerauld County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46075,Jones County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46077,Kingsbury County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46079,Lake County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46081,Lawrence County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46083,Lincoln County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46085,Lyman County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46087,McCook County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46089,McPherson County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46091,Marshall County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46093,Meade County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46095,Mellette County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46097,Miner County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46099,Minnehaha County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46101,Moody County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46102,Oglala Lakota County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46103,Pennington County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46105,Perkins County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46107,Potter County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46109,Roberts County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46111,Sanborn County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46115,Spink County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46117,Stanley County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46119,Sully County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46121,Todd County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46123,Tripp County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46125,Turner County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46127,Union County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46129,Walworth County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46135,Yankton County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+46137,Ziebach County,SD,South Dakota,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47001,Anderson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47003,Bedford County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47005,Benton County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47007,Bledsoe County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47009,Blount County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47011,Bradley County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47013,Campbell County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47015,Cannon County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47017,Carroll County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47019,Carter County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47021,Cheatham County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47023,Chester County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47025,Claiborne County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47027,Clay County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47029,Cocke County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47031,Coffee County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47033,Crockett County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47035,Cumberland County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47037,Davidson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47039,Decatur County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47041,DeKalb County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47043,Dickson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47045,Dyer County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47047,Fayette County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47049,Fentress County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47051,Franklin County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47053,Gibson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47055,Giles County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47057,Grainger County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47059,Greene County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47061,Grundy County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47063,Hamblen County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47065,Hamilton County,TN,Tennessee,hamiltonhealth,1,NA,Yes,Yes,1,NA,NA,NA,80338148,"**FOR IMMEDIATE RELEASE** November 24, 2021  Hamilton County Health Department to Begin Administering Booster Shots for Anyone Age 18+, No Appointment Necessary  Link:  https://t.co/1sAVS8rpVh  https://t.co/lsjafC4wHc",11/24/2021,12:52:36,https://twitter.com/HamiltonHealth/status/1463566235610849283,2021,11,24
+47067,Hancock County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47069,Hardeman County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47071,Hardin County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47073,Hawkins County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47075,Haywood County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47077,Henderson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47079,Henry County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47081,Hickman County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47083,Houston County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47085,Humphreys County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47087,Jackson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47089,Jefferson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47091,Johnson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47093,Knox County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47095,Lake County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47097,Lauderdale County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47099,Lawrence County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47101,Lewis County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47103,Lincoln County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47105,Loudon County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47107,McMinn County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47109,McNairy County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47111,Macon County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47113,Madison County,TN,Tennessee,jmcrhealthdept,1,NA,Yes,Yes,1,NA,NA,NA,1.05E+18,"#CoronavirusUpdate: As of 10 a.m. today, we now have 18,562 confirmed cases of #COVID19 in Madison County—up 53 since Wednesday, Nov. 17, 2021.   📍 17,893 Recovered 📍 46 Not Recovered 📍 88 Better 📍 220 Unknown 📍 315 Deaths 📍 354 Active Cases (including unknowns)  https://t.co/Mt0St9rp4F",11/24/2021,11:05:54,https://twitter.com/JMCRHealthDept/status/1463539383634640899,2021,11,24
+47115,Marion County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47117,Marshall County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47119,Maury County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47121,Meigs County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47123,Monroe County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47125,Montgomery County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47127,Moore County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47129,Morgan County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47131,Obion County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47133,Overton County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47135,Perry County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47137,Pickett County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47139,Polk County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47141,Putnam County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47143,Rhea County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47145,Roane County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47147,Robertson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47149,Rutherford County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47151,Scott County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47153,Sequatchie County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47155,Sevier County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47157,Shelby County,TN,Tennessee,shelbytnhealth,1,NA,Yes,Yes,1,NA,NA,NA,488793283,"In observance of the Thanksgiving holiday, the Shelby County Health Department will not provide the COVID-19 update Thursday, November 25 through Sunday, November 28. We will resume the update Monday, November 29.  https://t.co/1TekwNT2eH",11/24/2021,17:00:43,https://twitter.com/ShelbyTNHealth/status/1463628675451179009,2021,11,24
+47159,Smith County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47161,Stewart County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47163,Sullivan County,TN,Tennessee,sullivanhealth,1,NA,Yes,Yes,1,NA,NA,NA,65088327,THE BOOSTER VACCINATIONS ARE AVAILABLE TO EVERYONE 18 AND UP!  CALL US AT (423) 279-2777 TO SCHEDULE! ☎️   or  Visit  https://t.co/w0xA79As2P to book your COVID-19 shot today! 📲,11/24/2021,15:30:23,https://twitter.com/SullivanHealth/status/1463605940771557385,2021,11,24
+47165,Sumner County,TN,Tennessee,healthysumner,1,NA,Yes,No,1,NA,NA,NA,9.49E+17,Way to go @SumnerCoCSH!,8/20/2021,22:21:28,https://twitter.com/HealthySumner/status/1428905060587737089,2021,8,20
+47167,Tipton County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47169,Trousdale County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47171,Unicoi County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47173,Union County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47175,Van Buren County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47177,Warren County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47179,Washington County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47181,Wayne County,TN,Tennessee,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47183,Weakley County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47185,White County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47187,Williamson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+47189,Wilson County,TN,Tennessee,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48001,Anderson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48003,Andrews County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48005,Angelina County,TX,Texas,acchdus,1,NA,Yes,Yes,1,NA,NA,NA,9.18E+17,https://t.co/snjdBiYPfl,11/23/2021,20:16:06,https://twitter.com/acchdus/status/1463315456870203398,2021,11,23
+48007,Aransas County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48009,Archer County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48011,Armstrong County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48013,Atascosa County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48015,Austin County,TX,Texas,auspublichealth,1,NA,Yes,Yes,NA,NA,NA,NA,870535057,Get vaccinated 👉  https://t.co/J7VmYzANq1  https://t.co/nnIdx7IadP,11/24/2021,16:00:01,https://twitter.com/AusPublicHealth/status/1463613400563343366,2021,11,24
-48017,Bailey County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48019,Bandera County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48021,Bastrop County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48023,Baylor County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48025,Bee County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48027,Bell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48029,Bexar County,TX,Texas,sametrohealth,1,NA,Yes,Yes,NA,NA,NA,NA,85343799,"In observance of the Thanksgiving Holiday, the Alamodome Drive-Thru Vaccine Clinic will be closed on Thursday, November 25, 2021 and Friday, November 26, 2021. We will reopen with regular hours on Wednesday, December 2 from 12pm to 8pm.  https://t.co/zJ9js8OXWs",11/24/2021,16:01:11,https://twitter.com/SAMetroHealth/status/1463613694244442113,2021,11,24
-48031,Blanco County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48033,Borden County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48035,Bosque County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48037,Bowie County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48039,Brazoria County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48041,Brazos County,TX,Texas,brazoscohd,1,NA,Yes,Yes,NA,NA,NA,NA,1037445721,We want to hear from you! Fill out our survey today.    https://t.co/TS9rOgiC9S (English)    https://t.co/76aTPEGMpX (Español),11/19/2021,11:47:28,https://twitter.com/BrazosCoHD/status/1461737904686915586,2021,11,19
-48043,Brewster County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48045,Briscoe County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48047,Brooks County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48049,Brown County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48051,Burleson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48053,Burnet County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48055,Caldwell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48057,Calhoun County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48059,Callahan County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48061,Cameron County,TX,Texas,ccph_tx,1,NA,Yes,No,NA,NA,NA,NA,8.70E+17,https://t.co/3VOojbYeXd,4/1/2020,21:07:02,https://twitter.com/CCPH_TX/status/1245518069100929026,2020,4,1
-48063,Camp County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48065,Carson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48067,Cass County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48069,Castro County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48071,Chambers County,TX,Texas,cctxhealthdept,1,NA,Yes,No,NA,NA,NA,NA,2600331032,Information regarding the FREE mobile COVID-19 testing sites will be released soon! Remember - no symptoms will be required for this round of testing.  https://t.co/Gp9wibECit,6/26/2020,13:01:44,https://twitter.com/cctxhealthdept/status/1276561293865037829,2020,6,26
-48073,Cherokee County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48075,Childress County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48077,Clay County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48079,Cochran County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48081,Coke County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48083,Coleman County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48085,Collin County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48087,Collingsworth County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48089,Colorado County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48091,Comal County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48093,Comanche County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48095,Concho County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48097,Cooke County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48099,Coryell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48101,Cottle County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48103,Crane County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48105,Crockett County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48107,Crosby County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48109,Culberson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48111,Dallam County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48113,Dallas County,TX,Texas,dchhs,1,NA,Yes,Yes,NA,NA,NA,NA,28599776,"🚑‼️Mañana puedes recibir la vacuna del #COVID19 totalmente GRATIS de 10 am -2 pm. Tendremos la primera, la segunda y la vacuna de refuerzo disponibles y vacunas para niños de 5 a 11 años.   Al vacunarse recibirá una tarjeta de regalo por $25 de Walmart ✅ Te esperamos!",11/21/2021,22:23:46,https://twitter.com/DCHHS/status/1462622810719805444,2021,11,21
-48113,Dallas County,TX,Texas,dchhs,1,NA,Yes,Yes,NA,NA,NA,NA,28599776,"🚑‼️We’ll be hosting a FREE #COVID19 💉clinic tomorrow @ Trinity Basin Prep from 10 am - 2 pm. We’ll administer 1st, 2nd &amp; 3rd doses and vaccines for children 5-11 #GetVaccinated   Claim a $25 Walmart gift card after receiving the 💉. Details ⬇️⬇️‼️  https://t.co/FBA9rdcB2s",11/21/2021,22:23:46,https://twitter.com/DCHHS/status/1462622808631087112,2021,11,21
-48115,Dawson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48117,Deaf Smith County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48119,Delta County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48121,Denton County,TX,Texas,wearedcoh,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48123,DeWitt County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48125,Dickens County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48127,Dimmit County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48129,Donley County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48131,Duval County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48133,Eastland County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48135,Ector County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48137,Edwards County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48139,Ellis County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48141,El Paso County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48143,Erath County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48145,Falls County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48147,Fannin County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48149,Fayette County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48151,Fisher County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48153,Floyd County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48155,Foard County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48157,Fort Bend County,TX,Texas,fortbendhealth,1,NA,Yes,Yes,NA,NA,NA,NA,302236021,"COVID-19 HUB Data report for 11-24-21. Today 133 new cases of #COVID19 and 3 deaths were reported.  The current number of reported active cases is 1,433.  More FBC COVID-19 information can be found at  https://t.co/g8sJlg2xvE.  https://t.co/0Kh6evcZnH",11/24/2021,17:05:02,https://twitter.com/FortBendHealth/status/1463629760605605895,2021,11,24
-48159,Franklin County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48161,Freestone County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48163,Frio County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48165,Gaines County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48167,Galveston County,TX,Texas,gchdinfo,1,NA,Yes,Yes,NA,NA,NA,NA,3161549442,"Did you know Coastal Health &amp; Wellness offers medical, dental and counseling services for children, adolescents and adults? AND, we're accepting new patients!  Call us at 409.938.2234 to learn more!  https://t.co/j6AfHlDeLA",11/24/2021,17:45:00,https://twitter.com/GCHDinfo/status/1463639817380503552,2021,11,24
-48169,Garza County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48171,Gillespie County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48173,Glasscock County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48175,Goliad County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48177,Gonzales County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48179,Gray County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48015,Austin County,TX,Texas,auspublichealth,1,NA,Yes,Yes,1,NA,NA,NA,870535057,Get vaccinated 👉  https://t.co/J7VmYzANq1  https://t.co/nnIdx7IadP,11/24/2021,16:00:01,https://twitter.com/AusPublicHealth/status/1463613400563343366,2021,11,24
+48017,Bailey County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48019,Bandera County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48021,Bastrop County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48023,Baylor County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48025,Bee County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48027,Bell County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48029,Bexar County,TX,Texas,sametrohealth,1,NA,Yes,Yes,0,NA,NA,NA,85343799,"In observance of the Thanksgiving Holiday, the Alamodome Drive-Thru Vaccine Clinic will be closed on Thursday, November 25, 2021 and Friday, November 26, 2021. We will reopen with regular hours on Wednesday, December 2 from 12pm to 8pm.  https://t.co/zJ9js8OXWs",11/24/2021,16:01:11,https://twitter.com/SAMetroHealth/status/1463613694244442113,2021,11,24
+48031,Blanco County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48033,Borden County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48035,Bosque County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48037,Bowie County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48039,Brazoria County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48041,Brazos County,TX,Texas,brazoscohd,1,NA,Yes,Yes,1,NA,NA,NA,1037445721,We want to hear from you! Fill out our survey today.    https://t.co/TS9rOgiC9S (English)    https://t.co/76aTPEGMpX (Español),11/19/2021,11:47:28,https://twitter.com/BrazosCoHD/status/1461737904686915586,2021,11,19
+48043,Brewster County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48045,Briscoe County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48047,Brooks County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48049,Brown County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48051,Burleson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48053,Burnet County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48055,Caldwell County,TX,Texas,NA,0,NA,NA,NA,1,Emergency Management Agency,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48057,Calhoun County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48059,Callahan County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48061,Cameron County,TX,Texas,ccph_tx,1,NA,Yes,No,1,NA,NA,NA,8.70E+17,https://t.co/3VOojbYeXd,4/1/2020,21:07:02,https://twitter.com/CCPH_TX/status/1245518069100929026,2020,4,1
+48063,Camp County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48065,Carson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48067,Cass County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48069,Castro County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48071,Chambers County,TX,Texas,cctxhealthdept,1,NA,Yes,No,1,NA,NA,NA,2600331032,Information regarding the FREE mobile COVID-19 testing sites will be released soon! Remember - no symptoms will be required for this round of testing.  https://t.co/Gp9wibECit,6/26/2020,13:01:44,https://twitter.com/cctxhealthdept/status/1276561293865037829,2020,6,26
+48073,Cherokee County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48075,Childress County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48077,Clay County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48079,Cochran County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48081,Coke County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48083,Coleman County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48085,Collin County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48087,Collingsworth County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48089,Colorado County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48091,Comal County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48093,Comanche County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48095,Concho County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48097,Cooke County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48099,Coryell County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48101,Cottle County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48103,Crane County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48105,Crockett County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48107,Crosby County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48109,Culberson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48111,Dallam County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48113,Dallas County,TX,Texas,dchhs,1,NA,Yes,Yes,1,NA,NA,NA,28599776,"🚑‼️We’ll be hosting a FREE #COVID19 💉clinic tomorrow @ Trinity Basin Prep from 10 am - 2 pm. We’ll administer 1st, 2nd &amp; 3rd doses and vaccines for children 5-11 #GetVaccinated   Claim a $25 Walmart gift card after receiving the 💉. Details ⬇️⬇️‼️  https://t.co/FBA9rdcB2s",11/21/2021,22:23:46,https://twitter.com/DCHHS/status/1462622808631087112,2021,11,21
+48115,Dawson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48117,Deaf Smith County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48119,Delta County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48121,Denton County,TX,Texas,wearedcoh,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48123,DeWitt County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48125,Dickens County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48127,Dimmit County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48129,Donley County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48131,Duval County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48133,Eastland County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48135,Ector County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48137,Edwards County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48139,Ellis County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48141,El Paso County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48143,Erath County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48145,Falls County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48147,Fannin County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48149,Fayette County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48151,Fisher County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48153,Floyd County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48155,Foard County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48157,Fort Bend County,TX,Texas,fortbendhealth,1,NA,Yes,Yes,1,NA,NA,NA,302236021,"COVID-19 HUB Data report for 11-24-21. Today 133 new cases of #COVID19 and 3 deaths were reported.  The current number of reported active cases is 1,433.  More FBC COVID-19 information can be found at  https://t.co/g8sJlg2xvE.  https://t.co/0Kh6evcZnH",11/24/2021,17:05:02,https://twitter.com/FortBendHealth/status/1463629760605605895,2021,11,24
+48159,Franklin County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48161,Freestone County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48163,Frio County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48165,Gaines County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48167,Galveston County,TX,Texas,gchdinfo,1,NA,Yes,Yes,1,NA,NA,NA,3161549442,"Did you know Coastal Health &amp; Wellness offers medical, dental and counseling services for children, adolescents and adults? AND, we're accepting new patients!  Call us at 409.938.2234 to learn more!  https://t.co/j6AfHlDeLA",11/24/2021,17:45:00,https://twitter.com/GCHDinfo/status/1463639817380503552,2021,11,24
+48169,Garza County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48171,Gillespie County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48173,Glasscock County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48175,Goliad County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48177,Gonzales County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48179,Gray County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48181,Grayson County,TX,Texas,graysoncounty,1,NA,Yes,Yes,1,NA,EmergManage,NA,44794344,"Today’s COVID-19 Numbers 📊  Grayson County- Total: 16,491 New: 25 Active: 59 Deaths: 544  For more information including hospitalization rates, view the Grayson County COVID-19 Situation Report-   https://t.co/SvfsBpl2oZ  https://t.co/23DWWQ3JNw",11/24/2021,16:58:52,https://twitter.com/GraysonCounty/status/1463628208847347716,2021,11,24
-48183,Gregg County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48185,Grimes County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48187,Guadalupe County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48189,Hale County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48191,Hall County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48193,Hamilton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48195,Hansford County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48197,Hardeman County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48199,Hardin County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48201,Harris County,TX,Texas,hcphtx,1,NA,Yes,Yes,NA,NA,NA,NA,143092332,"Our testing and COVID-19 Vaccine sites will be closed Thursday 11/25 and Friday 11/26. Although we advise against large family and friends' gatherings, we are aware the temptation might win. In any case, it is best to #KnowYourCOVID19Status and #GetTested before the celebration.  https://t.co/Fst9JfsCD4",11/24/2021,16:00:26,https://twitter.com/hcphtx/status/1463613503705604112,2021,11,24
-48203,Harrison County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48205,Hartley County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48207,Haskell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48209,Hays County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48211,Hemphill County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48213,Henderson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48215,Hidalgo County,TX,Texas,hidalgohealth,1,NA,Yes,Yes,NA,NA,NA,NA,56421774,⭐️@hidalgohealth partnering with local partners to provide CoVID Vaccine for 5yrs of age and older as posted and vaccine provided at each of the Hidalgo County Clinics call 956 292 7765 for information  @HidalgoCounty @TexasDSHS  https://t.co/fVAZ9FH4a1,11/4/2021,10:21:40,https://twitter.com/hidalgohealth/status/1456265393006202896,2021,11,4
-48217,Hill County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48219,Hockley County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48221,Hood County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48223,Hopkins County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48225,Houston County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48227,Howard County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48229,Hudspeth County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48231,Hunt County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48233,Hutchinson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48235,Irion County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48237,Jack County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48239,Jackson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48241,Jasper County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48243,Jeff Davis County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48245,Jefferson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48247,Jim Hogg County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48249,Jim Wells County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48251,Johnson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48253,Jones County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48255,Karnes County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48257,Kaufman County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48259,Kendall County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48261,Kenedy County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48263,Kent County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48265,Kerr County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48267,Kimble County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48269,King County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48271,Kinney County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48273,Kleberg County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48275,Knox County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48277,Lamar County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48279,Lamb County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48281,Lampasas County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48283,La Salle County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48285,Lavaca County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48287,Lee County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48289,Leon County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48291,Liberty County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48293,Limestone County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48295,Lipscomb County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48297,Live Oak County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48299,Llano County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48301,Loving County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48303,Lubbock County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48305,Lynn County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48307,McCulloch County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48309,McLennan County,TX,Texas,wacohealthdept,1,NA,Yes,Yes,NA,NA,NA,NA,237028256,COVID-19 booster updates: everyone ages 18 and older is now eligible for a booster shot. The Health District offers all 3 vaccines.  https://t.co/b4sgF38OIZ  https://t.co/fx4tdeSUCg,11/24/2021,17:00:37,https://twitter.com/wacohealthdept/status/1463628649232482309,2021,11,24
-48311,McMullen County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48313,Madison County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48315,Marion County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48317,Martin County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48319,Mason County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48321,Matagorda County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48323,Maverick County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48325,Medina County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48327,Menard County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48329,Midland County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48331,Milam County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48333,Mills County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48335,Mitchell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48337,Montague County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48339,Montgomery County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48341,Moore County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48343,Morris County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48345,Motley County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48347,Nacogdoches County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48349,Navarro County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48351,Newton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48353,Nolan County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48355,Nueces County,TX,Texas,ccpublichealth,1,NA,Yes,Yes,NA,NA,NA,NA,47453990,"Today's update on COVID-19 in @NuecesCo: 82 cases (10 reported by the State [historic data] and 72 reported to the Health District). Of the 82, 21 are confirmed positives, 28 are probable positives and 33 are suspect positives. 👉 Learn More:  https://t.co/o1u7nYxY0d #NuecesKnows  https://t.co/NVzGAdTxsq",11/24/2021,17:47:48,https://twitter.com/ccpublichealth/status/1463640522392838147,2021,11,24
-48357,Ochiltree County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48359,Oldham County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48361,Orange County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48363,Palo Pinto County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48365,Panola County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48367,Parker County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48369,Parmer County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48371,Pecos County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48373,Polk County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48375,Potter County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48377,Presidio County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48379,Rains County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48381,Randall County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48383,Reagan County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48385,Real County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48387,Red River County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48389,Reeves County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48391,Refugio County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48393,Roberts County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48395,Robertson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48397,Rockwall County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48399,Runnels County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48401,Rusk County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48403,Sabine County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48405,San Augustine County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48407,San Jacinto County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48409,San Patricio County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48411,San Saba County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48413,Schleicher County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48415,Scurry County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48417,Shackelford County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48419,Shelby County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48421,Sherman County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48423,Smith County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48425,Somervell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48427,Starr County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48429,Stephens County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48431,Sterling County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48433,Stonewall County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48435,Sutton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48437,Swisher County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48439,Tarrant County,TX,Texas,tcphtweets,1,NA,Yes,Yes,NA,NA,NA,NA,3060489966,"Can a flu shot give you flu? No, the flu vaccines given with a flu shot are made with either inactivated (killed) viruses, or with only a single protein from the flu virus. The nasal spray vaccine contains live viruses that are weakened so that they will not cause illness.",11/20/2021,18:30:00,https://twitter.com/TCPHtweets/status/1462201591533088771,2021,11,20
-48441,Taylor County,TX,Texas,abilenehealth,1,NA,Yes,Yes,NA,NA,NA,NA,2239805246,For more tips like these visit  https://t.co/oQ9TMt3aOB  #HealthyHabits #TipTuesday #GoodFoodGoodMoves  https://t.co/OEtraZJp64,11/22/2021,9:30:10,https://twitter.com/AbileneHealth/status/1462790514210713603,2021,11,22
-48443,Terrell County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48445,Terry County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48447,Throckmorton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48449,Titus County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48451,Tom Green County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48453,Travis County,TX,Texas,traviscountyhhs,1,NA,Yes,Yes,NA,NA,NA,NA,3145676539,"All Travis County HHS offices and Community Centers will be closed Thursday, November 25th and Friday, November 26th. Happy Thanksgiving!! 🍁🦃 #givethanks #HappyThanksgiving2021  https://t.co/eehlQt181m",11/24/2021,10:49:37,https://twitter.com/TravisCountyHHS/status/1463535283975172098,2021,11,24
-48455,Trinity County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48457,Tyler County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48459,Upshur County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48461,Upton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48463,Uvalde County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48465,Val Verde County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48467,Van Zandt County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48469,Victoria County,TX,Texas,publiccounty,1,NA,No,No,NA,NA,NA,NA,1.02E+18,Open Forum for Quality Improvement (QI) and Innovation  https://t.co/pzHbxK59fG #publichealth via @NNPHI_ORG,10/23/2018,14:58:31,https://twitter.com/PublicCounty/status/1054809309970722818,2018,10,23
-48471,Walker County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48473,Waller County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48475,Ward County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48477,Washington County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48479,Webb County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48481,Wharton County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48483,Wheeler County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48485,Wichita County,TX,Texas,wfwcphd,1,DoubleCheck,No,No,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48487,Wilbarger County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48489,Willacy County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48491,Williamson County,TX,Texas,wcchd,1,NA,Yes,Yes,NA,NA,NA,NA,329751703,WCCHD has released the 11/24/21 COVID-19 Update -  https://t.co/DgBCnrabuz  https://t.co/xL5DaTmVjC,11/24/2021,18:04:27,https://twitter.com/WCCHD/status/1463644711567114251,2021,11,24
-48493,Wilson County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48495,Winkler County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48497,Wise County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48499,Wood County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48501,Yoakum County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48503,Young County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48505,Zapata County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48507,Zavala County,TX,Texas,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49001,Beaver County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49003,Box Elder County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49005,Cache County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49007,Carbon County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49009,Daggett County,UT,Utah,trico_health,1,NA,Yes,Yes,NA,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
-49011,Davis County,UT,Utah,daviscountyhlth,1,NA,Yes,Yes,NA,NA,NA,NA,253631366,The Davis County Health Department wishes you all a safe and healthy Thanksgiving holiday!  https://t.co/SamStd4mzf,11/24/2021,16:44:12,https://twitter.com/DavisCountyHlth/status/1463624516513386500,2021,11,24
-49013,Duchesne County,UT,Utah,trico_health,1,NA,Yes,Yes,NA,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
-49015,Emery County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49017,Garfield County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49019,Grand County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49021,Iron County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49023,Juab County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49025,Kane County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49027,Millard County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49029,Morgan County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49031,Piute County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49033,Rich County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49035,Salt Lake County,UT,Utah,saltlakehealth,1,NA,Yes,Yes,NA,NA,NA,NA,16633440,"In addition to the resource below, you can visit  https://t.co/EoRVwJORoK to find food sites near you with holiday food services.",11/23/2021,13:02:54,https://twitter.com/SaltLakeHealth/status/1463206436675092480,2021,11,23
-49037,San Juan County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49039,Sanpete County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49041,Sevier County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49043,Summit County,UT,Utah,summitcountyhd,1,NA,Yes,Yes,NA,NA,NA,NA,7.83E+17,"We encourage individuals who are interested in receiving a booster shot to check with their local pharmacies. For a list of complete locations, please visit:  https://t.co/M0pxdZ1vdt.",11/18/2021,15:33:13,https://twitter.com/SummitCountyHD/status/1461432325695098880,2021,11,18
-49045,Tooele County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49047,Uintah County,UT,Utah,trico_health,1,NA,Yes,Yes,NA,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
-49049,Utah County,UT,Utah,uchd,1,NA,Yes,Yes,NA,NA,NA,NA,21318795,"Utah County COVID-19 Help Line 801-851-HELP (4357) M-F, 8:30-4.  https://t.co/AA2tkW67vc",11/24/2021,15:00:13,https://twitter.com/UCHD/status/1463598351274885122,2021,11,24
-49051,Wasatch County,UT,Utah,wasatchcountyhd,1,NA,Yes,No,NA,NA,NA,NA,472223089,The Wasatch County Health Department has issued a Warning Advisory for harmful algae at Strawberry Reservoir. Test results on a sample from the reservoir came back above warning level thresholds. Strawberry Reservoir remains open for recreation.  https://t.co/tywcP7ay2g,9/22/2020,17:25:28,https://twitter.com/WasatchCountyHD/status/1308517796612104192,2020,9,22
-49053,Washington County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49055,Wayne County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-49057,Weber County,UT,Utah,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48183,Gregg County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48185,Grimes County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48187,Guadalupe County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48189,Hale County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48191,Hall County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48193,Hamilton County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48195,Hansford County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48197,Hardeman County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48199,Hardin County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48201,Harris County,TX,Texas,hcphtx,1,NA,Yes,Yes,1,NA,NA,NA,143092332,"Our testing and COVID-19 Vaccine sites will be closed Thursday 11/25 and Friday 11/26. Although we advise against large family and friends' gatherings, we are aware the temptation might win. In any case, it is best to #KnowYourCOVID19Status and #GetTested before the celebration.  https://t.co/Fst9JfsCD4",11/24/2021,16:00:26,https://twitter.com/hcphtx/status/1463613503705604112,2021,11,24
+48203,Harrison County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48205,Hartley County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48207,Haskell County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48209,Hays County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48211,Hemphill County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48213,Henderson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48215,Hidalgo County,TX,Texas,hidalgohealth,1,NA,Yes,Yes,1,NA,NA,NA,56421774,⭐️@hidalgohealth partnering with local partners to provide CoVID Vaccine for 5yrs of age and older as posted and vaccine provided at each of the Hidalgo County Clinics call 956 292 7765 for information  @HidalgoCounty @TexasDSHS  https://t.co/fVAZ9FH4a1,11/4/2021,10:21:40,https://twitter.com/hidalgohealth/status/1456265393006202896,2021,11,4
+48217,Hill County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48219,Hockley County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48221,Hood County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48223,Hopkins County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48225,Houston County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48227,Howard County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48229,Hudspeth County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48231,Hunt County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48233,Hutchinson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48235,Irion County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48237,Jack County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48239,Jackson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48241,Jasper County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48243,Jeff Davis County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48245,Jefferson County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48247,Jim Hogg County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48249,Jim Wells County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48251,Johnson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48253,Jones County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48255,Karnes County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48257,Kaufman County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48259,Kendall County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48261,Kenedy County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48263,Kent County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48265,Kerr County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48267,Kimble County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48269,King County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48271,Kinney County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48273,Kleberg County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48275,Knox County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48277,Lamar County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48279,Lamb County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48281,Lampasas County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48283,La Salle County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48285,Lavaca County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48287,Lee County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48289,Leon County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48291,Liberty County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48293,Limestone County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48295,Lipscomb County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48297,Live Oak County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48299,Llano County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48301,Loving County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48303,Lubbock County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48305,Lynn County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48307,McCulloch County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48309,McLennan County,TX,Texas,wacohealthdept,1,NA,Yes,Yes,1,NA,NA,NA,237028256,COVID-19 booster updates: everyone ages 18 and older is now eligible for a booster shot. The Health District offers all 3 vaccines.  https://t.co/b4sgF38OIZ  https://t.co/fx4tdeSUCg,11/24/2021,17:00:37,https://twitter.com/wacohealthdept/status/1463628649232482309,2021,11,24
+48311,McMullen County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48313,Madison County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48315,Marion County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48317,Martin County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48319,Mason County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48321,Matagorda County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48323,Maverick County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48325,Medina County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48327,Menard County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48329,Midland County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48331,Milam County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48333,Mills County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48335,Mitchell County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48337,Montague County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48339,Montgomery County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48341,Moore County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48343,Morris County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48345,Motley County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48347,Nacogdoches County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48349,Navarro County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48351,Newton County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48353,Nolan County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48355,Nueces County,TX,Texas,ccpublichealth,1,NA,Yes,Yes,1,NA,NA,NA,47453990,"Today's update on COVID-19 in @NuecesCo: 82 cases (10 reported by the State [historic data] and 72 reported to the Health District). Of the 82, 21 are confirmed positives, 28 are probable positives and 33 are suspect positives. 👉 Learn More:  https://t.co/o1u7nYxY0d #NuecesKnows  https://t.co/NVzGAdTxsq",11/24/2021,17:47:48,https://twitter.com/ccpublichealth/status/1463640522392838147,2021,11,24
+48357,Ochiltree County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48359,Oldham County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48361,Orange County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48363,Palo Pinto County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48365,Panola County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48367,Parker County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48369,Parmer County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48371,Pecos County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48373,Polk County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48375,Potter County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48377,Presidio County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48379,Rains County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48381,Randall County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48383,Reagan County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48385,Real County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48387,Red River County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48389,Reeves County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48391,Refugio County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48393,Roberts County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48395,Robertson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48397,Rockwall County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48399,Runnels County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48401,Rusk County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48403,Sabine County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48405,San Augustine County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48407,San Jacinto County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48409,San Patricio County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48411,San Saba County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48413,Schleicher County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48415,Scurry County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48417,Shackelford County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48419,Shelby County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48421,Sherman County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48423,Smith County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48425,Somervell County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48427,Starr County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48429,Stephens County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48431,Sterling County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48433,Stonewall County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48435,Sutton County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48437,Swisher County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48439,Tarrant County,TX,Texas,tcphtweets,1,NA,Yes,Yes,1,NA,NA,NA,3060489966,"Can a flu shot give you flu? No, the flu vaccines given with a flu shot are made with either inactivated (killed) viruses, or with only a single protein from the flu virus. The nasal spray vaccine contains live viruses that are weakened so that they will not cause illness.",11/20/2021,18:30:00,https://twitter.com/TCPHtweets/status/1462201591533088771,2021,11,20
+48441,Taylor County,TX,Texas,abilenehealth,1,NA,Yes,Yes,1,NA,NA,NA,2239805246,For more tips like these visit  https://t.co/oQ9TMt3aOB  #HealthyHabits #TipTuesday #GoodFoodGoodMoves  https://t.co/OEtraZJp64,11/22/2021,9:30:10,https://twitter.com/AbileneHealth/status/1462790514210713603,2021,11,22
+48443,Terrell County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48445,Terry County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48447,Throckmorton County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48449,Titus County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48451,Tom Green County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48453,Travis County,TX,Texas,traviscountyhhs,1,NA,Yes,Yes,1,NA,NA,NA,3145676539,"All Travis County HHS offices and Community Centers will be closed Thursday, November 25th and Friday, November 26th. Happy Thanksgiving!! 🍁🦃 #givethanks #HappyThanksgiving2021  https://t.co/eehlQt181m",11/24/2021,10:49:37,https://twitter.com/TravisCountyHHS/status/1463535283975172098,2021,11,24
+48455,Trinity County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48457,Tyler County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48459,Upshur County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48461,Upton County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48463,Uvalde County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48465,Val Verde County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48467,Van Zandt County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48469,Victoria County,TX,Texas,publiccounty,1,NA,No,No,1,NA,NA,NA,1.02E+18,Open Forum for Quality Improvement (QI) and Innovation  https://t.co/pzHbxK59fG #publichealth via @NNPHI_ORG,10/23/2018,14:58:31,https://twitter.com/PublicCounty/status/1054809309970722818,2018,10,23
+48471,Walker County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48473,Waller County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48475,Ward County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48477,Washington County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48479,Webb County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48481,Wharton County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48483,Wheeler County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48485,Wichita County,TX,Texas,wfwcphd,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48487,Wilbarger County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48489,Willacy County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48491,Williamson County,TX,Texas,wcchd,1,NA,Yes,Yes,1,NA,NA,NA,329751703,WCCHD has released the 11/24/21 COVID-19 Update -  https://t.co/DgBCnrabuz  https://t.co/xL5DaTmVjC,11/24/2021,18:04:27,https://twitter.com/WCCHD/status/1463644711567114251,2021,11,24
+48493,Wilson County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48495,Winkler County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48497,Wise County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48499,Wood County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48501,Yoakum County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48503,Young County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48505,Zapata County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48507,Zavala County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49001,Beaver County,UT,Utah,swuhealth,1,NA,NA,NA,1,NA,NA,Southwest Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49003,Box Elder County,UT,Utah,bearriverhealth,1,NA,NA,NA,1,NA,NA,Bear River Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
+49005,Cache County,UT,Utah,bearriverhealth,1,NA,NA,NA,1,NA,NA,Bear River Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
+49007,Carbon County,UT,Utah,seuthealth,1,NA,NA,NA,1,NA,NA,Southeast Utah Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49009,Daggett County,UT,Utah,trico_health,1,NA,Yes,Yes,1,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
+49011,Davis County,UT,Utah,daviscountyhlth,1,NA,Yes,Yes,1,NA,NA,NA,253631366,The Davis County Health Department wishes you all a safe and healthy Thanksgiving holiday!  https://t.co/SamStd4mzf,11/24/2021,16:44:12,https://twitter.com/DavisCountyHlth/status/1463624516513386500,2021,11,24
+49013,Duchesne County,UT,Utah,trico_health,1,NA,Yes,Yes,1,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
+49015,Emery County,UT,Utah,seuthealth,1,NA,NA,NA,1,NA,NA,Southeast Utah Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49017,Garfield County,UT,Utah,swuhealth,1,NA,NA,NA,1,NA,NA,Southwest Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49019,Grand County,UT,Utah,seuthealth,1,NA,NA,NA,1,NA,NA,Southeast Utah Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49021,Iron County,UT,Utah,swuhealth,1,NA,NA,NA,1,NA,NA,Southwest Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49023,Juab County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49025,Kane County,UT,Utah,swuhealth,1,NA,NA,NA,1,NA,NA,Southwest Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49027,Millard County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49029,Morgan County,UT,Utah,webermorganhd,1,NA,NA,NA,1,NA,NA,Weber-Morgan Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
+49031,Piute County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49033,Rich County,UT,Utah,bearriverhealth,1,NA,NA,NA,1,NA,NA,Bear River Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
+49035,Salt Lake County,UT,Utah,saltlakehealth,1,NA,Yes,Yes,1,NA,NA,NA,16633440,"In addition to the resource below, you can visit  https://t.co/EoRVwJORoK to find food sites near you with holiday food services.",11/23/2021,13:02:54,https://twitter.com/SaltLakeHealth/status/1463206436675092480,2021,11,23
+49037,San Juan County,UT,Utah,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49039,Sanpete County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49041,Sevier County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49043,Summit County,UT,Utah,summitcountyhd,1,NA,Yes,Yes,1,NA,NA,NA,7.83E+17,"We encourage individuals who are interested in receiving a booster shot to check with their local pharmacies. For a list of complete locations, please visit:  https://t.co/M0pxdZ1vdt.",11/18/2021,15:33:13,https://twitter.com/SummitCountyHD/status/1461432325695098880,2021,11,18
+49045,Tooele County,UT,Utah,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49047,Uintah County,UT,Utah,trico_health,1,NA,Yes,Yes,1,NA,NA,Tri-County Health Department - Utah,2492160103,"TriCounty Health Department will be closed November 25 and 26, 2021, in observance of Thanksgiving.  TCHD will open again at 7:30 a.m. on Monday November 29, 2021.  https://t.co/tiViBPWyX8",11/24/2021,8:44:01,https://twitter.com/TriCo_Health/status/1463503674156924928,2021,11,24
+49049,Utah County,UT,Utah,uchd,1,NA,Yes,Yes,1,NA,NA,NA,21318795,"Utah County COVID-19 Help Line 801-851-HELP (4357) M-F, 8:30-4.  https://t.co/AA2tkW67vc",11/24/2021,15:00:13,https://twitter.com/UCHD/status/1463598351274885122,2021,11,24
+49051,Wasatch County,UT,Utah,wasatchcountyhd,1,NA,Yes,No,1,NA,NA,NA,472223089,The Wasatch County Health Department has issued a Warning Advisory for harmful algae at Strawberry Reservoir. Test results on a sample from the reservoir came back above warning level thresholds. Strawberry Reservoir remains open for recreation.  https://t.co/tywcP7ay2g,9/22/2020,17:25:28,https://twitter.com/WasatchCountyHD/status/1308517796612104192,2020,9,22
+49053,Washington County,UT,Utah,swuhealth,1,NA,NA,NA,1,NA,NA,Southwest Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49055,Wayne County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
+49057,Weber County,UT,Utah,webermorganhd,1,NA,NA,NA,1,NA,NA,Weber-Morgan Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
 50001,Addison County,VT,Vermont,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 50003,Bennington County,VT,Vermont,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 50005,Caledonia County,VT,Vermont,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2852,7 +2850,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 51053,Dinwiddie County,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51057,Essex County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51059,Fairfax County,VA,Virginia,fairfaxhealth,1,NA,Yes,Yes,1,NA,NA,NA,117134352,Some reminders about staying safe from COVID-19 as you prepare to celebrate Thanksgiving:  https://t.co/OwUdAp9XgD  https://t.co/ufOiruUaFz,11/24/2021,18:10:02,https://twitter.com/fairfaxhealth/status/1463646120429633536,2021,11,24
-51061,Fauquier County,VA,Virginia,NA,0,NA,NA,NA,NA,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51061,Fauquier County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Rappahannock-Rapidan Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51063,Floyd County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,New River Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51065,Fluvanna County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51067,Franklin County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
