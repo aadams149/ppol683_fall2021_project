@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+label {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+.sidebar-menu li a { 
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+  }
+  
+.shiny-text-output{
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+div label {
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+span a {
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
+
+.help-block{
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+}
