@@ -208,11 +208,11 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 6041,Marin County,CA,California,marinhhs,1,NA,Yes,Yes,1,NA,NA,NA,596771292,"Our offices will be closed Thursday, November 25th and Friday, November 26th. Emergency and crisis services will remain open. Experiencing a mental health or substance use crisis? We're here to help. Call (888) 818-1115, 24/7 or text MARIN to 741741.  https://t.co/RhXEfPYKmO",11/23/2021,19:36:08,https://twitter.com/MarinHHS/status/1463305398568456192,2021,11,23
 6043,Mariposa County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6045,Mendocino County,CA,California,publichealthmc,1,NA,Yes,No,1,NA,NA,NA,1.24E+18,Preventing Childhood Lead Poisoning During the Coronavirus (COVID-19) Pandemic   https://t.co/gqyKBfB5gf,11/24/2020,16:58:16,https://twitter.com/PublicHealthMC/status/1331356487579430912,2020,11,24
-6047,Merced County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6047,Merced County,CA,California,mercedcountydph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6049,Modoc County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6051,Mono County,CA,California,countymono,1,NA,Yes,Yes,1,NA,NA,NA,1.24E+18,Mono County Vaccination &amp; Resource Clinics! 🚨 COVID-19 vaccine • Booster shot • Flu shot  https://t.co/IueMCUaN5p,11/3/2021,17:51:23,https://twitter.com/CountyMono/status/1456016179462488068,2021,11,3
 6053,Monterey County,CA,California,mchdpio,1,NA,Yes,Yes,1,NA,NA,NA,90519838,The holidays are tough for many people for lots of reasons.  Small gestures go a long way to bring a little joy to those who may need it.   #Thanksgiving #Kindness  https://t.co/nbiMJWj42C,11/24/2021,16:00:27,https://twitter.com/MCHDPIO/status/1463613507505643534,2021,11,24
-6055,Napa County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6055,Napa County,CA,California,livehealthynapa,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6057,Nevada County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6059,Orange County,CA,California,ochealth,1,NA,Yes,Yes,1,NA,NA,NA,36069538,"Good morning, #OC 🍊. Here are today’s key #OCCOVID19 messages you need to know from @ochealth and @OCGovCA:  https://t.co/fSjuqllDZt",11/24/2021,14:48:30,https://twitter.com/ochealth/status/1463595400363851778,2021,11,24
 6061,Placer County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -235,7 +235,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 6093,Siskiyou County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6095,Solano County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6097,Sonoma County,CA,California,sonomacohealth,1,NA,No,No,1,NA,NA,NA,8.15E+17,Sonoma County Environmental Health and CalRecycle will hold a Debris Removal Training tomorrow 11/20 from 3 to 5 p.m. at 625 5th Street in Santa Rosa. Attend to learn more about the #KincadeFire debris removal process.  https://t.co/lOBo7hM529,11/19/2019,14:31:42,https://twitter.com/SonomaCoHealth/status/1196873705831325696,2019,11,19
-6099,Stanislaus County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+6099,Stanislaus County,CA,California,schsa,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6101,Sutter County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6103,Tehama County,CA,California,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 6105,Trinity County,CA,California,trinityhhsd,1,NA,Yes,No,1,NA,NA,NA,1432209464,"Are you interested in becoming an In-Home Supportive Services (IHSS) Provider? For more information, you can contact the IHSS office by calling 530-623-8209 or via email at hhs.adultservices@trinitycounty.org. Enroll today!",9/2/2020,16:03:13,https://twitter.com/TrinityHHSD/status/1301249338828402688,2020,9,2
@@ -359,7 +359,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 12075,Levy County,FL,Florida,NA,0,NA,NA,NA,1,NA,EmergManage,NA,NA,NA,NA,NA,NA,NA,NA,NA
 12077,Liberty County,FL,Florida,NA,0,NA,NA,NA,1,NA,EmergManage,NA,NA,NA,NA,NA,NA,NA,NA,NA
 12079,Madison County,FL,Florida,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12081,Manatee County,FL,Florida,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12081,Manatee County,FL,Florida,healthymanatee,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 12083,Marion County,FL,Florida,flhealthmarion,1,NA,Yes,Yes,1,NA,NA,NA,1.24E+18,The Florida Department of Health in Marion County would like to wish you and yours a Happy Thanksgiving on Thursday. We also remind you that our offices will be closed on Nov. 25 and 26. We will resume normal operations on Nov. 29. Have a great holiday!  https://t.co/zqdct3NImP,11/24/2021,13:22:39,https://twitter.com/FLHealthMarion/status/1463573795265040394,2021,11,24
 12085,Martin County,FL,Florida,gohealthymartin,1,NA,Yes,Yes,1,NA,NA,NA,9.03E+17,"The @GoHealthyMartin team wishes you and yours a safe, happy &amp; healthy #Thanksgiving2021  https://t.co/l2yd0yXRTP",11/24/2021,14:18:15,https://twitter.com/GoHealthyMartin/status/1463587788142620672,2021,11,24
 12086,Miami-Dade County,FL,Florida,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -702,7 +702,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 18005,Bartholomew County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18007,Benton County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18009,Blackford County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18011,Boone County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18011,Boone County,IN,Indiana,boonecountyinhd,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18013,Brown County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18015,Carroll County,IN,Indiana,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18017,Cass County,IN,Indiana,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -725,7 +725,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 18051,Gibson County,IN,Indiana,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18053,Grant County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18055,Greene County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18057,Hamilton County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18057,Hamilton County,IN,Indiana,hamcohealthin,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18059,Hancock County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18061,Harrison County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18063,Hendricks County,IN,Indiana,hendricks_co,1,NA,Yes,Yes,1,NA,NA,NA,19712033,"Let’s talk turkey! Unsafe handling and under-cooking your holiday bird can cause foodborne illnesses. Here are a few tips from the USDA to keep your Thanksgiving safe and delicious! For more information, visit:  https://t.co/3GNlUwP7zZ #FoodSafe @USDAFoodSafety  https://t.co/JRn0wUaT57",11/24/2021,14:26:50,https://twitter.com/Hendricks_Co/status/1463589948330807305,2021,11,24
@@ -744,7 +744,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 18089,Lake County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18091,LaPorte County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18093,Lawrence County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18095,Madison County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18095,Madison County,IN,Indiana,madisoncohealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18097,Marion County,IN,Indiana,marion_health,1,NA,Yes,Yes,1,NA,NA,NA,2153136751,"MCPHD is closed Thu, Nov. 25 &amp; Fri, Nov. 26 for Thanksgiving, including COVID-19 testing and vaccine sites. On Wed, Nov. 24, COVID-19 testing at 3838 N. Rural St. is 10am-2pm, the vaccine clinic on Commercial Dr. is closed, and vaccine sites @indylibrary locations by appt. only.  https://t.co/fUQPBPhDAD",11/23/2021,15:36:38,https://twitter.com/Marion_Health/status/1463245126151684100,2021,11,23
 18099,Marshall County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 18101,Martin County,IN,Indiana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -992,7 +992,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 20203,Wichita County,KS,Kansas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 20205,Wilson County,KS,Kansas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 20207,Woodson County,KS,Kansas,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
-20209,Wyandotte County,KS,Kansas,NA,1,DoubleCheck,No,No,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
+20209,Wyandotte County,KS,Kansas,NA,0,DoubleCheck,No,No,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21001,Adair County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
 21003,Allen County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21005,Anderson County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1024,7 +1024,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 21057,Cumberland County,KY,Kentucky,lcdhd,1,NA,Yes,Yes,1,NA,NA,Lake Cumberland District Health Department - Kentucky,67671445,"The Holidays are coming!! If you haven't been vaccinated yet, please consider doing so. We'd like to help as many people as possible gather safely this Holiday Season and for years to come!   👉More info @  https://t.co/Nv2znVPIXL  #kickcovidKY #everybodycounts #vaccinatedbychoice  https://t.co/xN1T3oCWr1",11/23/2021,12:02:03,https://twitter.com/LCDHD/status/1463191125162930183,2021,11,23
 21059,Daviess County,KY,Kentucky,grdhd,1,NA,No,No,1,NA,Outdated-Twitter,Green River District Health Department - Kentucky,162090541,January is Radon Awareness Month and GRDHD wants to help you learn more about how to test your home for Radon!  https://t.co/2mnujrkQp0,1/13/2020,9:53:05,https://twitter.com/GRDHD/status/1216734920502063110,2020,1,13
 21061,Edmonson County,KY,Kentucky,barrenriverhd,1,NA,Yes,Yes,1,NA,NA,Barren River Health Department - Kentucky,115077040,"The Barren River District Health Department has confirmed a total of 524 new cases and 53,377 total cases, 46,067 of which have recovered. We have 753 deaths reported from COVID-19. We stand in solidarity with those affected during these difficult times.  https://t.co/dxuBJUyFnl",11/24/2021,17:17:52,https://twitter.com/BarrenRiverHD/status/1463632991394095106,2021,11,24
-21063,Elliott County,KY,Kentucky,NA,1,DoubleCheck,No,No,1,NA,NA,Gateway District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
+21063,Elliott County,KY,Kentucky,NA,0,DoubleCheck,No,No,1,NA,NA,Gateway District Health Department - Kentucky,NA,NA,NA,NA,NA,NA,NA,NA
 21065,Estill County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 21067,Fayette County,KY,Kentucky,lfchd,1,NA,Yes,Yes,1,NA,NA,NA,39805456,"Here’s a recipe for a healthy #Thanksgiving! Share this to help keep your family, especially those at high risk from COVID-19, as safe as possible.  #LexDoThis  https://t.co/mrMsGfq4aa",11/24/2021,10:15:00,https://twitter.com/LFCHD/status/1463526571663310858,2021,11,24
 21069,Fleming County,KY,Kentucky,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1286,7 +1286,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 26105,Mason County,MI,Michigan,midhd10,1,NA,Yes,Yes,0,NA,NA,District Health Department 10 - Michigan,8.77E+17,PFIZER COVID-19 BOOSTER DOSE NOW APPROVED FOR SOME;  MODERNA AND J&amp;J NOT CURRENTLY APPROVED   District Health Department #10 (DHD#10) reports that the Advisory Committee on Immunization Practices (ACIP) voted on September 23 to recommend a single Pfizer-…  https://t.co/cvad0Jj70h  https://t.co/nQtc10gPwg,9/27/2021,16:40:52,https://twitter.com/MiDHD10/status/1442590084117630977,2021,9,27
 26107,Mecosta County,MI,Michigan,midhd10,1,NA,Yes,Yes,0,NA,NA,District Health Department 10 - Michigan,8.77E+17,PFIZER COVID-19 BOOSTER DOSE NOW APPROVED FOR SOME;  MODERNA AND J&amp;J NOT CURRENTLY APPROVED   District Health Department #10 (DHD#10) reports that the Advisory Committee on Immunization Practices (ACIP) voted on September 23 to recommend a single Pfizer-…  https://t.co/cvad0Jj70h  https://t.co/nQtc10gPwg,9/27/2021,16:40:52,https://twitter.com/MiDHD10/status/1442590084117630977,2021,9,27
 26109,Menominee County,MI,Michigan,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-26111,Midland County,MI,Michigan,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+26111,Midland County,MI,Michigan,mcdphealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 26113,Missaukee County,MI,Michigan,midhd10,1,NA,Yes,Yes,0,NA,NA,District Health Department 10 - Michigan,8.77E+17,PFIZER COVID-19 BOOSTER DOSE NOW APPROVED FOR SOME;  MODERNA AND J&amp;J NOT CURRENTLY APPROVED   District Health Department #10 (DHD#10) reports that the Advisory Committee on Immunization Practices (ACIP) voted on September 23 to recommend a single Pfizer-…  https://t.co/cvad0Jj70h  https://t.co/nQtc10gPwg,9/27/2021,16:40:52,https://twitter.com/MiDHD10/status/1442590084117630977,2021,9,27
 26115,Monroe County,MI,Michigan,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 26117,Montcalm County,MI,Michigan,mmdhd2,1,NA,Yes,Yes,1,NA,NA,Mid-Michigan Health Department,2227272378,The flu and COVID-19 cases are rising. Get vaccinated now!  https://t.co/cPJEGGpef5,11/24/2021,9:11:00,https://twitter.com/MMDHD2/status/1463510465196150785,2021,11,24
@@ -1376,7 +1376,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 27117,Pipestone County,MN,Minnesota,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27119,Polk County,MN,Minnesota,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27121,Pope County,MN,Minnesota,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
-27123,Ramsey County,MN,Minnesota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27123,Ramsey County,MN,Minnesota,healthyramsey,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27125,Red Lake County,MN,Minnesota,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27127,Redwood County,MN,Minnesota,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 27129,Renville County,MN,Minnesota,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1532,7 +1532,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 29091,Howell County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29093,Iron County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29095,Jackson County,MO,Missouri,jacksoncountyhd,1,NA,Yes,Yes,1,NA,NA,NA,3806820266,"Thanksgiving is almost here! 🦃  For those worried about preparing this special meal, @USDA has you covered. Their Meat and Poultry Hotline is available all week + on Thanksgiving Day to answer your questions. Here are some quick tips to stay #foodsafe:  https://t.co/QjM21SFdJr.  https://t.co/hnQqIOnef4",11/24/2021,13:05:51,https://twitter.com/JacksonCountyHD/status/1463569569860128779,2021,11,24
-29097,Jasper County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29097,Jasper County,MO,Missouri,jaspercohd,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29099,Jefferson County,MO,Missouri,jeffcohealthmo,1,NA,Yes,Yes,0,NA,DoubleCheck,NA,334032791,Week 46 Respiratory Update: COVID County Status- RED This week is the first time we are utilizing our combined respiratory disease surveillance report. This report includes data on both influenza and COVID for Week 46.   Click the link for the full update:  https://t.co/9FxAdvQmmo  https://t.co/ClVuKYNlYB,11/24/2021,15:27:51,https://twitter.com/JeffCoHealthMO/status/1463605303061192717,2021,11,24
 29101,Johnson County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29103,Knox County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1553,7 +1553,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 29133,Mississippi County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29135,Moniteau County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29137,Monroe County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-29139,Montgomery County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29139,Montgomery County,MO,Missouri,mocomohealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29141,Morgan County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29143,New Madrid County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29145,Newton County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1568,7 +1568,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 29163,Pike County,MO,Missouri,bgpchd,1,NA,Yes,Yes,1,NA,NA,NA,2614624728,Don't forget about our Annual Turkey Trot 5k Run/Walk happening Thanksgiving morning!  - Thanksgiving Morning: 11/25/2021 - Registration @ BG High School 7:00 am - Race Begins @ 8:00 am - $25 Per Person,11/19/2021,12:09:38,https://twitter.com/bgpchd/status/1461743482964430848,2021,11,19
 29165,Platte County,MO,Missouri,plattehealth,1,NA,Yes,Yes,0,NA,DoubleCheck,NA,21626834,"REMINDER: We will be closed Thursday, Nov. 25 and Friday, Nov 26 in observance of the Thanksgiving holiday. We will be back open Monday, Nov. 29.  https://t.co/UESmp6d0k8",11/23/2021,17:00:35,https://twitter.com/plattehealth/status/1463266253439655936,2021,11,23
 29167,Polk County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
-29169,Pulaski County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29169,Pulaski County,MO,Missouri,centerpulaski,1,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29171,Putnam County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29173,Ralls County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29175,Randolph County,MO,Missouri,randolphchd,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1598,7 +1598,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 29225,Webster County,MO,Missouri,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 29227,Worth County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,Tri-County Health Department - Missouri,NA,NA,NA,NA,NA,NA,NA,NA
 29229,Wright County,MO,Missouri,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-29510,St. Louis city,MO,Missouri,NA,0,NA,NA,NA,1,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
+29510,St. Louis city,MO,Missouri,cityofstldhoh,1,NA,NA,NA,1,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 30001,Beaverhead County,MT,Montana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 30003,Big Horn County,MT,Montana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 30005,Blaine County,MT,Montana,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1855,7 +1855,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 36047,Kings County,NY,New York,kingscountyhosp,1,NA,Yes,Yes,1,NA,NA,NA,1.13E+18,"💡If you are gathering with a group of people from multiple households &amp; potentially from different parts of the country, you could consider additional precautions (e.g., avoiding crowded indoor spaces before travel, taking a test) in advance of gathering to further reduce risk✅  https://t.co/tbaxf9Rdva",11/24/2021,13:50:02,https://twitter.com/KingsCountyHosp/status/1463580687617998857,2021,11,24
 36049,Lewis County,NY,New York,healthlewis,1,NA,Yes,No,1,NA,NA,NA,3115709093,"In 2019, over 1,000 cases of measles were confirmed across 31 states, with the majority of cases among people who were not vaccinated. This shows, while many serious diseases are no longer common in the US, they can still spread when vaccination rates are low. #NIAM #ivax2protect  https://t.co/NQHNxlrnOh",8/13/2021,17:00:35,https://twitter.com/HealthLewis/status/1426287592778211329,2021,8,13
 36051,Livingston County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-36053,Madison County,NY,New York,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36053,Madison County,NY,New York,madisoncountydoh,1,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36055,Monroe County,NY,New York,monroehealth,1,NA,Yes,Yes,1,NA,NA,NA,36764315,"Our IMPACT team is at the International Plaza for the Hope Dealers BTC Hopesgiving until 4pm today - providing education about substance use disorder, Narcan, and harm reduction.  https://t.co/HIf1TCSYCV",11/19/2021,14:11:31,https://twitter.com/MonroeHealth/status/1461774153497948160,2021,11,19
 36057,Montgomery County,NY,New York,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36059,Nassau County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1873,7 +1873,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 36083,Rensselaer County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36085,Richmond County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36087,Rockland County,NY,New York,rockhealth,1,NA,Yes,Yes,1,NA,NA,NA,135628383,Today is Public Health Thank You Day. Show your thanks by supporting your local health department today! #PHTYD #PublicHealthHeroes  https://t.co/mis9Z5pjtZ,11/22/2021,11:39:30,https://twitter.com/rockhealth/status/1462823061040807951,2021,11,22
-36089,St. Lawrence County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+36089,St. Lawrence County,NY,New York,slhs_healthy,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36091,Saratoga County,NY,New York,saratogacoph,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36093,Schenectady County,NY,New York,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 36095,Schoharie County,NY,New York,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1926,7 +1926,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 37065,Edgecombe County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37067,Forsyth County,NC,North Carolina,fcpublichealth,1,NA,Yes,Yes,1,NA,NA,NA,9.08E+17,Forsyth County Updated COVID-19 Data - 11/24/2021  https://t.co/MV7wkcjBRb,11/24/2021,14:46:04,https://twitter.com/fcpublichealth/status/1463594788981293061,2021,11,24
 37069,Franklin County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-37071,Gaston County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37071,Gaston County,NC,North Carolina,gastonhhs,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37073,Gates County,NC,North Carolina,arhs_nc,1,NA,Yes,Yes,1,NA,NA,Albemarle Regional Health Services - North Carolina,1267151060,https://t.co/HwFKhggk0k,11/24/2021,9:02:37,https://twitter.com/ARHS_NC/status/1463508355465555976,2021,11,24
 37075,Graham County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37077,Granville County,NC,North Carolina,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -1941,7 +1941,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 37095,Hyde County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37097,Iredell County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37099,Jackson County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-37101,Johnston County,NC,North Carolina,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
+37101,Johnston County,NC,North Carolina,johnstonhealth,1,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37103,Jones County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37105,Lee County,NC,North Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 37107,Lenoir County,NC,North Carolina,NA,0,NA,NA,NA,0,NA,DoubleCheck,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2088,7 +2088,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 39083,Knox County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39085,Lake County,OH,Ohio,lchealthdist,1,NA,Yes,Yes,1,NA,NA,NA,73162642,"It is never okay to drink and drive. Even if you’ve had only one alcoholic beverage, designate a sober driver or plan to use public transportation or a ride service to get home safely. Go to  https://t.co/PNRo6uClXM for more info. #Thanksgiving #BuzzedDrivingisDrunkDriving  https://t.co/FcXDdLmH2u",11/24/2021,16:00:02,https://twitter.com/LCHealthDist/status/1463613402278817796,2021,11,24
 39087,Lawrence County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-39089,Licking County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39089,Licking County,OH,Ohio,lickinghealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39091,Logan County,OH,Ohio,logancohealth,1,NA,Yes,Yes,1,NA,NA,NA,1394515124,"We're Hiring an Outreach Specialist!  Join our team and enjoy a flexible, family friendly environment!    https://t.co/cNx4dZ0jCN  https://t.co/mYxeQN5j1P",11/23/2021,8:06:04,https://twitter.com/LoganCoHealth/status/1463131736875876361,2021,11,23
 39093,Lorain County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39095,Lucas County,OH,Ohio,toledolucashd,1,NA,Yes,Yes,1,NA,NA,NA,403628387,"‼️🚨UPDATE: ALL #COVID19 TEST KITS ARE GONE as of 12:00 pm Wednesday, Nov 24 🚨‼️ We hope to get additional kits before the Christmas holiday.",11/24/2021,12:29:12,https://twitter.com/ToledoLucasHD/status/1463560344341827591,2021,11,24
@@ -2120,7 +2120,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 39147,Seneca County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39149,Shelby County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39151,Stark County,OH,Ohio,health_stark,1,NA,Yes,Yes,1,NA,NA,NA,1.06E+18,"Want to see if your business, school, or non-profit qualifies for items to make your environment safer? Visit  https://t.co/4kZBs0OTnl to locate your business.  https://t.co/mYVd5cwv60",11/24/2021,13:45:03,https://twitter.com/health_stark/status/1463579435131617284,2021,11,24
-39153,Summit County,OH,Ohio,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+39153,Summit County,OH,Ohio,scphoh,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 39155,Trumbull County,OH,Ohio,trumbull_health,1,NA,Yes,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,2021,11,25
 39157,Tuscarawas County,OH,Ohio,tchdnow,1,NA,Yes,Yes,1,NA,NA,NA,9.61E+17,"Don’t let a pre-Thanksgiving party squash your holiday meal. Here is a reminder that drinking &amp; driving don't mix. From 2015-2019, 135 drivers involved  in fatal crashes on Thanksgiving eve were alcohol-impaired. If you’ve been drinking, don't drive.  #SafeCommunitiesofTuscCounty  https://t.co/W9Y3AbLM7N",11/24/2021,14:29:00,https://twitter.com/TCHDNow/status/1463590492227076097,2021,11,24
 39159,Union County,OH,Ohio,unioncohealth,1,NA,Yes,Yes,1,NA,NA,NA,620326861,"With Thanksgiving a little over a week away, here are some great community resources to make sure everyone gets a great Thanksgiving feast this year! ❤  https://t.co/tAD7ScKigE",11/17/2021,15:05:08,https://twitter.com/unioncohealth/status/1461062872092528650,2021,11,17
@@ -2290,7 +2290,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 42085,Mercer County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 42087,Mifflin County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 42089,Monroe County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-42091,Montgomery County,PA,Pennsylvania,montco_ph,1,NA,Yes,Yes,1,NA,NA,NA,1.24E+18,"The Testing Positivity Rate for Montgomery County has decreased to 4%. Source: UT Health, School of Public Health",11/24/2021,18:24:40,https://twitter.com/MontCo_PH/status/1463649802684616709,2021,11,24
+42091,Montgomery County,PA,Pennsylvania,montcohealthpa,1,NA,Yes,Yes,1,NA,NA,NA,1.24E+18,"The Testing Positivity Rate for Montgomery County has decreased to 4%. Source: UT Health, School of Public Health",11/24/2021,18:24:40,https://twitter.com/MontCo_PH/status/1463649802684616709,2021,11,24
 42093,Montour County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 42095,Northampton County,PA,Pennsylvania,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 42097,Northumberland County,PA,Pennsylvania,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2345,7 +2345,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 45051,Horry County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45053,Jasper County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45055,Kershaw County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-45057,Lancaster County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+45057,Lancaster County,SC,South Carolina,lanc_sc_hw,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45059,Laurens County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45061,Lee County,SC,South Carolina,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 45063,Lexington County,SC,South Carolina,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2537,7 +2537,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 48021,Bastrop County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48023,Baylor County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48025,Bee County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48027,Bell County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48027,Bell County,TX,Texas,bellcountypubh,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48029,Bexar County,TX,Texas,sametrohealth,1,NA,Yes,Yes,0,NA,NA,NA,85343799,"In observance of the Thanksgiving Holiday, the Alamodome Drive-Thru Vaccine Clinic will be closed on Thursday, November 25, 2021 and Friday, November 26, 2021. We will reopen with regular hours on Wednesday, December 2 from 12pm to 8pm.  https://t.co/zJ9js8OXWs",11/24/2021,16:01:11,https://twitter.com/SAMetroHealth/status/1463613694244442113,2021,11,24
 48031,Blanco County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48033,Borden County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2591,7 +2591,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 48129,Donley County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48131,Duval County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48133,Eastland County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48135,Ector County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48135,Ector County,TX,Texas,ectorcountylhd,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48137,Edwards County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48139,Ellis County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48141,El Paso County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2693,7 +2693,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 48333,Mills County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48335,Mitchell County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48337,Montague County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-48339,Montgomery County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+48339,Montgomery County,TX,Texas,montco_ph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48341,Moore County,TX,Texas,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48343,Morris County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 48345,Motley County,TX,Texas,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2796,7 +2796,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 49031,Piute County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
 49033,Rich County,UT,Utah,bearriverhealth,1,NA,NA,NA,1,NA,NA,Bear River Health Department - Utah,NA,NA,NA,NA,NA,NA,NA,NA
 49035,Salt Lake County,UT,Utah,saltlakehealth,1,NA,Yes,Yes,1,NA,NA,NA,16633440,"In addition to the resource below, you can visit  https://t.co/EoRVwJORoK to find food sites near you with holiday food services.",11/23/2021,13:02:54,https://twitter.com/SaltLakeHealth/status/1463206436675092480,2021,11,23
-49037,San Juan County,UT,Utah,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+49037,San Juan County,UT,Utah,sanjuanhealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 49039,Sanpete County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
 49041,Sevier County,UT,Utah,cuphd,1,NA,NA,NA,1,NA,NA,Central Utah Public Health Department,NA,NA,NA,NA,NA,NA,NA,NA
 49043,Summit County,UT,Utah,summitcountyhd,1,NA,Yes,Yes,1,NA,NA,NA,7.83E+17,"We encourage individuals who are interested in receiving a booster shot to check with their local pharmacies. For a list of complete locations, please visit:  https://t.co/M0pxdZ1vdt.",11/18/2021,15:33:13,https://twitter.com/SummitCountyHD/status/1461432325695098880,2021,11,18
@@ -2872,7 +2872,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 51099,King George County,VA,Virginia,rappahannockd,1,NA,NA,NA,1,NA,NA,Rappahannock Area Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51101,King William County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51103,Lancaster County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
-51105,Lee County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51105,Lee County,VA,Virginia,lenowiscohd,1,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51107,Loudoun County,VA,Virginia,loudouncohealth,1,NA,Yes,Yes,1,NA,NA,NA,242339104,Both the Loudoun County COVID info hotline and the vaccination clinic will be closed starting at 1pm on Wednesday November 24th for Thanksgiving weekend. Happy Thanksgiving!  https://t.co/9z6Y6V3Q1d,11/23/2021,17:38:00,https://twitter.com/LoudounCoHealth/status/1463275667928272900,2021,11,23
 51109,Louisa County,VA,Virginia,healthybrhd,1,NA,NA,NA,1,NA,NA,Blue Ridge Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51111,Lunenburg County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Piedmont Health District,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2901,7 +2901,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 51163,Rockbridge County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51165,Rockingham County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Central Shenandoah Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51167,Russell County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Cumberland Plateau Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
-51169,Scott County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51169,Scott County,VA,Virginia,lenowiscohd,1,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51171,Shenandoah County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51173,Smyth County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51175,Southampton County,VA,Virginia,NA,0,NA,NA,NA,0,NA,NA,Western Tidewater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2913,7 +2913,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 51187,Warren County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Lord Fairfax Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51191,Washington County,VA,Virginia,mrhdvdh,1,NA,NA,NA,1,NA,NA,Mount Rogers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51193,Westmoreland County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,Three Rivers Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
-51195,Wise County,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51195,Wise County,VA,Virginia,lenowiscohd,1,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51197,Wythe County,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 51199,York County,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51510,Alexandria city,VA,Virginia,alexandriavagov,1,NA,Yes,Yes,1,NA,CountyGeneral,NA,29287545,"@GiggsyTheCorgi It's hard to tell from your photo what area of FB this is or how you arrived at it, but it looks to be out of our control. It's not a view of the main APD Facebook page that we're seeing when not logged in either. Are you able to share a more complete screenshot or URL?",11/24/2021,15:30:29,https://twitter.com/AlexandriaVAGov/status/1463605966793056260,2021,11,24
@@ -2941,7 +2941,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 51690,Martinsville city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,West Piedmont Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51700,Newport News city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51710,Norfolk city,VA,Virginia,norfolkdph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-51720,Norton city,VA,Virginia,lenowiscohd,0,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
+51720,Norton city,VA,Virginia,lenowiscohd,1,NA,NA,NA,1,NA,NA,Lenowisco Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51730,Petersburg city,VA,Virginia,craterhd,1,NA,NA,NA,1,NA,NA,Crater Health District - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51735,Poquoson city,VA,Virginia,hamp_pen_lhd,1,NA,NA,NA,1,NA,NA,Hampton and Peninsula Health Districts - Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 51740,Portsmouth city,VA,Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2961,7 +2961,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 53007,Chelan County,WA,Washington,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53009,Clallam County,WA,Washington,clallamhealth,1,NA,Yes,Yes,1,NA,NA,NA,538573293,"Have a safe and happy holiday!  Our offices will reopen Monday, November 29th.  https://t.co/uGhfRoRaqm",11/24/2021,16:20:37,https://twitter.com/ClallamHealth/status/1463618583150219266,2021,11,24
 53011,Clark County,WA,Washington,clarkcowa_ph,1,NA,Yes,Yes,1,NA,NA,NA,36480720,"•538 total deaths to date (495 confirmed, 43 suspect) •12 additional confirmed deaths since the last update: •1 man in his 50s •2 men in their 60s •4 men in their 70s •1 man 80+ years old •1 woman in her 50s •3 women 80+ years old 4/4",11/24/2021,18:24:32,https://twitter.com/ClarkCoWA_PH/status/1463649767594942465,2021,11,24
-53013,Columbia County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53013,Columbia County,WA,Washington,cchs_wa,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53015,Cowlitz County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53017,Douglas County,WA,Washington,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53019,Ferry County,WA,Washington,ferryhealth,1,DoubleCheck,No,No,1,NA,NA,Northeast Tri-County Health District - Washington,NA,NA,NA,NA,NA,NA,NA,NA
@@ -2991,7 +2991,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 53067,Thurston County,WA,Washington,thurstonhealth,1,NA,Yes,Yes,1,NA,NA,NA,937440919,"Thurston County COVID-19 data for 11/23/2021 ▫️New COVID-19 cases: 45    7-day case count: 470 ▫️New Deaths: 3 - men in their 50's, 60's and 70's    7-day death count: 8 ▫️New Hospitalizations: 4    7-day hospitalization count: 8 Complete COVID-19 data👉 https://t.co/PpN96knKwb  https://t.co/FmREgqdJ9V",11/24/2021,18:00:07,https://twitter.com/ThurstonHealth/status/1463643622876790792,2021,11,24
 53069,Wahkiakum County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53071,Walla Walla County,WA,Washington,wwcdch,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-53073,Whatcom County,WA,Washington,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+53073,Whatcom County,WA,Washington,whatcomcohealth,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 53075,Whitman County,WA,Washington,whitman_health,1,NA,Yes,No,1,NA,NA,NA,1.10E+18,https://t.co/7twDaBgK5b,11/25/2020,13:01:30,https://twitter.com/whitman_health/status/1331659290151690243,2020,11,25
 53077,Yakima County,WA,Washington,yakima_health,1,DoubleCheck,No,No,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54001,Barbour County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -3003,7 +3003,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 54013,Calhoun County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,Mid-Ohio Valley Health Department - West Virginia,NA,NA,NA,NA,NA,NA,NA,NA
 54015,Clay County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54017,Doddridge County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-54019,Fayette County,WV,West Virginia,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54019,Fayette County,WV,West Virginia,fayettehealthwv,1,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54021,Gilmer County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54023,Grant County,WV,West Virginia,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54025,Greenbrier County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -3024,7 +3024,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 54055,Mercer County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54057,Mineral County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54059,Mingo County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-54061,Monongalia County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+54061,Monongalia County,WV,West Virginia,wvmchd,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54063,Monroe County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54065,Morgan County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 54067,Nicholas County,WV,West Virginia,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -3066,7 +3066,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 55029,Door County,WI,Wisconsin,doorcohealth,1,NA,No,No,1,NA,NA,NA,1068766112,Check out May Mental Health Parent Cafes!  https://t.co/DZejxt40kO,4/29/2019,13:00:08,https://twitter.com/DoorCoHealth/status/1122908434486255616,2019,4,29
 55031,Douglas County,WI,Wisconsin,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55033,Dunn County,WI,Wisconsin,NA,0,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-55035,Eau Claire County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55035,Eau Claire County,WI,Wisconsin,echealthdept,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55037,Florence County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55039,Fond du Lac County,WI,Wisconsin,fonddulaccounty,1,NA,Yes,Yes,1,NA,NA,NA,1.09E+18,"Friendly reminder that there will NOT be mobile COVID-19 testing at the fairgrounds on Thursday. Testing will resume Monday, November 29th at 8:00am.  ➡More community testing sites here:  https://t.co/mmtFVvjaP6  https://t.co/1yHSmslusk",11/23/2021,14:35:03,https://twitter.com/fonddulaccounty/status/1463229626591940609,2021,11,23
 55041,Forest County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -3115,7 +3115,7 @@ fips,name,state,state_full,twitter,twitterYN,twitterNotes,twitter_active_COVID,t
 55125,Vilas County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55127,Walworth County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55129,Washburn County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-55131,Washington County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+55131,Washington County,WI,Wisconsin,washozph,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55133,Waukesha County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55135,Waupaca County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 55137,Waushara County,WI,Wisconsin,NA,0,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

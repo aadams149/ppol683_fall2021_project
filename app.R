@@ -34,7 +34,7 @@ covid <-
 # Read in my project data from my project GitHub
 tw_fb_data <-
     readr::read_csv(
-        url('https://raw.githubusercontent.com/aadams149/ppol683_fall2021_project/main/data/counties_with_tweets.csv')
+        url('https://raw.githubusercontent.com/aadams149/ppol683_fall2021_project/main/data/raw/counties_with_tweets.csv')
     ) %>%
     #Change the fips column to character so it plays nice with the other data sets
     mutate(fips =
