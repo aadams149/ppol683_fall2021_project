@@ -24,8 +24,8 @@ options(scipen = 999)
 # The master file is really large, so I'm using the 'recent' version,
 # which just contains data for the past 30 days.
 covid <-
-    readr::read_csv(
-        url('https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties-recent.csv')
+    vroom(
+      'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
     ) %>%
     # Pivot and rename the data
     pivot_longer('cases':'deaths',
@@ -34,8 +34,8 @@ covid <-
 
 # Read in my project data from my project GitHub
 tw_fb_data <-
-    readr::read_csv(
-        url('https://raw.githubusercontent.com/aadams149/ppol683_fall2021_project/main/data/raw/counties_with_tweets.csv')
+    vroom(
+        'https://raw.githubusercontent.com/aadams149/ppol683_fall2021_project/main/data/raw/counties_with_tweets.csv'
     ) %>%
     #Change the fips column to character so it plays nice with the other data sets
     mutate(fips =
@@ -78,6 +78,10 @@ population_counties <-
     mutate('fips' = paste0(STATE,COUNTY)) %>%
     select(fips, STNAME, population)
 
+#Read in vaccination data
+vax_data <-
+  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=5000') %>%
+  filter(date == max(date))
 
 # Read in shapefiles:
 
@@ -187,7 +191,38 @@ ui <-
                 tabItem(
                     tabName = 'tables',
                     h2('Summary Table'),
-                    dataTableOutput(outputId = 'summary_table')),
+                    tabsetPanel(
+                      tabPanel('Master Table',
+                               helpText(
+                                 h5(
+                                   'This table shows the data used in this app
+                                   for all counties and county-equivalent jurisdictions
+                                   in the United States'
+                                 )
+                               ),
+                               dataTableOutput(outputId = 'summary_table')),
+                      tabPanel('Similarity Table',
+                               helpText(
+                                 h5(
+                                   'Use the drop-down menu on the sidebar to 
+                                   select a state. Once a state is selected,
+                                   the drop-down menu on this tab will populate
+                                   with the counties in that state. Selecting 
+                                   a county will cause the app to calculate and
+                                   identify the five most similar counties in the
+                                   United States, and report data on those counties
+                                   in the table below. Checking the "Within State"
+                                   box will tell the app to limit the calculations
+                                   to the selected state, rather than the entire
+                                   country. For more information about how these
+                                   similar counties are identified, check the 
+                                   "Similarity Table" page in the "Help" tab.'
+                                 )
+                               ),
+                               checkboxInput('instate','Within State'),
+                               dataTableOutput(outputId = 'similarity_table'))
+                    )
+                    ),
                 
                 # Scatterplot Tab -----------------------------------------------------
                 
@@ -634,7 +669,49 @@ server <-
                                          Facebook == 0 ~ 'No',
                                          Facebook == 'NA' ~ 'NA')))
         
+        similarity_table <-
+          reactive({
+            summary_labels <-
+              summary_data() %>%
+              select(fips,
+                     name,
+                     STNAME,
+                     state_full)
+            
+            knn_data <-
+              summary_data() %>%
+              select(!c(
+                fips,
+                name,
+                STNAME,
+                state_full
+              ))
+            knn_model <-
+              RANN::nn2(knn_data())
+            knn_df <-
+              as.data.frame(knn_model$nn.idx)
+            knn_df <- 
+              cbind.data.frame(summary_labels(),
+                               knn_df)
+            knn_df <-
+              knn_df %>%
+              filter(
+                state_full == input$state_select,
+                name == input$county_select
+              )
+            
+            summary_data() %>%
+              filter(as.numeric(rownames(.) %in% c(knn_df$V2,
+                                                   knn_df$V3,
+                                                   knn_df$V4,
+                                                   knn_df$V5,
+                                                   knn_df$V6)))
+          })
         
+        output$similarity_table <-
+          renderDataTable(
+            similarity_table()
+          )
         # Scatterplot Code ----------------------------------------------------
         
         #Create a reactive data set of county names based on chosen state
