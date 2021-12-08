@@ -65,6 +65,13 @@ tw_fb_data <-
         )
     ) 
 
+racedata <-
+  vroom('data/raw/county_race_data.csv') %>%
+  select(id,
+         Total_Hispanic:Total_Multiracial) %>%
+  mutate(fips = 
+           str_sub(id,-5,-1)) %>%
+  select(!id)
 #Read in county population data
 #Yes, this is the same file we used in class, I'm just excluding the 
 #state totals instead of filtering to only them
@@ -78,11 +85,34 @@ population_counties <-
     mutate('fips' = paste0(STATE,COUNTY)) %>%
     select(fips, STNAME, population)
 
-#Read in vaccination data
+#Read in vaccination data from CDC API
+#I'm only incorporating the most recent vax numbers in this project
+#This data set updates each day, same as the COVID-19 one from the NYTimes
+#Rows are imported in reverse chronological order
+#I use the system date to check if there are at least 3143 rows where the date
+#is today (the number of counties in the US). If so, subset the data to 
+#rows from today. Otherwise, subtract 1 from the date and subset to that date
+#(yesterday). This way, no matter when the app is run, it should have 
+#1 vaccine data observation for each county that is no more than 24 hours old
 vax_data <-
-  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=5000') %>%
-  filter(date == max(date))
+  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
 
+today <- Sys.Date()
+
+if (length(vax_data[vax_data$date == today,]) >= 3143){
+  vax_data = vax_data %>%
+    filter(date == today)
+}else{
+  vax_data = vax_data %>%
+    filter(date == today-1)
+}
+
+vax_data <-
+  vax_data %>%
+  select(fips,
+         series_complete_pop_pct,
+         administered_dose1_pop_pct
+         )
 # Read in shapefiles:
 
 #Side note: thank you for providing the U.S. county shapefile!
@@ -118,6 +148,12 @@ ui <-
                 label = 'Select a range of dates:',
                 start = min(covid$date),
                 end = max(covid$date)),
+            
+            selectInput(
+              inputId = 'state_selector',
+              label = 'Select a state',
+              choices = c('Show All',sort(unique(tw_fb_data$state_full)))
+            ),
             
             radioButtons(
                 inputId = 'metric',
@@ -172,12 +208,6 @@ ui <-
                     tabName = 'maps',
                     #Create a header
                     h2('Map of COVID-19 Outcomes'),
-                    #Create a drop down input for selecting which state to show
-                    selectInput(
-                        inputId = 'state_map',
-                        label = 'State',
-                        choices = c('Show all',
-                                    sort(population_counties$STNAME))),
                     #Display some dynamic text about which county in the selected
                     #jurisdiction has the highest/lowest incidence of the selected
                     #metric for the specified interval
@@ -194,11 +224,7 @@ ui <-
                     tabsetPanel(
                       tabPanel('Master Table',
                                helpText(
-                                 h5(
-                                   'This table shows the data used in this app
-                                   for all counties and county-equivalent jurisdictions
-                                   in the United States'
-                                 )
+                                 textOutput('master_table_text')
                                ),
                                dataTableOutput(outputId = 'summary_table')),
                       tabPanel('Similarity Table',
@@ -211,7 +237,7 @@ ui <-
                                    a county will cause the app to calculate and
                                    identify the five most similar counties in the
                                    United States, and report data on those counties
-                                   in the table below. Checking the "Within State"
+                                   in the table below. Checking the "Within State?"
                                    box will tell the app to limit the calculations
                                    to the selected state, rather than the entire
                                    country. For more information about how these
@@ -219,8 +245,12 @@ ui <-
                                    "Similarity Table" page in the "Help" tab.'
                                  )
                                ),
-                               checkboxInput('instate','Within State'),
-                               dataTableOutput(outputId = 'similarity_table'))
+                               checkboxInput('instate','Within State?'),
+                               uiOutput('county_selector_table'),
+                               conditionalPanel(
+                                 condition = "input.state_selector != 'Show All'",
+                                 dataTableOutput(outputId = 'similarity_table'))
+                               )
                     )
                     ),
                 
@@ -231,11 +261,6 @@ ui <-
                     tabName = 'charts',
                     #Create appropriate header
                     h2('Trends in COVID-19 Incidence'),
-                    #Create drop down selector for state
-                    selectInput(
-                        inputId = 'state_select',
-                        label = 'State',
-                        choices = c(sort(population_counties$STNAME))),
                     #Display selector for counties depending on selected state
                     uiOutput('county_selector_trend'),
                     #Display text indicating which COVID-19 metric is chosen,
@@ -250,12 +275,6 @@ ui <-
                 tabItem(
                     tabName = 'socialmedia',
                     h2('County Public Health Department Social Media Accounts'),
-                    #Create selector for state
-                    selectInput(
-                        inputId = 'state_socmed',
-                        label = 'State',
-                        choices = c('Show all',
-                                    sort(population_counties$STNAME))),
                     #Display text indicating number of counties w/ FB and/or Twitter
                     textOutput('socialmedia_text'),
                     #Display interactive map
@@ -322,7 +341,7 @@ ui <-
                at the county level. The map view can be changed using the 
                radio buttons and "Adjust for population?" checkbox on the 
                sidebar, as well as the drop-down menu on this tab. Choosing 
-               "Show all" in the drop-down menu will display a map of the 
+               "Show All" in the drop-down menu will display a map of the 
                United States. Choosing any other option will display a map 
                of the selected state. Moving your cursor over a county on 
                the map will show the county and state name. Clicking on a 
@@ -376,7 +395,7 @@ ui <-
                          that state, colored in based on whether each county
                          health department has a Facebook or Twitter account.
                          Moving your cursor over a county will show the 
-                         county name. Select "Show all" to see a map of the
+                         county name. Select "Show All" to see a map of the
                          entire United States.'),
                                          
                                          h5('Note: Due to the ongoing data collection 
@@ -470,30 +489,83 @@ server <-
                     ) %>%
                     #Add in population data
                     left_join(population_counties,
+                              by = c('fips' = 'fips',
+                                     'state_full' = 'STNAME')) %>%
+                    left_join(vax_data,
                               by = 'fips') %>%
+                    rename('% Fully Vaccinated' = series_complete_pop_pct,
+                           '% First Dose' = administered_dose1_pop_pct) %>%
                     #Remove cases where data is recorded for units other than county
-                    filter(!is.na(fips))
+                    filter(!is.na(fips)) %>%
+                left_join(
+                      racedata,
+                      by = 'fips'
+                    ) %>%
+                mutate(
+                  hispanic_prop = 
+                    Total_Hispanic/population,
+                  white_prop =
+                    Total_White/population,
+                  black_prop = 
+                    Total_Black/population,
+                  AmInd_prop = 
+                    Total_AmIndian/population,
+                  asian_prop = 
+                    Total_Asian/population,
+                  nhawaiian_prop = 
+                    Total_NativeHawaiian/population,
+                  other_prop = 
+                    Total_Other/population,
+                  multi_prop = 
+                    Total_Multiracial/population
+                ) %>%
+                select(!c(Total_Hispanic,
+                          Total_White,
+                          Total_Black,
+                          Total_Asian,
+                          Total_AmIndian,
+                          Total_NativeHawaiian,
+                          Total_Other,
+                          Total_Multiracial))
+                
             })
+        
+        master_table_text <-
+          reactive({
+          if(input$state_selector == 'Show All'){
+            'This table shows the data used in this app for all counties
+            and county-equivalent jurisdictions in the United States.'
+          }else{
+            paste(
+              'This table shows the data used in this app for all counties
+              and county-equivalent jurisdictions in ',
+              input$state_selector,'.')
+          }})
+        
+        output$master_table_text <-
+          renderText(
+            master_table_text()
+          )
         
         #Filter the summary data if the option selected is anything other than
         #"Show all" (this is only used for the dynamic text which accompanies
         #the map)
         summary_covidmap_subset <-
             reactive({
-                if(input$state_map != 'Show all'){
+                if(input$state_selector != 'Show All'){
                     summary_data() %>%
-                        filter(state_full == input$state_map)
+                        filter(state_full == input$state_selector)
                 }
             })
         
         #Filter the shapefile based on the selected state
         shapefile_covid <-
             reactive({
-                if(input$state_map == 'Show all'){
+                if(input$state_selector == 'Show All'){
                     us_counties
                 }else{
                     us_counties %>%
-                        filter(STNAME == input$state_map)
+                        filter(STNAME == input$state_selector)
                 }
             })
         
@@ -505,7 +577,7 @@ server <-
         #4 versions: U.S. vs specific state, Pop_adjust vs not
         covidmap_text <-
             reactive({
-                if(input$state_map == 'Show all'){
+                if(input$state_selector == 'Show All'){
                     if(input$population_adjust){
                         paste0('Between ',
                                input$date_range[1],
@@ -563,7 +635,7 @@ server <-
                                ' had the highest rate of COVID-19 ',
                                tolower(input$metric),
                                ' in ',
-                               input$state_map,
+                               input$state_selector,
                                ', adjusted for population. ',
                                summary_covidmap_subset()$name[which.min(
                                    summary_covidmap_subset()$n)], 
@@ -574,7 +646,7 @@ server <-
                                ' had the lowest rate of COVID-19 ',
                                tolower(input$metric),
                                ' in ',
-                               input$state_map,
+                               input$state_selector,
                                ', adjusted for population.')}
                     else{
                         paste0('Between ',
@@ -591,7 +663,7 @@ server <-
                                ' had the highest rate of COVID-19 ',
                                tolower(input$metric),
                                ' in ',
-                               input$state_map,
+                               input$state_selector,
                                '. ',
                                summary_covidmap_subset()$name[which.min(
                                    summary_covidmap_subset()$n)], 
@@ -602,7 +674,7 @@ server <-
                                ' had the lowest rate of COVID-19 ',
                                tolower(input$metric),
                                ' in ',
-                               input$state_map,'.')
+                               input$state_selector,'.')
                     }
                 }
             })
@@ -638,13 +710,13 @@ server <-
         #Create and render an interactive data table
         output$summary_table <-
             renderDataTable(
+              if(input$state_selector == 'Show All'){
                 #Use the summary data as a base
                 summary_data() %>%
                     #Drop unwanted columns
                     select(!c(fips,
                               place,
-                              socmed,
-                              STNAME)) %>%
+                              socmed)) %>%
                     #Rename columns to look neater/more professional
                     select(State = state_full,
                            County = name,
@@ -667,45 +739,133 @@ server <-
                            Facebook =
                                case_when(Facebook == 1 ~ 'Yes',
                                          Facebook == 0 ~ 'No',
-                                         Facebook == 'NA' ~ 'NA')))
+                                         Facebook == 'NA' ~ 'NA'))
+                }else{
+                  summary_data() %>%
+                    filter(state_full == input$state_selector) %>%
+                    #Drop unwanted columns
+                    select(!c(fips,
+                              place,
+                              socmed)) %>%
+                    #Rename columns to look neater/more professional
+                    select(State = state_full,
+                           County = name,
+                           '2020 Population' = population,
+                           !!str_to_title(input$metric) := n,
+                           Facebook,
+                           Twitter
+                    ) %>%
+                    #Drop rows w/ bad data
+                    filter(!is.na(State)) %>%
+                    #replace zeros and ones with nos and yeses 
+                    #(and NAs, where applicable)
+                    mutate(Facebook = 
+                             ifelse(is.na(Facebook),
+                                    'NA',
+                                    Facebook)) %>%
+                    mutate(Twitter = 
+                             case_when(Twitter == 1 ~ 'Yes',
+                                       Twitter == 0 ~ 'No'),
+                           Facebook =
+                             case_when(Facebook == 1 ~ 'Yes',
+                                       Facebook == 0 ~ 'No',
+                                       Facebook == 'NA' ~ 'NA'))
+                })
+        
+        output$county_selector_table <- renderUI(
+          selectizeInput('county_selector_table',
+                         'County',
+                         choices = c(sort(county_names_trend()$name))))
         
         similarity_table <-
           reactive({
+          if(input$instate){
             summary_labels <-
               summary_data() %>%
-              select(fips,
-                     name,
-                     STNAME,
-                     state_full)
+              drop_na() %>%
+              filter(state_full == input$state_selector)
+            
+            knn_data <-
+              summary_data() %>%
+              filter(state_full == input$state_selector) %>%
+              select(!c(
+                fips,
+                name,
+                state_full,
+                place,
+                socmed
+              )) %>%
+              drop_na() 
+          }else{
+            
+            summary_labels <-
+              summary_data() %>%
+              drop_na()
             
             knn_data <-
               summary_data() %>%
               select(!c(
                 fips,
                 name,
-                STNAME,
-                state_full
-              ))
+                state_full,
+                place,
+                socmed
+              )) %>%
+              drop_na()}
+            
             knn_model <-
-              RANN::nn2(knn_data())
-            knn_df <-
+              RANN::nn2(knn_data)
+            knn_output <-
               as.data.frame(knn_model$nn.idx)
-            knn_df <- 
-              cbind.data.frame(summary_labels(),
-                               knn_df)
-            knn_df <-
-              knn_df %>%
+            knn_output <- 
+              cbind.data.frame(summary_labels,
+                               knn_output)
+            knn_output = 
+              knn_output %>%
+              mutate(ID = row_number())
+            
+            target_row <-
+              knn_output %>%
               filter(
-                state_full == input$state_select,
-                name == input$county_select
+                name == input$county_selector_table,
+                state_full == input$state_selector
               )
             
-            summary_data() %>%
-              filter(as.numeric(rownames(.) %in% c(knn_df$V2,
-                                                   knn_df$V3,
-                                                   knn_df$V4,
-                                                   knn_df$V5,
-                                                   knn_df$V6)))
+            output_table <-
+              bind_rows(knn_output[knn_output$ID == target_row$V1,],
+                        knn_output[knn_output$ID == target_row$V2,],
+                        knn_output[knn_output$ID == target_row$V3,],
+                        knn_output[knn_output$ID == target_row$V4,],
+                        knn_output[knn_output$ID == target_row$V5,],
+                        knn_output[knn_output$ID == target_row$V6,])
+            output_table <-
+              output_table %>%
+              select(!c(fips,
+                        state_full,
+                        name,
+                        Twitter,
+                        Facebook
+                        )) %>%
+              mutate('Similarity Ranking' = 
+                       c('Selected County',
+                         '1st',
+                         '2nd',
+                         '3rd',
+                         '4th',
+                         '5th')) %>%
+              select(
+                County = place,
+                `Similarity Ranking`,
+                `Social Media` = socmed,
+                !!str_to_title(input$metric) := n,
+                Population = population,
+                `% Fully Vaccinated`,
+                `% First Dose`,
+                `% Hispanic` = hispanic_prop,
+                `% White` = white_prop,
+                `% Black` = black_prop,
+                `% Asian` = asian_prop
+              )
           })
         
         output$similarity_table <-
@@ -717,8 +877,9 @@ server <-
         #Create a reactive data set of county names based on chosen state
         county_names_trend <-
             reactive({
-                tw_fb_data %>%
-                    filter(state_full == input$state_select)})
+                summary_data() %>%
+                    filter(state_full == input$state_selector) %>%
+                drop_na()})
         
         #County selector for line plot, to render after state is selected
         output$county_selector_trend <- renderUI(
@@ -736,7 +897,7 @@ server <-
                 covid_adjusted() %>%
                     left_join(tw_fb_data,
                               by = 'fips') %>%
-                    filter(state_full == input$state_select &
+                    filter(state_full == input$state_selector &
                                name %in% input$county_selector)})
         
         #Create some reactive text explaining what's in the plot
@@ -750,7 +911,7 @@ server <-
                            ' to ',
                            input$date_range[2],
                            ' in the selected counties in ',
-                           input$state_select,
+                           input$state_selector,
                            ".")}
                 else{
                     paste0('Right now, the line plot below is showing COVID-19 ',
@@ -760,7 +921,7 @@ server <-
                            ' to ',
                            input$date_range[2],
                            ' in the selected counties in ',
-                           input$state_select,
+                           input$state_selector,
                            ".")}})
         
         #Render the text
@@ -791,11 +952,11 @@ server <-
         #social media tab
         shapefile_socmed <-
             reactive({
-                if(input$state_socmed == 'Show all'){
+                if(input$state_selector == 'Show All'){
                     us_counties
                 }else{
                     us_counties %>%
-                        filter(STNAME == input$state_socmed)
+                        filter(STNAME == input$state_selector)
                 }
             })
         
@@ -828,7 +989,7 @@ server <-
         #for chosen jurisdiction.
         socialmedia_text <-
             reactive({
-                if(input$state_socmed == 'Show all'){
+                if(input$state_selector == 'Show All'){
                     paste0(nrow(tw_fb_data %>%
                                     filter(facebookYN == 1)), 
                            ' of the ',
@@ -843,23 +1004,23 @@ server <-
                  have Twitter accounts.')
                 } else{
                     paste0(nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_socmed,
+                                    filter(state_full == input$state_selector,
                                            facebookYN == 1)),
                            ' of the ',
                            nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_socmed)), 
+                                    filter(state_full == input$state_selector)), 
                            ' county public health departments in ', 
-                           input$state_socmed,
+                           input$state_selector,
                            ' have Facebook accounts. ',
                            nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_socmed,
+                                    filter(state_full == input$state_selector,
                                            twitterYN == 1)),
                            ' of the ',
                            nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_socmed)), 
+                                    filter(state_full == input$state_selector)), 
                            ' county public health departments in ',
-                           input$state_socmed,
-                           ' have Twitter accounts. ')}})
+                           input$state_selector,
+                           ' have Twitter accounts.')}})
         
         #Render the above text
         output$socialmedia_text <-
