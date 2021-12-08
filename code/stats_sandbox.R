@@ -23,6 +23,8 @@ for (ii in unique(tweets$username)){
   newdf = rbind.data.frame(newdf, rows)
 }
 
+racedata = readr::read_csv('data/raw/county_race_data.csv')
+
 newdf1 <-
   newdf %>%
   distinct(across(c(date,
@@ -61,6 +63,12 @@ counties =
     .keep_all = TRUE
   )
 
+write_csv(counties, 'data/raw/counties_with_tweets.csv')
+
+getwd()
+counties = counties %>%
+  rename('name' = name.x,
+         'twitter_display_name' = name.y)
 
 population = readr::read_csv('data/raw/co-est2020.csv') %>%
   #Exclude state total populations
@@ -86,6 +94,8 @@ covid_today <-
   pivot_wider(
               names_from = 'metric',
               values_from = 'n')
+
+rm(covid)
 
 df = 
   counties %>%
@@ -557,7 +567,7 @@ summary(vaxx_18_65_model)
 vaccination_rates <-
   readr::read_csv('data/raw/vaccination_rates.csv')
 
-df1 = df %>%
+df = df %>%
   left_join(
     vaccination_rates,
     by = c('fips' = 'FIPS'))
@@ -619,6 +629,9 @@ vaxx_engagement <-
   )
 summary(vaxx_engagement)
 
+racedata = racedata %>%
+  rename(fips = id)
+
 df1 = df1 %>%
   left_join(
     racedata,
@@ -662,3 +675,32 @@ summary(vaxxadmin_engagement)
 
 
 df1$in_multicountydistrict = ifelse(!is.na(df1$district),1,0)
+
+
+# maps ----------------------------------------------------------------
+
+library(RANN)
+
+nn_data = df %>%
+  select(fips,
+         name = name.x,
+         state_full,
+         twitterYN,
+         twitter_active_COVID_all,
+         twitter_active_last60_all,
+         facebookYN,
+         population,
+         cases_normalized,
+         deaths_normalized,
+         hispanic_prop:multi_prop,
+         Series_Complete_Pop_Pct,
+         Administered_Dose1_Pop_Pct
+         ) %>%
+  drop_na()
+
+nn_info = nn_data %>% select(fips,name,state_full)
+
+abc = RANN::nn2(data = nn_data %>% select(!c(fips,name,state_full)))
+
+nn_output = as.data.frame(abc$nn.idx)
+nn_output = cbind.data.frame(nn_info, nn_output)

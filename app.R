@@ -2,6 +2,7 @@
 # setup -------------------------------------------------------------------
 library(leaflet)
 library(lubridate)
+library(RANN)
 library(sf)
 library(tmap)
 library(shiny)
