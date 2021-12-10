@@ -72,11 +72,12 @@ racedata <-
   mutate(fips = 
            str_sub(id,-5,-1)) %>%
   select(!id)
+
 #Read in county population data
 #Yes, this is the same file we used in class, I'm just excluding the 
 #state totals instead of filtering to only them
 population_counties <-
-    readr::read_csv('data/raw/co-est2020.csv') %>%
+    vroom('data/raw/co-est2020.csv') %>%
     #Exclude state total populations
     filter(COUNTY != '000') %>%
     #Rename population for convenience
@@ -113,6 +114,7 @@ vax_data <-
          series_complete_pop_pct,
          administered_dose1_pop_pct
          )
+
 # Read in shapefiles:
 
 #Side note: thank you for providing the U.S. county shapefile!
