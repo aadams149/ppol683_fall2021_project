@@ -168,6 +168,10 @@ ui <-
                 label = 'Adjust for population?'),
             
             sidebarMenu(
+                menuItem('Home',
+                         icon = icon('home'),
+                         tabName = 'home'),
+                
                 menuItem('Map',
                          icon = icon('map'),
                          tabName = 'maps'),
@@ -175,18 +179,15 @@ ui <-
                 menuItem('Table',
                          icon = icon('table'),
                          tabName = 'tables'),
-                
+      
                 menuItem('Trend',
                          icon = icon('chart-line'),
                          tabName = 'charts'),
                 
-                # Add two new tabs:
-                #     'Social Media': For displaying a map of county health department
-                #                     social media accounts
-                #     'Help':         Basically an FAQ
                 menuItem('Social Media',
                          icon = icon('wifi'),
                          tabName = 'socialmedia'),
+                
                 menuItem('Help',
                          icon = icon('question-circle'),
                          tabName = 'help')
@@ -206,6 +207,19 @@ ui <-
             
             
             tabItems(
+                tabItem(
+                  tabName = 'home',
+                  h2('Homepage'),
+                  helpText('The purpose of this app is to visualize data
+                           related to county health department social
+                           media accounts in the United States. Try clicking
+                           on one of the other tabs to see some of the 
+                           visualizations. You can adjust the input values
+                           using the control widgets on the sidebar and in
+                           the tabs. For more information about any of the
+                           tabs or visualizations included here, click on
+                           the "Help" tab.')
+                ),
                 tabItem(
                     tabName = 'maps',
                     #Create a header
