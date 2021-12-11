@@ -1,7 +1,26 @@
 library(tidyverse)
 
-counties = readr::read_csv('data/raw/counties_with_tweets.csv')
-tweets = readr::read_csv('data/most_recent_tweets/most_recent_tweets_2021_11_30.csv')
+counties = vroom('data/raw/counties_with_tweets.csv')
+tweets = vroom('data/most_recent_tweets/most_recent_tweets_2021_11_30.csv')
+population_counties <-
+  vroom('data/raw/co-est2020.csv') %>%
+  #Exclude state total populations
+  filter(COUNTY != '000') %>%
+  #Rename population for convenience
+  rename('population' = POPESTIMATE2020) %>%
+  #Create a fips column for easy merging
+  mutate('fips' = paste0(STATE,COUNTY)) %>%
+  select(fips, STNAME, population)
+
+df = counties %>%
+  left_join(
+    population_counties,
+    by = c('fips' = 'fips',
+           'state_full' = 'STNAME')
+  ) %>%
+  select(fips:twitter,
+         population,
+         twitterYN:filename)
 
 newdf = data.frame()
 for (ii in unique(tweets$username)){
@@ -22,15 +41,6 @@ newdf1 <-
                     name,
                     tweet)),
            .keep_all = TRUE)
-
-newdf1 = 
-  newdf1 %>%
-  select(user_id,
-         username,
-         tweet,
-         date,
-         time,
-         link)
 
 counties$twitter = tolower(counties$twitter)
 
