@@ -8,6 +8,7 @@ library(tmap)
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
+library(vroom)
 options(scipen = 999)
 
 # data --------------------------------------------------------------------
@@ -21,16 +22,11 @@ options(scipen = 999)
 # Read in covid data from New York Times:
 
 # For this app, I'm using county-level data on cases and deaths.
-# The master file is really large, so I'm using the 'recent' version,
-# which just contains data for the past 30 days.
+
 covid <-
     vroom(
       'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
-    ) %>%
-    # Pivot and rename the data
-    pivot_longer('cases':'deaths',
-                 names_to = 'metric',
-                 values_to = 'n')
+    ) 
 
 # Read in my project data from my project GitHub
 tw_fb_data <-
@@ -87,14 +83,11 @@ population_counties <-
     select(fips, STNAME, population)
 
 #Read in vaccination data from CDC API
-#I'm only incorporating the most recent vax numbers in this project
-#This data set updates each day, same as the COVID-19 one from the NYTimes
-#Rows are imported in reverse chronological order
-#I use the system date to check if there are at least 3143 rows where the date
-#is today (the number of counties in the US). If so, subset the data to 
-#rows from today. Otherwise, subtract 1 from the date and subset to that date
-#(yesterday). This way, no matter when the app is run, it should have 
-#1 vaccine data observation for each county that is no more than 24 hours old
+#I'm incorporating vaccine data from the past two months into this app.
+#(I've tested different lengths of time, and this is the most I can get
+#without it taking an absurdly long time to download.)
+
+#61 days * 3143 counties is 191723 rows of data
 vax_data <-
   vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
 
@@ -108,12 +101,33 @@ if (length(vax_data[vax_data$date == today,]) >= 3143){
     filter(date == today-1)
 }
 
+
+#Drop rows where date is min date, since there might not be an observation
+#for all 3143 counties
 vax_data <-
   vax_data %>%
-  select(fips,
-         series_complete_pop_pct,
-         administered_dose1_pop_pct
-         )
+  select(date,
+         fips,
+         series_complete_yes,
+         administered_dose1_recip)
+
+#Left join into covid data, treat as metric
+covid <-
+  covid %>%
+  left_join(
+    vax_data,
+    by = c('fips' = 'fips',
+           'date' = 'date')
+  ) %>%
+  select(
+    date:deaths,
+    series_complete_yes,
+    administered_dose1_recip
+  ) %>%
+  # Pivot and rename the data
+  pivot_longer('cases':'administered_dose1_recip',
+               names_to = 'metric',
+               values_to = 'n')
 
 # Read in shapefiles:
 
@@ -130,6 +144,11 @@ us_counties <-
     left_join(population_counties,
               by = 'fips')
 
+#Define rescaling function
+range01 <- function(x){
+  (x-min(x))/(max(x)-min(x))
+  }
+
 #Set tmap mode
 tmap_mode('view')
 
@@ -144,12 +163,35 @@ ui <-
         dashboardHeader(title = 'Social Media and Public Health'),
         
         dashboardSidebar(
-            
-            dateRangeInput(
-                inputId = 'date_range',
-                label = 'Select a range of dates:',
-                start = min(covid$date),
-                end = max(covid$date)),
+          radioButtons(
+            inputId = 'date_or_daterange',
+            label = 'Display',
+            choiceNames = c(
+              'Cumulative Total',
+              'Total Over Selected Date Range'
+            ),
+            choiceValues = c(
+              'cumulative',
+              'daterange'
+            )
+          ),
+          conditionalPanel(
+            condition = "input.date_or_daterange == 'cumulative'",
+            dateInput(
+              inputId = 'single_date',
+              label = 'Select a date:',
+              min = min(covid$date),
+              max = max(covid$date))
+          ),
+          conditionalPanel(
+            condition = "input.date_or_daterange == 'daterange'",
+            uiOutput('daterangeUI')
+            # dateRangeInput(
+            #   inputId = 'date_range',
+            #   label = 'Select a range of dates:',
+            #   start = min(covid$date),
+            #   end = max(covid$date))
+          ),
             
             selectInput(
               inputId = 'state_selector',
@@ -160,8 +202,14 @@ ui <-
             radioButtons(
                 inputId = 'metric',
                 label = 'View:',
-                choiceNames = c('Cases', 'Deaths'),
-                choiceValues = c('cases', 'deaths')),
+                choiceNames = c('Cases',
+                                'Deaths',
+                                'Fully Vaccinated',
+                                'At Least 1 Vaccine Dose'),
+                choiceValues = c('cases',
+                                 'deaths',
+                                 'completed vaccinations',
+                                 'first vaccine doses administered')),
             
             checkboxInput(
                 inputId = 'population_adjust',
@@ -451,6 +499,27 @@ ui <-
 server <- 
     function(input, output) { 
         
+        daterangeUI <-
+          reactive({
+            if(input$metric %in% c('completed vaccinations',
+                                   'first vaccine doses administered')){
+              dateRangeInput(
+                inputId = 'date_range',
+                label = 'Select a range of dates',
+                min = min(vax_data$date),
+                max = max(vax_data$date)
+              )
+            }else{
+              dateRangeInput(
+                inputId = 'date_range',
+                label = 'Select a range of dates',
+                min = min(covid$date),
+                max = max(covid$date))
+            }
+          })
+          
+        output$daterangeUI <-
+          renderUI(daterangeUI())
         
         
         # Code for COVID Map Output -------------------------------------------
@@ -461,11 +530,18 @@ server <-
         #First, filter the COVID-19 data by metric and date range
         covid_filtered <-
             reactive({
+              if(input$date_or_daterange == 'cumulative'){
+                covid %>%
+                  filter(metric == input$metric,
+                         date == input$single_date) %>%
+                  select(!metric)
+              }else{
                 covid %>%
                     filter(metric == input$metric,
                            date >= input$date_range[1],
                            date <= input$date_range[2]) %>%
                     select(!metric)
+              }
             }) 
         
         #Check the status of the population adjustment checkbox to 
@@ -487,9 +563,16 @@ server <-
         #interval
         summary_data <-
             reactive({
-                covid_adjusted() %>%
+              if(input$date_or_daterange == 'daterange'){
+                covid_adjusted <-
+                  covid_adjusted() %>%
                     group_by(fips) %>%
-                    summarise(n = max(n) - min(n)) %>%
+                    summarise(n = max(n) - min(n)) }
+              else{
+                covid_adjusted <-
+                  covid_adjusted()
+              }
+                covid_adjusted %>%
                     #Left join with social media data
                     left_join(tw_fb_data,
                               by = 'fips') %>%
@@ -509,8 +592,8 @@ server <-
                                      'state_full' = 'STNAME')) %>%
                     left_join(vax_data,
                               by = 'fips') %>%
-                    rename('% Fully Vaccinated' = series_complete_pop_pct,
-                           '% First Dose' = administered_dose1_pop_pct) %>%
+                    rename('Fully Vaccinated' = series_complete_yes,
+                           'First Dose' = administered_dose1_recip) %>%
                     #Remove cases where data is recorded for units other than county
                     filter(!is.na(fips)) %>%
                 left_join(
@@ -593,43 +676,56 @@ server <-
         #4 versions: U.S. vs specific state, Pop_adjust vs not
         covidmap_text <-
             reactive({
-                if(input$state_selector == 'Show All'){
-                    if(input$population_adjust){
-                        paste0('Between ',
-                               input$date_range[1],
-                               ' and ',
-                               input$date_range[2],
-                               ", ",
-                               summary_data()$place[which.max(summary_data()$n)],
-                               ' (Population: ',
-                               summary_data()$population[which.max(summary_data()$n)],
-                               ') ',
-                               ' had the highest rate of COVID-19 ',
-                               tolower(input$metric),
-                               ' in the United States, adjusted for population. ',
-                               summary_data()$place[which.min(summary_data()$n)],
-                               ' (Population: ',
-                               summary_data()$population[which.min(summary_data()$n)],
-                               ') ',
-                               ' had the lowest rate of COVID-19 ',
-                               tolower(input$metric),
-                               ' in the United States, adjusted for population.')}
+              max_metric = summary_data()$place[which.max(summary_data()$n)]
+              max_pop = summary_data()$population[which.max(summary_data()$n)]
+              min_metric = summary_data()$place[which.min(summary_data()$n)]
+              min_pop = summary_data()$population[which.min(summary_data()$n)]
+              
+              if(input$date_or_daterange == 'daterange'){
+                beginning = 
+                  paste0('Between ',
+                         input$date_range[1],
+                         ' and ',
+                         input$date_range[2],
+                         ", ")
+              }else{
+                beginning = 
+                  paste0('As of ',
+                         input$single_date,
+                         ", ")
+              }
+              if(input$state_selector == 'Show All'){
+                  if(input$population_adjust){
+                      
+                      paste0(
+                        beginning,
+                        max_metric,
+                        ' (Population: ',
+                        max_pop,
+                        ') ',
+                        ' had the highest rate of COVID-19 ',
+                        tolower(input$metric),
+                        ' in the United States, adjusted for population. ',
+                        min_metric,
+                        ' (Population: ',
+                        min_pop,
+                        ') ',
+                        ' had the lowest rate of COVID-19 ',
+                        tolower(input$metric),
+                        ' in the United States, adjusted for population.'
+                      )}
                     else{
-                        paste0('Between ',
-                               input$date_range[1],
-                               ' and ',
-                               input$date_range[2],
-                               ", ",
-                               summary_data()$place[which.max(summary_data()$n)],
+                        paste0(beginning,
+                               max_metric,
                                ' (Population: ',
-                               summary_data()$population[which.max(summary_data()$n)],
+                               max_pop,
                                ') ',
                                ' had the highest rate of COVID-19 ',
                                tolower(input$metric),
                                ' in the United States. ',
-                               summary_data()$place[which.min(summary_data()$n)],
+                               min_metric,
                                ' (Population: ',
-                               summary_data()$population[which.min(summary_data()$n)],
+                               min_pop,
                                ') ',
                                ' had the lowest rate of COVID-19 ',
                                tolower(input$metric),
@@ -637,11 +733,7 @@ server <-
                     }
                 } else {
                     if(input$population_adjust){
-                        paste0('Between ',
-                               input$date_range[1],
-                               ' and ',
-                               input$date_range[2],
-                               ", ",
+                        paste0(beginning,
                                summary_covidmap_subset()$name[which.max(
                                    summary_covidmap_subset()$n)],
                                ' (Population: ',
@@ -665,11 +757,7 @@ server <-
                                input$state_selector,
                                ', adjusted for population.')}
                     else{
-                        paste0('Between ',
-                               input$date_range[1],
-                               ' and ',
-                               input$date_range[2],
-                               ", ",
+                        paste0(beginning,
                                summary_covidmap_subset()$name[which.max(
                                    summary_covidmap_subset()$n)],
                                ' (Population: ',
@@ -811,7 +899,25 @@ server <-
                 place,
                 socmed
               )) %>%
-              drop_na() 
+              drop_na() %>%
+              mutate(
+                population = 
+                  range01(population),
+                 n = 
+                   range01(n),
+                `Fully Vaccinated` = 
+                  range01(`Fully Vaccinated`),
+                `First Dose` = 
+                  range01(`First Dose`),
+                hispanic_prop = 
+                  range01(hispanic_prop),
+                white_prop = 
+                  range01(white_prop),
+                black_prop = 
+                  range01(black_prop),
+                asian_prop = 
+                  range01(asian_prop)
+              )
           }else{
             
             summary_labels <-
@@ -846,6 +952,34 @@ server <-
                 name == input$county_selector_table,
                 state_full == input$state_selector
               )
+            if(input$instate & input$state_selector == 'Delaware'){
+                output_table <-
+                  bind_rows(knn_output[knn_output$ID == target_row$V1,],
+                            knn_output[knn_output$ID == target_row$V2,],
+                            knn_output[knn_output$ID == target_row$V3,])
+                output_table <-
+                  output_table %>%
+                  mutate('Similarity Ranking' = 
+                           c('Selected County',
+                             '1st',
+                             '2nd'))
+              }else{
+                if(input$instate & input$state_selector == 'Rhode Island'){
+                output_table <-
+                  bind_rows(knn_output[knn_output$ID == target_row$V1,],
+                            knn_output[knn_output$ID == target_row$V2,],
+                            knn_output[knn_output$ID == target_row$V3,],
+                            knn_output[knn_output$ID == target_row$V4,],
+                            knn_output[knn_output$ID == target_row$V5,])
+                output_table <-
+                  output_table %>%
+                  mutate('Similarity Ranking' = 
+                           c('Selected County',
+                             '1st',
+                             '2nd',
+                             '3rd',
+                             '4th'))
+              }else{
             
             output_table <-
               bind_rows(knn_output[knn_output$ID == target_row$V1,],
@@ -856,27 +990,30 @@ server <-
                         knn_output[knn_output$ID == target_row$V6,])
             output_table <-
               output_table %>%
-              select(!c(fips,
-                        state_full,
-                        name,
-                        Twitter,
-                        Facebook
-                        )) %>%
               mutate('Similarity Ranking' = 
                        c('Selected County',
                          '1st',
                          '2nd',
                          '3rd',
                          '4th',
-                         '5th')) %>%
+                         '5th'))
+              }}
+            output_table <-
+              output_table %>%
+              select(!c(fips,
+                        state_full,
+                        name,
+                        Twitter,
+                        Facebook
+                        )) %>%
               select(
                 County = place,
                 `Similarity Ranking`,
                 `Social Media` = socmed,
                 !!str_to_title(input$metric) := n,
                 Population = population,
-                `% Fully Vaccinated`,
-                `% First Dose`,
+                `Fully Vaccinated`,
+                `First Dose`,
                 `% Hispanic` = hispanic_prop,
                 `% White` = white_prop,
                 `% Black` = black_prop,
@@ -886,6 +1023,7 @@ server <-
         
         output$similarity_table <-
           renderDataTable(
+            options = list(scrollX = TRUE),
             similarity_table()
           )
         # Scatterplot Code ----------------------------------------------------

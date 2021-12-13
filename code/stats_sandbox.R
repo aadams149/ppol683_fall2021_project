@@ -25,6 +25,26 @@ for (ii in unique(tweets$username)){
 
 racedata = readr::read_csv('data/raw/county_race_data.csv')
 
+vax_data1 <-
+  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$')
+
+today <- Sys.Date()
+
+if (length(vax_data[vax_data$date == today,]) >= 3143){
+  vax_data = vax_data %>%
+    filter(date == today)
+}else{
+  vax_data = vax_data %>%
+    filter(date == today-1)
+}
+
+vax_data <-
+  vax_data %>%
+  select(fips,
+         series_complete_pop_pct,
+         administered_dose1_pop_pct
+  )
+
 newdf1 <-
   newdf %>%
   distinct(across(c(date,
@@ -65,7 +85,6 @@ counties =
 
 write_csv(counties, 'data/raw/counties_with_tweets.csv')
 
-getwd()
 counties = counties %>%
   rename('name' = name.x,
          'twitter_display_name' = name.y)
@@ -98,11 +117,12 @@ covid_today <-
 rm(covid)
 
 df = 
-  counties %>%
-  left_join(
-    population,
-    by = 'fips'
-  ) %>%
+  # counties %>%
+  # left_join(
+  #   population,
+  #   by = 'fips'
+  # ) %>%
+  df %>%
   left_join(
     covid_today,
     by = 'fips'
@@ -569,8 +589,8 @@ vaccination_rates <-
 
 df = df %>%
   left_join(
-    vaccination_rates,
-    by = c('fips' = 'FIPS'))
+    vax_data,
+    by = 'fips')
   
 
 cases_engagement <-
@@ -704,3 +724,71 @@ abc = RANN::nn2(data = nn_data %>% select(!c(fips,name,state_full)))
 
 nn_output = as.data.frame(abc$nn.idx)
 nn_output = cbind.data.frame(nn_info, nn_output)
+
+
+# tweet_counts_model --------------------------------------------------
+
+tweet_counts_cases <-
+  lm(cases_normalized ~ total_tweets+
+       tweets_COVID+
+       tweets_last60+
+       white_prop+
+       black_prop+
+       hispanic_prop+
+       asian_prop+
+       AmInd_prop+
+       nhawaiian_prop+
+       other_prop+
+       multi_prop,
+     data = df)
+
+summary(tweet_counts_cases)
+
+tweet_counts_deaths <-
+  lm(deaths_normalized ~ total_tweets+
+       tweets_COVID+
+       tweets_last60+
+       white_prop+
+       black_prop+
+       hispanic_prop+
+       asian_prop+
+       AmInd_prop+
+       nhawaiian_prop+
+       other_prop+
+       multi_prop,
+     data = df)
+
+summary(tweet_counts_deaths)
+
+
+tweet_counts_fullvax <-
+  lm(series_complete_pop_pct ~ total_tweets+
+       tweets_COVID+
+       tweets_last60+
+       white_prop+
+       black_prop+
+       hispanic_prop+
+       asian_prop+
+       AmInd_prop+
+       nhawaiian_prop+
+       other_prop+
+       multi_prop,
+     data = df)
+
+summary(tweet_counts_fullvax)
+
+tweet_counts_vax1 <-
+  lm(administered_dose1_pop_pct*100 ~ total_tweets+
+       tweets_COVID+
+       tweets_last60+
+       white_prop+
+       black_prop+
+       hispanic_prop+
+       asian_prop+
+       AmInd_prop+
+       nhawaiian_prop+
+       other_prop+
+       multi_prop,
+     data = df)
+
+summary(tweet_counts_vax1)

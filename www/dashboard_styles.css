@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+3:wght@300&display=swap');
 
 label {
   font-size: 1.2em;
@@ -8,42 +8,47 @@ label {
 h2 {
   font-size: 3em;
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 h4 {
   font-size: 1em;
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
+
 
 h5 {
   font-size: 1em;
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+   font-family: 'Source Sans 3', sans-serif;
 }
+
 
 .sidebar-menu li a { 
   font-weight: normal;
-  font-family: 'Merriweather', serif;
-  }
+  font-family: 'Source Sans 3', sans-serif;
+}
+
   
 .shiny-text-output{
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
+
 
 div label {
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 span a {
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
+
 
 .help-block{
   font-weight: normal;
-  font-family: 'Merriweather', serif;
+   font-family: 'Source Sans 3', sans-serif;
 }
