@@ -59,7 +59,8 @@ tw_fb_data <-
             facebookYN == 0 &
                 twitterYN == 1 ~ "Twitter but no Facebook"
         )
-    ) 
+    ) %>%
+  rename('tweet_date' = date)
 
 racedata <-
   vroom('data/raw/county_race_data.csv') %>%
