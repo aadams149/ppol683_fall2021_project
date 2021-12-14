@@ -80,7 +80,11 @@ tweet_counts =
   left_join(
     tweets_per_last60,
     by = 'Var1'
-  ) 
+  )
+
+
+# Combine all tweet summary tables ------------------------------------
+
 
 all_accounts = counties %>%
   select(twitter) %>%
@@ -93,51 +97,59 @@ all_accounts = counties %>%
   ) %>%
   distinct()
 
+#Replace missing values with 0
 all_accounts[is.na(all_accounts)] <- 0
+
+
+# Calculate mean likes/retweets/replies -------------------------------
+engagement = data.frame()
+mean_likes = c()
+mean_retweets = c()
+mean_replies = c()
+for (ii in all_accounts$twitter){
+  select_tweets <-
+    tweets %>%
+    filter(username == ii)
+  
+  if(length(select_tweets) == 0){
+    mean_likes <- 
+      append(mean_likes, 0)
+    mean_retweets <- 
+      append(mean_retweets, 0)
+    mean_replies <- 
+      append(mean_replies, 0)
+  }
+  else{
+    mean_likes <-
+      append(mean_likes, mean(select_tweets$likes_count))
+    mean_retweets <-
+      append(mean_retweets, mean(select_tweets$retweets_count))
+    mean_replies <-
+      append(mean_replies, mean(select_tweets$replies_count))
+  }
+}
+#Bind together into data frame
+engagement <-
+  cbind.data.frame(
+    all_accounts$twitter,
+    mean_likes,
+    mean_retweets,
+    mean_replies
+  ) %>%
+  rename('twitter' = `all_accounts$twitter`)
+
+#Replace missing values with 0
+engagement[is.na(engagement)] <- 0
 
 df <-
   df %>%
   left_join(
     all_accounts,
     by = 'twitter'
+  ) %>%
+  left_join(
+    engagement,
+    by = 'twitter'
   )
 
-
-
-# newdf = data.frame()
-# for (ii in unique(tweets$username)){
-#   print(ii)
-#   rows = tweets %>%
-#     filter(username == ii) %>%
-#     filter(date == max(date)) %>%
-#     filter(time == max(time))
-#   newdf = rbind.data.frame(newdf, rows)
-# }
-# 
-# newdf1 <-
-#   newdf %>%
-#   distinct(across(c(date,
-#                     time,
-#                     user_id,
-#                     username,
-#                     name,
-#                     tweet)),
-#            .keep_all = TRUE)
-
-# counties$twitter = tolower(counties$twitter)
-# 
-# counties <-
-#   counties %>%
-#   select(fips:district)
-# 
-# counties = 
-#   counties %>%
-#   left_join(newdf1,
-#             by = c('twitter' = 'username'))
-
-#counties$date = as.character(counties$date)
-counties$year = lubridate::year(counties$date)
-counties$month = lubridate::month(counties$date) %>%
-  str_pad(width = '2',pad = '0')
-counties$day = lubridate::day(counties$date) %>%
-  str_pad(width = '2',pad = '0')
+write_csv(df, 'data/raw/counties_with_tweets1.csv')

@@ -208,8 +208,8 @@ ui <-
                                 'At Least 1 Vaccine Dose'),
                 choiceValues = c('cases',
                                  'deaths',
-                                 'completed vaccinations',
-                                 'first vaccine doses administered')),
+                                 'series_complete_yes',
+                                 'administered_dose1_recip')),
             
             checkboxInput(
                 inputId = 'population_adjust',

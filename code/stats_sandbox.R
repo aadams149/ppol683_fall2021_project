@@ -17,9 +17,9 @@ newdf = data.frame()
 for (ii in unique(tweets$username)){
   print(ii)
   rows = tweets %>%
-    filter(username == ii) %>%
-    filter(date == max(date)) %>%
-    filter(time == max(time))
+    filter(username == ii,
+           date == max(date),
+           time == max(time))
   newdf = rbind.data.frame(newdf, rows)
 }
 
