@@ -136,7 +136,7 @@ covid <-
 #I was going to go try and track one down, so thank you for saving me
 #the trouble
 us_counties <-
-    st_read('data/spatial/us_counties.shp') %>%
+    st_read('data/spatial/counties_with_mc_districts.shp') %>%
     #Rename GEOID to fips for clarity
     rename(fips = GEOID) %>%
     #Transform to 4326 so it plays nice w/ tmap

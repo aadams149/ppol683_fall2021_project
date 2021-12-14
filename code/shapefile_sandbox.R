@@ -110,7 +110,7 @@ us_counties1 <-
 
 #Write the shapefile
 st_write(
-  us_counties,
+  us_counties1,
   'data/spatial',
   'counties_with_mc_districts',
   driver = "ESRI Shapefile"
