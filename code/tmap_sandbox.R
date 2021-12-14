@@ -115,10 +115,7 @@ us_counties <-
   #Rename GEOID to fips for clarity
   rename(fips = GEOID) %>%
   #Transform to 4326 so it plays nice w/ tmap
-  st_transform(crs = 4326) %>%
-  #Maybe this left join is unnecessary.
-  left_join(population_counties,
-            by = 'fips')
+  st_transform(crs = 4326) 
 
 #Define rescaling function
 range01 <- function(x){
@@ -206,10 +203,10 @@ summary_data <-
             Total_Multiracial))
 
 district_df_full = data.frame()
-# district_fips = us_counties %>%
-#   filter(is_dstr == 1) %>%
-#   select(distrct,
-#          fips)
+district_fips = us_counties %>%
+  filter(is_dstr == 1) %>%
+  select(distrct,
+         fips)
 for (ii in unique(summary_data$district)) {
   district_df = data.frame()
   row_subset <-
@@ -264,17 +261,26 @@ colnames(district_df_full) <-
 summary_data = rbind.data.frame(summary_data, district_df_full)
 
 summary_data_WV = summary_data %>%
-  filter(state_full == 'West Virginia')
+  filter(state_full %in% c('Ohio','Indiana','Michigan','Illinois',
+                           'Iowa','Wisconsin'))
 
 us_counties %>%
-  filter(STNAME == 'West Virginia',
+  filter(STNAME %in% c('Ohio','Indiana','Michigan','Illinois',
+                  'Iowa','Wisconsin'),
          in_dstr == 0) %>%
   left_join(summary_data_WV,
             by = 'fips') %>%
+  mutate(name_1 = 
+           case_when(is.na(name_1) ~ name,
+                     !is.na(name_1) ~ name_1)) %>%
+  rename('Jurisdiction' = name_1) %>%
   tm_shape() +
   #Fill with the COVID-19 indicator
   tm_polygons(col = 'n',
-              #Tooltip = county name and state abbreviation
               id = 'place',
+              #Tooltip = county name and state abbreviation
+              popup.vars = c('Jurisdiction: ' = 'Jurisdiction',
+                             'Case Rate: ' = 'n'),
               #Legend title = currently active metric
-              title = 'Cases') 
+              title = 'Cases',
+              alpha = 0.3) 
