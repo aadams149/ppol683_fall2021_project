@@ -140,7 +140,8 @@ covid_filtered <-
 covid_adjusted <-
   covid_filtered %>%
   left_join(population_counties,
-            by = 'fips') %>%
+            by = c('fips',
+                   'state' = 'STNAME')) %>%
   mutate(n =
            n / population * 100)
 
@@ -158,6 +159,7 @@ summary_data <-
          Twitter = twitterYN,
          Facebook = facebookYN,
          socmed,
+         date,
          n = n,
          district
   ) %>%
@@ -166,7 +168,8 @@ summary_data <-
             by = c('fips' = 'fips',
                    'state_full' = 'STNAME')) %>%
   left_join(vax_data,
-            by = 'fips') %>%
+            by = c('fips',
+                   'date' = 'date')) %>%
   rename('Fully Vaccinated' = series_complete_yes,
          'First Dose' = administered_dose1_recip) %>%
   #Remove cases where data is recorded for units other than county
@@ -202,40 +205,76 @@ summary_data <-
             Total_Other,
             Total_Multiracial))
 
-for (ii in unique(summary_data$district)){
+district_df_full = data.frame()
+# district_fips = us_counties %>%
+#   filter(is_dstr == 1) %>%
+#   select(distrct,
+#          fips)
+for (ii in unique(summary_data$district)) {
+  district_df = data.frame()
   row_subset <-
     summary_data %>%
     filter(district == ii)
   
-  for(date in unique(row_subset$date)){
+  row_subset$date =
+    as.character(row_subset$date)
   
+   for (date in unique(row_subset$date)) {
     newrow <-
       data.frame(
-        fips = us_counties$fips[us_counties$district == ii,],
+        fips = district_fips[district_fips$distrct == ii,]$fips,
         state_full = unique(row_subset$state_full)[1],
         name = ii,
         place = ii,
-        twitter = NA,
-        Facebook = NA,
+        Twitter = mean(row_subset[row_subset$date == date,]$Twitter),
+        Facebook = mean(row_subset[row_subset$date == date,]$Facebook),
         socmed = NA,
-        n = mean(row_subset$n[row_subset$date == date,]),
+        date = as.character(date),
+        n = mean(row_subset[row_subset$date == date,]$n),
         district = ii,
-        population = sum(row_subset$population[row_subset$date == date,]),
-        date = date,
-        `Fully Vaccinated` = mean(row_subset$`Fully Vaccinated`[row_subset$date == date,]),
-        `First Dose` = mean(row_subset$`First Dose`[row_subset$date == date,]),
-        hispanic_prop = mean(row_subset$hispanic_prop[row_subset$date == date,]),
-        white_prop = mean(row_subset$white_prop[row_subset$date == date,]),
-        black_prop = mean(row_subset$black_prop[row_subset$date == date,]),
-        AmInd_prop = mean(row_subset$AmInd_prop[row_subset$date == date,]),
-        asian_prop = mean(row_subset$asian_prop[row_subset$date == date,]),
-        nhawaiian_prop = mean(row_subset$nhawaiian_prop[row_subset$date == date,]),
-        other_prop = mean(row_subset$other_prop[row_subset$date == date,]),
-        multi_prop = mean(row_subset$multi_prop[row_subset$date == date,]),
-        
-        
-        
+        population = sum(row_subset[row_subset$date == date,]$population),
+        `Fully Vaccinated` = mean(row_subset[row_subset$date == date,]$`Fully Vaccinated`),
+        `First Dose` = mean(row_subset[row_subset$date == date,]$`First Dose`),
+        hispanic_prop = mean(row_subset[row_subset$date == date,]$hispanic_prop),
+        white_prop = mean(row_subset[row_subset$date == date,]$white_prop),
+        black_prop = mean(row_subset[row_subset$date == date,]$black_prop),
+        AmInd_prop = mean(row_subset[row_subset$date == date,]$AmInd_prop),
+        asian_prop = mean(row_subset[row_subset$date == date,]$asian_prop),
+        nhawaiian_prop = mean(row_subset[row_subset$date == date,]$nhawaiian_prop),
+        other_prop = mean(row_subset[row_subset$date == date,]$other_prop),
+        multi_prop = mean(row_subset[row_subset$date == date,]$multi_prop)
       )
-    
+  district_df = rbind.data.frame(district_df,
+                                newrow)
+
   }
+  district_df_full = rbind.data.frame(district_df_full,
+                                     district_df)
+  
+  district_df_full$date = as.Date(district_df_full$date, format = 'YYYY-mm-dd')
+  
+  
+
 }
+
+
+colnames(district_df_full) <-
+  colnames(summary_data)
+
+summary_data = rbind.data.frame(summary_data, district_df_full)
+
+summary_data_WV = summary_data %>%
+  filter(state_full == 'West Virginia')
+
+us_counties %>%
+  filter(STNAME == 'West Virginia',
+         in_dstr == 0) %>%
+  left_join(summary_data_WV,
+            by = 'fips') %>%
+  tm_shape() +
+  #Fill with the COVID-19 indicator
+  tm_polygons(col = 'n',
+              #Tooltip = county name and state abbreviation
+              id = 'place',
+              #Legend title = currently active metric
+              title = 'Cases') 

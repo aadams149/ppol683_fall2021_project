@@ -15,9 +15,24 @@
 library(sf)
 library(tidyverse)
 
+#Do this because I need a state name variable for left joins later
+population_counties <-
+  vroom('data/raw/co-est2020.csv') %>%
+  #Exclude state total populations
+  filter(COUNTY != '000') %>%
+  #Rename population for convenience
+  rename('population' = POPESTIMATE2020) %>%
+  #Create a fips column for easy merging
+  mutate('fips' = paste0(STATE,COUNTY)) %>%
+  select(fips, STNAME)
+
 #Read in original shapefile
 us_counties <-
-  st_read('data/spatial/us_counties.shp')
+  st_read('data/spatial/us_counties.shp') %>%
+  left_join(
+    population_counties,
+    by = c('GEOID' = 'fips')
+  )
 
 #Read in social media dataset (this has the district names)
 tw_fb_data <-
@@ -84,6 +99,7 @@ for (ii in unique(districts$district)){
         ALAND = NA,
         AWATER = NA,
         name = countynames,
+        STNAME = unique(needed_counties$STNAME)[1],
         district = ii,
         geometry = unified))
     
@@ -113,5 +129,6 @@ st_write(
   us_counties1,
   'data/spatial',
   'counties_with_mc_districts',
-  driver = "ESRI Shapefile"
+  driver = "ESRI Shapefile",
+  append = FALSE
 )
