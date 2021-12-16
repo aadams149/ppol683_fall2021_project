@@ -14,7 +14,7 @@
 #Read in needed libraries
 library(sf)
 library(tidyverse)
-
+library(vroom)
 #Do this because I need a state name variable for left joins later
 population_counties <-
   vroom('data/raw/co-est2020.csv') %>%
@@ -111,6 +111,7 @@ for (ii in unique(districts$district)){
   newfips = newfips+1
 }
 
+
 #Create 2 additional variables
 us_counties1 <-
   us_counties1 %>%
@@ -124,11 +125,26 @@ us_counties1 <-
                      is.na(district) ~ 0,
                      (GEOID <= 99000) & (!is.na(district)) ~ 1)) 
 
+us_counties_simple <-
+  rmapshaper::ms_simplify(
+    us_counties1,
+    keep_shapes = TRUE
+  )
+
 #Write the shapefile
 st_write(
   us_counties1,
   'data/spatial',
   'counties_with_mc_districts',
+  driver = "ESRI Shapefile",
+  append = FALSE
+)
+
+#Write the simplified shapefile
+st_write(
+  us_counties_simple,
+  'data/spatial',
+  'counties_with_mc_districts_small',
   driver = "ESRI Shapefile",
   append = FALSE
 )
