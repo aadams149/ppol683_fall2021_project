@@ -2,12 +2,13 @@
 # setup -------------------------------------------------------------------
 library(leaflet)
 library(lubridate)
+library(plotly)
 library(RANN)
 library(sf)
-library(tmap)
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
+library(tmap)
 library(vroom)
 options(scipen = 999)
 
@@ -185,7 +186,13 @@ us_counties <-
 #Define rescaling function
 range01 <- function(x){
   (x-min(x))/(max(x)-min(x))
-  }
+}
+
+#Read in Moran's I table
+moran_I <-
+  readr::read_csv(
+    'data/raw/moran_i.csv'
+  )
 
 #Set tmap mode
 tmap_mode('view')
@@ -207,7 +214,7 @@ ui <-
         dashboardSidebar(
           radioButtons(
             inputId = 'date_or_daterange',
-            label = 'Display',
+            label = 'Display:',
             choiceNames = c(
               'Cumulative Total',
               'Total Over Selected Date Range'
@@ -222,6 +229,7 @@ ui <-
             dateInput(
               inputId = 'single_date',
               label = 'Select a date:',
+              value = max(covid$date),
               min = min(covid$date),
               max = max(covid$date))
           ),
@@ -231,7 +239,9 @@ ui <-
              inputId = 'date_range',
                label = 'Select a range of dates:',
                start = min(covid$date),
-               end = max(covid$date))
+               min = min(covid$date),
+               end = max(covid$date),
+               max = max(covid$date))
           ),
           radioButtons(
             inputId = 'counties_districts',
@@ -311,12 +321,76 @@ ui <-
                            related to county health department social
                            media accounts in the United States. Try clicking
                            on one of the other tabs to see some of the 
-                           visualizations. You can adjust the input values
+                           visualizations.'),
+                  helpText('You can adjust the input values
                            using the control widgets on the sidebar and in
-                           the tabs. For more information about any of the
+                           the tabs. Some visualizations require certain inputs
+                           to work properly. For more information about any of the
                            tabs or visualizations included here, click on
-                           the "Help" tab.')
+                           the "Help" tab.'),
+                  hr(),
+                  helpText("The central premise of this project is to investigate and
+                           consider a possible relationship between county health departments
+                           in the United States having social media accounts on major
+                           platforms and those counties' outcomes during the COVID-19
+                           pandemic. This premise is derived from the convergence of
+                           multiple ideas in academic literature, namely:"),
+                  hr(),
+                  helpText("-As of 2020, there is a 20-point gap between Americans'
+                           trust in their local government and trust in the federal
+                           government."),
+                  hr(),         
+                  helpText("-With each year, a larger share of Americans (particularly
+                           those under 30) state that they receive some, most, or all
+                           of their news through social media rather than traditional
+                           media platforms."),
+                  hr(),         
+                  helpText("-People are more likely to respond to public health messaging
+                           on social media when that messaging comes from an organization,
+                           rather than an individual."),
+                  hr(),
+                  helpText("Local health departments (often administered at the county level)
+                           present the ideal venue for this investigation. Since they are local
+                           agencies, they are more immediately present in their communities than
+                           federal or state-level departments, and are likely trusted more on 
+                           average than those departments. Their social media communications
+                           are also typically sent from organization-level accounts, rather 
+                           than by individual messengers. I examined four different metrics
+                           related to COVID-19: cases, deaths, completed vaccinations (meaning
+                           people who received a full multi-course sequence of the Pfizer or Moderna
+                           vaccines, or one dose of the Johnson and Johnson vaccine), and first
+                           vaccine doses administered. After adjusting for population, I find that
+                           counties whose health departments have Twitter accounts have slightly
+                           lower rates of COVID-19 cases and deaths and slightly higher rates of
+                           completed vaccinations and first doses administered than counties
+                           whose health departments do not have Twitter accounts. The effect of
+                           a health department having a Facebook account is not statistically 
+                           significant and the effect size is almost zero. County-level COVID-19
+                           outcomes are spatially autocorrelated; the p-values of the Moran's I
+                           statistic for all four metrics used in this project are extremely
+                           close to zero:"),
+                  tableOutput('moran_I'),
+                  helpText('The intent of this analysis is not to suggest a causal link
+                           between local health departments having social media 
+                           presences and their constituents experiencing better health
+                           outcomes, but rather to identify if there is an association
+                           between the two. Future exploration could center on factors
+                           such as age, since the current literature suggests that younger
+                           people are more likely to use social media for news than
+                           older people. The presence of consistent spatial autocorrelation
+                           also indicates that state-level COVID-19 policies may be 
+                           associated with differential outcomes. Additionally,
+                           a county health department having a social media account 
+                           may be a proxy or instrumental variable for a different factor.
+                           However, such considerations are beyond the scope of
+                           this project at this stage.'),
+                  hr(),
+                  helpText('Enjoy using this app! To get started, I recommend
+                           selecting a date using the date widget and viewing 
+                           one of the maps.')
                 ),
+                
+                #COVID-19 metrics map tab----
                 tabItem(
                     tabName = 'maps',
                     #Create a header
@@ -326,9 +400,11 @@ ui <-
                     #metric for the specified interval
                     textOutput('covidmap_text'),
                     #Display a map of the desired COVID indicator, state, and interval
-                    tmapOutput(outputId = 'covid_map')),
+                    tmapOutput(outputId = 'covid_map',
+                                 height = '800px')
+                    ),
                 
-                # Summary Table Tab ---------------------------------------------------
+                #Summary Table Tab ---------------------------------------------------
                 
                 #This one's nice and simple
                 tabItem(
@@ -355,7 +431,8 @@ ui <-
                                    to the selected state, rather than the entire
                                    country. For more information about how these
                                    similar counties are identified, check the 
-                                   "Similarity Table" page in the "Help" tab.'
+                                   "Similarity Table" section on the
+                                   "Visualizations" page in the "Help" tab.'
                                  )
                                ),
                                checkboxInput('instate','Within State?'),
@@ -367,8 +444,7 @@ ui <-
                     )
                     ),
                 
-                # Scatterplot Tab -----------------------------------------------------
-                
+                #County-level lineplot Tab --------------------------------------------
                 
                 tabItem(
                     tabName = 'charts',
@@ -380,7 +456,8 @@ ui <-
                     #which state is chosen, and the current selected date interval
                     textOutput('plot_text'),
                     #Show a dynamic line plot
-                    plotOutput(outputId = 'plot_output')),
+                    plotOutput(outputId = 'plot_output',
+                               height = '800px')),
                 
                 # Social Media Map tab ------------------------------------------------
                 
@@ -389,9 +466,28 @@ ui <-
                     tabName = 'socialmedia',
                     h2('County Public Health Department Social Media Accounts'),
                     #Display text indicating number of counties w/ FB and/or Twitter
-                    textOutput('socialmedia_text'),
-                    #Display interactive map
-                    tmapOutput(outputId = 'socialmedia_map')
+                    tabsetPanel(
+                      tabPanel('Map',
+                               helpText(
+                                 textOutput(
+                                   'socialmedia_map_text'
+                                 )
+                               ),
+                               tmapOutput(outputId = 'socialmedia_map',
+                                          height = '800px')
+                               
+                               ),
+                      tabPanel('Line Plot',
+                               helpText(
+                                 textOutput(
+                                   'socmed_lineplot_text'
+                                 )
+                               ),
+                               plotlyOutput(
+                                 'socmed_lineplot',
+                                 height = '800px'
+                               ))
+                    )
                 ),
                 
                 # Help tab ------------------------------------------------------------
@@ -403,141 +499,225 @@ ui <-
                     h2('Help'),
                     
                     tabsetPanel(
-                        tabPanel('General Information',
+                      #Widget inputs-----
+                        tabPanel('Sidebar Inputs',
                                  helpText(
                                      h5(
                                          'This web app is intended to allow users to 
                          visualize data related to COVID-19 and public
                          health departments across the United States.'),
-                                     
-                                     h5(
-                                         paste(
-                                             'The date-range widget on the left allows users
-                           to select from a range of dates, spanning from ',
-                                             min(covid$date),
-                                             ' to ',
-                                             max(covid$date),
-                                             '. This interval reflects the data on
-                 COVID-19 cases and deaths at the county level over the past
-                 30 days. This data is retrieved from the New York Times 
-                 COVID-19 data GitHub repository, accessible on the "Links"
-                 tab below. The other data used in this app, such as the 
-                 data on social media coverage and county population, will
-                 be added to the `ppol683_final_project` repository 
-                 accessible at my GitHub (labeled "Alex`s GitHub"
-                 on the "Links" tab) in the weeks to come.')),
-                                     
-                                     h5(
-                                         "The radio buttons can be used to switch between 
-                         views of COVID-19 case counts and COVID-19 deaths.
-                         Checking the 'Adjust for Population?' checkbox 
-                         divides the number of cases or deaths in each 
-                         county by that county's population."),
-                                     
-                                     h5("Some elements of this app, such as the maps on 
-                       the Map and Social Media sidebar tabs or the county
-                       drop-down menu on the Trend sidebar tab, may take a
-                       few seconds to load. Don't worry! Unless you see an
-                       error message (which you shouldn't), the app is 
-                       working normally, and might just be a little slow.
-                       When running this app in RStudio, there should be
-                       three warning messages about the number of options
-                       in certain selector widgets. These will not affect
-                       the performance of the app, and can be safely
-                       ignored."))
-                        ),
-                        
-                        tabPanel('Map',
-                                 helpText(
-                                     h5('This tab shows the number of COVID-19 cases or 
-                       deaths over the last 30 days in the United States
-               at the county level. The map view can be changed using the 
-               radio buttons and "Adjust for population?" checkbox on the 
-               sidebar, as well as the drop-down menu on this tab. Choosing 
-               "Show All" in the drop-down menu will display a map of the 
-               United States. Choosing any other option will display a map 
-               of the selected state. Moving your cursor over a county on 
-               the map will show the county and state name. Clicking on a 
-               county will produce a pop-up bubble showing the county name,
-               state, and COVID-19 statistic based on the radio
-               buttons and checkbox. This map is created using the 
-               `tmap` package'))),
-                        
-                        tabPanel('Table',
-                                 helpText(
-                                     h5('This table shows the population as of the 2020 
-                       census, existence of public health department 
-                       Facebook and Twitter accounts, and COVID-19 rates for
-                       each county in the United States. Like the map on the
-                       "Map" tab, this table reacts to the radio buttons and
-                       checkbox on the sidebar. Switching between "Cases" 
-                       and "Deaths" or checking or un-checking the "Adjust
-                       for Population?" box will alter the information 
-                       displayed in the COVID-19 statistic column.'),
-                                     
-                                     h5("The table is also searchable: entering text in 
-                       the box in the top-right corner will bring up entries
-                       with those characters. Clicking the arrows next to 
-                       each column name once will sort the table by 
-                       ascending order of that column's values; clicking it
-                       a second time will sort the table by descending order
-                       of column values. The number of items displayed can 
-                       be changed using the widget in the top-left corner, 
-                       and it is possible to view additional pages of the 
-                       table using the navigation buttons at the bottom."))),
-                        
-                        tabPanel('Scatterplot',
-                                 helpText(
-                                     paste0("This tab shows a line plot of changes in 
-                       COVID-19 incidence for a selected metric and interval.
-                       You can use the 'State' drop-down menu to choose a 
-                       state, and then select up to five counties from the 
-                       'County' drop-down menu. Each county will be added to
-                       the line plot as a colored line, and the legend on 
-                       the right side of the plot will update as counties 
-                       are added and removed. The plot in this tab is 
-                       generated using the `ggplot2`
-                       package, from the `tidyverse` collection of packages.")
-                                 )),
-                        
-                        tabPanel('Social Media',
-                                 helpText(
-                                     helpText(
-                                         h5('Use the "State" drop-down selector to choose a 
-                         state to view. The app will then create a map of 
-                         that state, colored in based on whether each county
-                         health department has a Facebook or Twitter account.
-                         Moving your cursor over a county will show the 
-                         county name. Select "Show All" to see a map of the
-                         entire United States.'),
-                                         
-                                         h5('Note: Due to the ongoing data collection 
-                         process, data for some states may be incomplete. 
-                         The app will be updated with more complete data in
-                         the coming weeks. Additionally, many county public
-                         health departments which do not have individual 
-                         social media accounts are part of multi-county or 
-                         regional departments which do have accounts. 
-                         Those counties are listed as having a Facebook or
-                         Twitter profile here. There are also some county 
-                         health department Twitter accounts which are 
-                         inactive or have not tweeted. While those are 
-                         included here, future versions of this app will 
-                         identify those counties, as well as the ones which
-                         are part of multi-county health departments.')
-                                     ))),
-                        
+                                     hr(),
+                                     h3('Display'),
+                                     h5('The "Display" radio buttons allow
+                                        for two types of views. Selecting
+                                        the "Cumulative" option will cause
+                                        the map on the "Maps" tab to display
+                                        cumulative data as of the selected 
+                                        date. Selecting "Total Over Selected
+                                        Date Range" will switch the date
+                                        widget to a date range input, and
+                                        will cause the map on the "Maps"
+                                        tab to show the change between 
+                                        the selected dates.'),
+                                     h5('The "Display" radio buttons also affect
+                                        the line plots on the "Trends" page and the
+                                        "Lineplot" tab of the "Social Media" page. 
+                                        Selecting a date range will cause the plot to 
+                                        update to that specific date range. If the
+                                        "Cumulative" option is selected, the line
+                                        plots will show the full range of data,
+                                        from January 21, 2020 to December 14, 2021.'),
+                                     hr(),
+                                     h3('Geograpahy'),
+                                     h5('The "Geography" widget allows for
+                                        two different types of views. Selecting
+                                        "Counties Only" will cause the maps
+                                        on the "Maps" and "Social Media" tabs
+                                        to show maps of U.S. counties. Selecting
+                                        "Counties and Multi-County Districts" will
+                                        switch the view so that counties which
+                                        are part of multi-county public health
+                                        districts will be replaced by those districts. 
+                                        This widget does not affect any other visualizations
+                                        in the app.'),
+                                     hr(),
+                                     h3('Select a state'),
+                                     h5("The 'Select a state' drop-down menu
+                                        lets users choose which U.S. state to display
+                                        in the visualizations. This widget affects
+                                        every visualization and virtually all of the reactive
+                                        text in this app. Selecting a state will cause the maps
+                                        to display maps of that specific state, filter the 
+                                        table on the 'Master Table' tab of the 'Table' page
+                                        to just show counties in that state, populate the 
+                                        county selector drop down on the trends tab with the
+                                        names of that state's counties, and filter the 
+                                        counties used to calculate the data for the line plot
+                                        in the social media page to just those within the selected
+                                        state."),
+                                     hr(),
+                                     h3('View'),
+                                     h5('The "View" radio buttons let users switch
+                                        between different COVID-19 metrics. "Cases" will
+                                        cause maps and plots to show COVID-19 cases, "Deaths"
+                                        will show deaths, "Fully Vaccinated" will show rates
+                                        of completed vaccination sequences (two doses of either the 
+                                        Pfizer or Moderna vaccines, or one dose of the Johnson and Johnson
+                                        vaccine), and "At Least 1 Vaccine Dose" will show rates of first
+                                        doses administered.'),
+                                     hr(),
+                                     h3('Adjust for population?'),
+                                     h5('When the "Adjust for population?" checkbox is checked, 
+                                        the data for the selected COVID-19 metric (chosen by the
+                                        "View" radio buttons) is divided by the population of 
+                                        that county or multi-county district.'))),
+                                 #data sources ----
+                                 tabPanel(
+                                   'Data Sources',
+                                   h4('The data on COVID-19 cases and deaths
+                                      used in this project was retrieved from the
+                                      New York Times COVID-19 Data GitHub. The
+                                      data on vaccination rates was retrieved
+                                      from the Centers for Disease Control and 
+                                      Prevention Socrata API. The data on 
+                                      county-level social media accounts was
+                                      collected by Alexander Adams, and is
+                                      available at his GitHub. The data on
+                                      race used in the similarity tables was
+                                      retrieved from the 2020 U.S. Census
+                                      through the U.S. Census Bureau. The data on
+                                      county population was also retrieved from the
+                                      2020 U.S. Census through the U.S. Census Bureau.
+                                      The shapefile used to create this app was originally
+                                      retrieved using the `tigris` package in R, 
+                                      and was then modified and reduced in size by
+                                      Alexander Adams. Links to these data sources
+                                      are available on the "Links" tab.')
+                                   
+                                 ),
+                        #explain each tab----
+                        tabPanel('Visualizations',
+                                 h2('This tab contains explanations of
+                                    each of the visualizations available 
+                                    through the pages on the sidebar.'),
+                                 hr(),
+                                 h3('Map'),
+                                 h5('The "Map" tab displays a map of 
+                                    COVID-19 outcomes at the county level.
+                                    The specific view can be customized using
+                                    the Display, date input, Geography,
+                                    state selector, View, and Adjust for 
+                                    Population widgets. Moving your cursor
+                                    over an area on the map will show the
+                                    name of that area, and clicking on it
+                                    will show the value of the selected
+                                    COVID-19 metric, based on the input
+                                    from the sidebar widgets. If the
+                                    map is showing multi-county health
+                                    districts, then clicking on a district
+                                    will show which counties or county-equivalent
+                                    jurisdictions make up that district.'),
+                                 hr(),
+                                 h3('Table'),
+                                 h4('Master Table'),
+                                 h5("The table on the 'Master Table' tab
+                                    shows data for each county, including
+                                    the state, county name, population,
+                                    if that county's health department has a
+                                    Facebook account or Twitter account,
+                                    and the metric selected using the 'View'
+                                    and 'Adjust for population' inputs. If
+                                    a state has been selected, the table will
+                                    only show counties in that state. The table
+                                    does not show multi-county health departments.
+                                    The table is both searchable and sortable,
+                                    and the number of counties displayed on 
+                                    each page can be adjusted using the drop-down
+                                    at the top."),
+                                 h4('Similarity Table'),
+                                 h5("The table on the 'Similarity Table' page is
+                                 only visible if a state has been selected using
+                                 the state selector drop-down. The county selector
+                                    drop-down will populate with the list of counties
+                                    in that particular state, and default to the
+                                    first one alphabetically. The table will
+                                    show which 5 counties are most similar to the 
+                                    selected county. This similarity is calculated 
+                                    using the `k-nearest neighbors` algorithm,
+                                    implemented in the `RANN` package. While
+                                    k-nearest-neighbors usually classifies observations
+                                    based on similarity to other data, this 
+                                    version of the algorithm identifies which
+                                    other points (or in this case, counties) are most
+                                    similar to the selected county. The variables
+                                    used to compute this similarity are population,
+                                    the COVID-19 metric selected on the sidebar,
+                                    and the racial makeup of the county. All variables
+                                    are rescaled to be between zero and one prior to 
+                                    calculation. Checking the 'Within State' checkbox
+                                    will limit the app to finding the most similar counties
+                                    within the selected state (i.e. if the selected county is
+                                    Brevard County, Florida, checking the 'Within State' box
+                                    will cause the table to display the Florida counties most similar
+                                    to Brevard, rather than the counties from across the entire
+                                    United States). Like the master table, the similarity table
+                                    is searchable and sortable."),
+                                 hr(),
+                                 h3('Trend'),
+                                 h5('This tab shows a line plot of the selected COVID-19 metric.
+                                    The plot will only appear if a state has been selected on
+                                    the state selector on the sidebar. The county selector
+                                    will then populate with the names of counties in that state.
+                                    Users can select up to five counties. Data for those counties will
+                                    be plotted on the line graph. Users can delete and add counties to the
+                                    plot at will, and the plot will update after each addition or removal.'),
+                                 h5('Warning: This visualization may take time to load, and will likely be slower
+                                    than other elements of the app.'),
+                                 hr(),
+                                 h3('Social Media'),
+                                 h4('Map'),
+                                 h5('This tab shows a map of the selected state (or the entire
+                                    country, if the "Show All" option is chosen in the state selector).
+                                    If the selected geography is "Counties Only", then the map will show
+                                    health department social media presence for counties in the jurisdiction.
+                                    Moving your cursor over a county will show the county name, and clicking
+                                    on it will show which social media accounts exist for the county health
+                                    department. If the department has a Twitter account, and tweets were able
+                                    to be scraped, the pop-up will also include a link to the most recent 
+                                    tweet from the account. If the selected geography includes multi-county
+                                    health districts, the map will show those districts instead of their
+                                    constituent counties. Clicking on a district will show its name 
+                                    and the counties it encompasses, as well as the social media accounts
+                                    for the health district and a link to the most recent tweet, if available.
+                                    For examples of multi-county public health districts, I recommend selecting
+                                    Idaho, Kentucky, Nebraska, Utah, or Virginia as the state, though there
+                                    are many other states with such districts.'),
+                                 h4('Line Plot'),
+                                 h5('This tab shows an interactive line plot of the selected COVID-19 metric
+                                    for counties in the selected state, grouped by health department social
+                                    media. Each line represents a category (e.g. counties whose health departments have 
+                                    a Facebook page but not a Twitter account, or counties whose health departments
+                                    have neither), and the y-values are the mean of the selected metric for all
+                                    counties in that category in the selected state during the selected date interval.
+                                    The slider at the bottom can be used to view different ranges of the data. Clicking
+                                    on a legend element will hide that line on the plot.')
+                                 ),             
+                        #links tab----
                         tabPanel('Links',
                                  tags$a(href = 'https://github.com/nytimes/covid-19-data',
                                         'New York Times COVID-19 Data GitHub'),
                                  hr(),
+                                 tags$a(href = 'https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh',
+                                        'County-Level Vaccination Data, Centers for Disease Control and Prevention'),
+                                 hr(),
+                                 tags$a(href = 'https://data.census.gov/cedsci/table?q=2020%20redistricting%20data&g=0100000US%240500000&tid=DECENNIALPL2020.P1',
+                                        '2020 County-Level Redistricting Data, U.S. Census Bureau'),
+                                 hr(),
                                  tags$a(href = 'https://github.com/aadams149',
                                         "Alex's GitHub"),
                                  hr(),
-                                 tags$a(href = 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap',
-                                        'Get the font used in this app')))
-                    
-                )
+                                 tags$a(href = 'https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+3:wght@300&display=swap',
+                                        'Get the font used in this app'))))
                 
             )
         )
@@ -547,6 +727,14 @@ ui <-
 
 server <- 
     function(input, output) { 
+      
+
+        # Render Moran's I summary table --------------------------------------
+
+        output$moran_I <-
+          renderTable({
+            moran_I
+          })
         
         # Code for COVID Map Output -------------------------------------------
         
@@ -579,7 +767,7 @@ server <-
                         left_join(population_counties,
                                   by = 'fips') %>%
                         mutate(n =
-                                   n / population * 100) %>%
+                                   n / population) %>%
                     #Some counties have weird, likely erroneous data
                         mutate(n = 
                                  case_when(n >= 1 ~ 1,
@@ -590,7 +778,7 @@ server <-
             })
         
         #Create a summary table showing cumulative change over the selected
-        #interval
+        #interval -----
         summary_data <-
             reactive({
               #Cumulative vs date range
@@ -658,6 +846,7 @@ server <-
                 
             })
         
+        # Data table text -----
         master_table_text <-
           reactive({
           if(input$state_selector == 'Show All'){
@@ -675,6 +864,7 @@ server <-
             master_table_text()
           )
         
+        #COVID map table text ----
         #Filter the summary data if the option selected is anything other than
         #"Show all" (this is only used for the dynamic text which accompanies
         #the map)
@@ -851,12 +1041,13 @@ server <-
                                 popup.vars = c('Jurisdiction: ' = 'place',
                                                'Rate: ' = 'n'),
                                 #Legend title = currently active metric
-                                title = str_to_title(input$metric)) +
+                                title = str_to_title(input$metric),
+                                alpha = 0.4) +
                     #Use filtered shapefile to set bbox (sorry Alaska)
                     tm_view(bbox = st_bbox(shapefile_covid())))
         
         # Interactive Data Table Code -----------------------------------------
-        
+        #Summary table master----
         #Create and render an interactive data table
         output$summary_table <-
             renderDataTable(
@@ -921,12 +1112,12 @@ server <-
                                        Facebook == 0 ~ 'No',
                                        Facebook == 'NA' ~ 'NA'))
                 })
-        
+        #County selector UI----
         output$county_selector_table <- renderUI(
           selectizeInput('county_selector_table',
                          'County',
                          choices = c(sort(county_names_trend()$name))))
-        
+        #Similarity table----
         similarity_table <-
           reactive({
           if(input$instate){
@@ -943,7 +1134,8 @@ server <-
                 name,
                 state_full,
                 place,
-                socmed
+                socmed,
+                `Most Recent Tweet`
               )) %>%
               drop_na() %>%
               mutate(
@@ -973,7 +1165,8 @@ server <-
                 name,
                 state_full,
                 place,
-                socmed
+                socmed,
+                `Most Recent Tweet`
               )) %>%
               drop_na()}
             
@@ -1066,7 +1259,7 @@ server <-
             options = list(scrollX = TRUE),
             similarity_table()
           )
-        # Scatterplot Code ----------------------------------------------------
+        # Lineplot Code ----------------------------------------------------
         
         #Create a reactive data set of county names based on chosen state
         county_names_trend <-
@@ -1086,18 +1279,59 @@ server <-
                            options = list(maxItems = 5)))
         
         #Select just the rows based on the desired counties
-        scatterplot_data <-
-            reactive({
-                covid_adjusted() %>%
+        lineplot_data <-
+          reactive({
+            if (input$date_or_daterange == 'daterange') {
+              if ((!is.na(input$date_range[1]) & (!is.na(input$date_range[2])))) {
+                if (input$state_selector != 'Show All') {
+                  covid %>%
                     left_join(tw_fb_data,
                               by = 'fips') %>%
-                    filter(state_full == input$state_selector &
-                               name %in% input$county_selector)})
-        
-        #Create some reactive text explaining what's in the plot
+                    filter(
+                      state_full == input$state_selector,
+                      metric == input$metric,
+                      date >= input$date_range[1],
+                      date <= input$date_range[2]
+                    )
+                } else{
+                  covid %>%
+                    left_join(tw_fb_data,
+                              by = 'fips') %>%
+                    filter(metric == input$metric,
+                           date >= input$date_range[1],
+                           date <= input$date_range[2])
+                }
+              }
+            }
+            else{
+              if (input$state_selector != 'Show All') {
+                covid %>%
+                  left_join(tw_fb_data,
+                            by = 'fips') %>%
+                  filter(
+                    state_full == input$state_selector,
+                    metric == input$metric,
+                    date <= input$single_date
+                  )
+              } else{
+                covid %>%
+                  left_join(tw_fb_data,
+                            by = 'fips') %>%
+                  filter(metric == input$metric,
+                         date <= input$single_date)
+              }
+            }
+          })
+        trend_plot_data <-
+          reactive({
+            lineplot_data() %>%
+              filter(name %in% input$county_selector)
+          })
+        #Create some reactive text explaining what's in the plot----
         plot_text <-
             reactive({
                 if(input$population_adjust){
+                  if((!is.na(input$date_range[1]) & (!is.na(input$date_range[2])))){
                     paste0('Right now, the line plot below is showing COVID-19 ',
                            str_to_title(input$metric),
                            ', adjusted for population, from ',
@@ -1107,7 +1341,18 @@ server <-
                            ' in the selected counties in ',
                            input$state_selector,
                            ".")}
+                  else{
+                    paste0('Right now, the line plot below is showing COVID-19 ',
+                           str_to_title(input$metric),
+                           ', adjusted for population,
+                           from January 21, 2020 to 
+                           December 14, 2021, 
+                           in the selected counties in ',
+                           input$state_selector,
+                           ".")
+                  }}
                 else{
+                  if((!is.na(input$date_range[1]) & (!is.na(input$date_range[2])))){
                     paste0('Right now, the line plot below is showing COVID-19 ',
                            str_to_title(input$metric),
                            ' from ',
@@ -1116,7 +1361,16 @@ server <-
                            input$date_range[2],
                            ' in the selected counties in ',
                            input$state_selector,
-                           ".")}})
+                           ".")}
+                  else{
+                    paste0('Right now, the line plot below is showing COVID-19 ',
+                           str_to_title(input$metric),
+                           'from January 21, 2020 to 
+                           December 14, 2021, 
+                           in the selected counties in ',
+                           input$state_selector,
+                           ".")
+                  }}})
         
         #Render the text
         output$plot_text <-
@@ -1126,7 +1380,7 @@ server <-
         #Create a line plot based on the counties selected
         output$plot_output <-
             renderPlot({
-                scatterplot_data() %>%
+                trend_plot_data() %>%
                     ggplot() +
                     geom_line(aes(x = date,
                                   y = n,
@@ -1161,10 +1415,60 @@ server <-
                                                'Most Recent Tweet: ' = 'Most Recent Tweet'),
                                 popup.format = list(html.escape = F),
                                 #Set legend title
-                                title = 'Social Media') +
+                                title = 'Social Media',
+                                alpha = 0.4) +
                     #Use shapefile slice to set bounding box
-                    tm_view(bbox = st_bbox(shapefile_covid())))    
+                    tm_view(bbox = st_bbox(shapefile_covid()))) 
         
+        # Social Media Lineplot Data and Plot----------------------------------
+        socmed_lineplot_data <-
+          reactive({
+         
+             if(input$population_adjust){
+               lineplot_df <-
+                 lineplot_data() %>%
+                 mutate(n =
+                          n/population)
+             }else{
+               lineplot_df <-
+                 lineplot_data()
+             }
+            
+            lineplot_df %>%
+              group_by(date,
+                       socmed) %>%
+              summarise(metric =
+                          mean(n, na.rm = TRUE)) %>%
+              ungroup() %>%
+              drop_na()
+              
+          })
+        #social media lineplot----
+        output$socmed_lineplot <-
+          renderPlotly(
+            socmed_lineplot_data() %>% 
+              plot_ly(
+              type = 'scatter',
+              mode = 'lines',
+              x = ~date, 
+              y = ~metric, 
+              color = ~socmed, 
+              legendgroup = ~socmed
+            ) %>%
+              layout(
+                title = 'COVID-19 and Social Media',
+                xaxis = list(
+                  title = 'Date',
+                  rangeslider = list(type = "date",
+                                     label = 'Date')),
+                yaxis = list(
+                  title = paste('Cumulative Avg. ',
+                                str_to_title(input$metric),
+                                ' Rate'
+                                )
+                ))
+            
+          )
         
         # Social Media Map Dynamic Text ---------------------------------------
         
@@ -1176,41 +1480,158 @@ server <-
             reactive({
                 if(input$state_selector == 'Show All'){
                     paste0(nrow(tw_fb_data %>%
-                                    filter(facebookYN == 1)), 
+                                    filter(socmed == 'Both Facebook and Twitter',
+                                           fips < 99000)), 
                            ' of the ',
-                           nrow(tw_fb_data), 
-                           ' county public health departments in the United States
-                 have Facebook accounts. ',
                            nrow(tw_fb_data %>%
-                                    filter(twitterYN == 1)), 
-                           ' of the ',
-                           nrow(tw_fb_data), 
+                                  filter(fips < 99000)), 
                            ' county public health departments in the United States
-                 have Twitter accounts.')
+                 have both Facebook and Twitter accounts. ',
+                           nrow(tw_fb_data %>%
+                                  filter(socmed == 'Facebook but no Twitter',
+                                         fips < 99000)), 
+                           ' of the ',
+                           nrow(tw_fb_data %>%
+                                  filter(fips < 99000)), 
+                           ' county public health departments in the United States
+                 have Facebook accounts only. ',
+                           nrow(tw_fb_data %>%
+                                  filter(socmed == 'Twitter but no Facebook',
+                                         fips < 99000)),
+                          ' of the ',
+                          nrow(tw_fb_data %>%
+                                 filter(fips < 99000)),
+                          ' county public health departments in the United States
+                 have Twitter accounts only. ',
+                          nrow(tw_fb_data %>%
+                                 filter(socmed == 'No Facebook of Twitter',
+                                        fips < 99000)),
+                          ' of the ',
+                          nrow(tw_fb_data %>%
+                                 filter(fips < 99000)),
+                          ' county public health departments in the United States
+                 do not have a Facebook or Twitter account.'
+                          )
                 } else{
-                    paste0(nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_selector,
-                                           facebookYN == 1)),
-                           ' of the ',
-                           nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_selector)), 
-                           ' county public health departments in ', 
-                           input$state_selector,
-                           ' have Facebook accounts. ',
-                           nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_selector,
-                                           twitterYN == 1)),
-                           ' of the ',
-                           nrow(tw_fb_data %>% 
-                                    filter(state_full == input$state_selector)), 
-                           ' county public health departments in ',
-                           input$state_selector,
-                           ' have Twitter accounts.')}})
+                  paste0(nrow(tw_fb_data %>%
+                                filter(socmed == 'Both Facebook and Twitter',
+                                       fips < 99000,
+                                       state_full == input$state_selector)), 
+                         ' of the ',
+                         nrow(tw_fb_data %>%
+                                filter(fips < 99000,
+                                       state_full == input$state_selector)), 
+                         ' county public health departments in the United States
+                 have both Facebook and Twitter accounts. ',
+                         nrow(tw_fb_data %>%
+                                filter(socmed == 'Facebook but no Twitter',
+                                       fips < 99000,
+                                       state_full == input$state_selector)), 
+                         ' of the ',
+                         nrow(tw_fb_data %>%
+                                filter(fips < 99000,
+                                       state_full == input$state_selector)), 
+                         ' county public health departments in the United States
+                 have Facebook accounts only. ',
+                         nrow(tw_fb_data %>%
+                                filter(socmed == 'Twitter but no Facebook',
+                                       fips < 99000,
+                                       state_full == input$state_selector)),
+                         ' of the ',
+                         nrow(tw_fb_data %>%
+                                filter(fips < 99000,
+                                       state_full == input$state_selector)),
+                         ' county public health departments in the United States
+                 have Twitter accounts only. ',
+                         nrow(tw_fb_data %>%
+                                filter(socmed == 'No Facebook of Twitter',
+                                       fips < 99000,
+                                       state_full == input$state_selector)),
+                         ' of the ',
+                         nrow(tw_fb_data %>%
+                                filter(fips < 99000,
+                                       state_full == input$state_selector)),
+                         ' county public health departments in the United States
+                 do not have a Facebook or Twitter account.'
+                  )
+                  }})
         
         #Render the above text
-        output$socialmedia_text <-
+        output$socialmedia_map_text <-
             renderText(
                 socialmedia_text())
+        
+        #Social Media lineplot dynamic text
+        socmed_lineplot_text <-
+          reactive({
+            if(input$state_selector == 'Show All'){
+              if((!is.na(input$date_range[1]) & (!is.na(input$date_range[2])))){
+              paste0(
+                'The plot below shows rates of COVID-19 ',
+                input$metric,
+                " across the United States between ",
+                input$date_range[1],
+                ' and ',
+                input$date_range[2],
+                ". Each line represents a category of 
+                county, based on which social media accounts that county's
+                health department has. The y-axis values are the mean of 
+                the selected metric for all counties in that category across
+                the United States. You can click and drag the slider at the bottom
+                to explore the data. Clicking on one of the items in the legend
+                will hide that line on the plot."
+              )}else{
+                paste0(
+                  'The plot below shows rates of COVID-19 ',
+                  input$metric,
+                  " across the United States between January 21, 2020 and 
+                  December 14, 2021. Each line represents a category of 
+                county, based on which social media accounts that county's
+                health department has. The y-axis values are the mean of 
+                the selected metric for all counties in that category across
+                the United States. You can click and drag the slider at the bottom
+                to explore the data. Clicking on one of the items in the legend
+                will hide that line on the plot."
+                )
+              }
+            }else{
+              if((!is.na(input$date_range[1]) & (!is.na(input$date_range[2])))){
+                paste0(
+                  'The plot below shows rates of COVID-19 ',
+                  input$metric,
+                  " across the United States between ",
+                  input$date_range[1],
+                  ' and ',
+                  input$date_range[2],
+                  ". Each line represents a category of 
+                county, based on which social media accounts that county's
+                health department has. The y-axis values are the mean of 
+                the selected metric for all counties in that category in ",
+                input$state_selector,
+                '. You can click and drag the slider at the bottom
+                to explore the data. Clicking on one of the items in the legend
+                will hide that line on the plot.'
+                )}else{
+                  paste0(
+                    'The plot below shows rates of COVID-19 ',
+                    input$metric,
+                    " across the United States between January 21, 2020 and 
+                  December 14, 2021. Each line represents a category of 
+                county, based on which social media accounts that county's
+                health department has. The y-axis values are the mean of 
+                the selected metric for all counties in that category in ",
+                    input$state_selector,
+                    '. You can click and drag the slider at the bottom
+                to explore the data. Clicking on one of the items in the legend
+                will hide that line on the plot.'
+                  )
+                }
+            }
+          })
+        output$socmed_lineplot_text <-
+          renderText(
+            socmed_lineplot_text()
+          )
         
         
     }
