@@ -73,6 +73,9 @@ tw_fb_data <-
     twitterYN:socmed
   )
 
+#This whole section is bad and I know it's bad and also it's finals
+#week and I'm tired and it works and that's good enough
+
 #Create new data frame
 district_data = data.frame()
 #Loop over district names
@@ -170,23 +173,27 @@ district_data <-
 
 # Make COVID-19 district-level data -----------------------------------
 
+#Read in covid data
 covid <-
   vroom(
     'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
   ) %>%
   filter(date <= '2021-12-14')
 
+#Read in vaccination data
 vax_data <-
   vroom('data/raw/vax_data.csv') %>%
   mutate(date = 
            lubridate::mdy(date))
 
+#Select just county names to include later
 county_names <-
   tw_fb_data %>%
   select(fips, 
          name,
          district)
 
+#Lots of left joins
 covid_all <-
   covid %>%
   left_join(
@@ -201,59 +208,59 @@ covid_all <-
   drop_na(fips,
           name)
 
+#Replace missing w/ 0, since the missingness is in the early dates
+#before there was a lot of spread/vaccinations
 covid_all[c('deaths',
             'Series_Complete_Yes',
             'Administered_Dose1_Recip')][is.na(covid_all[c('deaths',
                                                            'Series_Complete_Yes',
                                                            'Administered_Dose1_Recip')])] <- 0
 
+#Select rows where county is in district
 covid_all1 <-
   covid_all %>%
   drop_na(district)
 
-#Generate aggregated COVID-19 statistics for each multi-county health
-#district
+#Create subset of names for merging later
+district_fips <-
+  district_data %>%
+  select(
+    fips,
+    district,
+    state = state_full
+  )
 
-#No worries about population or proportions, that will be taken care of 
-#in the app
+#I reached a point where my brain was so broken that I forgot about
+#groupby/summarize. Just spent way too long writing the most heinous
+#nested for loops and wondering why it took forever to run and still didn't
+#work right. Got there in the end though
 
-#THIS LOOP TAKES SEVERAL MINUTES TO RUN AND I DON'T KNOW WHY
-#But I ran it, and now I've saved the output as a .csv and no longer 
-#need to run it
-covid_district_data = data.frame()
-for(ii in unique(covid_all1$district)) {
-  df_subset <-
-    covid_all1 %>%
-    filter(district == ii)
-  
-  date_df = data.frame()
-  for (jj in unique(df_subset$date)) {
-    date_subset <-
-      df_subset %>%
-      filter(date == jj)
-    
-    newrow <-
-      data.frame(
-        date = unique(df_subset$date)[1],
-        county = unique(df_subset$district)[1],
-        state = unique(df_subset$state)[1],
-        fips = district_data[district_data$district == unique(df_subset$district)[1], ]$fips,
-        cases = sum(df_subset$cases),
-        deaths = sum(df_subset$deaths),
-        Series_Complete_Yes = sum(df_subset$Series_Complete_Yes),
-        Administered_Dose1_Recip = sum(df_subset$Administered_Dose1_Recip)
-      )
-    
-    date_df <-
-      rbind.data.frame(date_df,
-                       newrow)
-    
-  }
-  covid_district_data <-
-    rbind.data.frame(covid_district_data,
-                     date_df)  
-}
+covid_district_data <-
+  covid_all1 %>%
+  #I want one row for each date-district pair
+  group_by(date,
+           district) %>%
+  #I want sums of metrics. We got population in the previous data set
+  #so we can use it in the app.
+  summarize(
+    cases = sum(cases),
+    deaths = sum(deaths),
+    Series_Complete_Yes = sum(Series_Complete_Yes),
+    Administered_Dose1_Recip = sum(Administered_Dose1_Recip)
+  ) %>%
+  #Merge in name columns
+  left_join(district_fips,
+            by = 'district') %>%
+  #Make the bind_rows in the app easier
+  select(
+    date,
+    county = district,
+    state,
+    fips,
+    cases:Administered_Dose1_Recip
+  )
 
+#Export data as .csv
 # write_csv(
 #   covid_district_data,
 #   'data/raw/covid_district_data.csv'

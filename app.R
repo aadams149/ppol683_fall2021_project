@@ -63,8 +63,18 @@ tw_fb_data <-
             facebookYN == 0 &
                 twitterYN == 1 ~ "Twitter but no Facebook"
         )
-    ) %>%
-  rename('tweet_date' = date)
+    )
+
+tw_fb_data_districts <-
+  vroom('data/raw/mc_district_socmed_data.csv') %>%
+  mutate(fips = 
+           as.character(fips))
+
+tw_fb_data <-
+  tw_fb_data %>%
+  bind_rows(
+    tw_fb_data_districts
+  )
 
 racedata <-
   vroom('data/raw/county_race_data.csv') %>%
@@ -97,27 +107,14 @@ vax_data <-
   vroom('data/raw/vax_data.csv') %>%
   mutate(date = 
            lubridate::mdy(date))
-  #vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
 
-# today <- Sys.Date()
-# 
-# if (length(vax_data[vax_data$date == today,]) >= 3143){
-#   vax_data = vax_data %>%
-#     filter(date == today)
-# }else{
-#   vax_data = vax_data %>%
-#     filter(date == today-1)
-# }
-
-
-# #Drop rows where date is min date, since there might not be an observation
-# #for all 3143 counties
-# vax_data <-
-#   vax_data %>%
-#   select(date,
-#          fips,
-#          series_complete_yes,
-#          administered_dose1_recip)
+#Read in data for multicounty districts
+covid_district_data <-
+  vroom('data/raw/covid_district_data.csv') %>%
+  mutate(
+    fips =
+      as.character(fips)
+  )
 
 #Left join into covid data, treat as metric
 covid <-
@@ -126,6 +123,9 @@ covid <-
     vax_data,
     by = c('fips' = 'fips',
            'date' = 'date')
+  ) %>%
+  bind_rows(
+    covid_district_data
   ) %>%
   select(
     date:deaths,
@@ -141,6 +141,8 @@ covid <-
            case_when(metric == 'Series_Complete_Yes' ~ 'completed vaccinations',
                      metric == 'Administered_Dose1_Recip' ~ 'first doses received',
                      metric %in% c('cases','deaths') ~ metric))
+
+covid$n[is.na(covid$n)] <- 0
 
 # Read in shapefiles:
 
@@ -161,6 +163,10 @@ range01 <- function(x){
 
 #Set tmap mode
 tmap_mode('view')
+
+#Remove large unneeded files
+rm(vax_data)
+rm(covid_district_data)
 
 # user interface ----------------------------------------------------------
 
@@ -195,12 +201,11 @@ ui <-
           ),
           conditionalPanel(
             condition = "input.date_or_daterange == 'daterange'",
-            uiOutput('daterangeUI')
-            # dateRangeInput(
-            #   inputId = 'date_range',
-            #   label = 'Select a range of dates:',
-            #   start = min(covid$date),
-            #   end = max(covid$date))
+             dateRangeInput(
+             inputId = 'date_range',
+               label = 'Select a range of dates:',
+               start = min(covid$date),
+               end = max(covid$date))
           ),
           radioButtons(
             inputId = 'counties_districts',
@@ -516,29 +521,6 @@ ui <-
 
 server <- 
     function(input, output) { 
-        
-        daterangeUI <-
-          reactive({
-            if(input$metric %in% c('completed vaccinations',
-                                   'first doses received')){
-              dateRangeInput(
-                inputId = 'date_range',
-                label = 'Select a range of dates',
-                min = min(vax_data$date),
-                max = max(vax_data$date)
-              )
-            }else{
-              dateRangeInput(
-                inputId = 'date_range',
-                label = 'Select a range of dates',
-                min = min(covid$date),
-                max = max(covid$date))
-            }
-          })
-          
-        output$daterangeUI <-
-          renderUI(daterangeUI())
-        
         
         # Code for COVID Map Output -------------------------------------------
         
