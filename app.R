@@ -23,10 +23,14 @@ options(scipen = 999)
 
 # For this app, I'm using county-level data on cases and deaths.
 
+#I'm limiting the date range to end at Dec 14 2021 so I can incorporate
+#vaccination data. Retrieving it from the web through the API is 
+#painfully slow (see section on reading in vaccine data).
 covid <-
     vroom(
       'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
-    ) 
+    ) %>%
+  filter(date <= '2021-12-14')
 
 # Read in my project data from my project GitHub
 tw_fb_data <-
@@ -84,33 +88,36 @@ population_counties <-
     select(fips, STNAME, population)
 
 #Read in vaccination data from CDC API
-#I'm incorporating vaccine data from the past two months into this app.
-#(I've tested different lengths of time, and this is the most I can get
-#without it taking an absurdly long time to download.)
-
-#61 days * 3143 counties is 191723 rows of data
+#(I wanted to have the app retrieve data from the API, but
+#it takes so long to read in that I just manually downloaded the file
+#and subset to relevant columns, and I've decided to have the app only
+#use data from Jan 2020 to Dec 14 2021 to make things easier.)
+#This data contains all relevant columns for this app.
 vax_data <-
-  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
+  vroom('data/raw/vax_data.csv') %>%
+  mutate(date = 
+           lubridate::mdy(date))
+  #vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
 
-today <- Sys.Date()
+# today <- Sys.Date()
+# 
+# if (length(vax_data[vax_data$date == today,]) >= 3143){
+#   vax_data = vax_data %>%
+#     filter(date == today)
+# }else{
+#   vax_data = vax_data %>%
+#     filter(date == today-1)
+# }
 
-if (length(vax_data[vax_data$date == today,]) >= 3143){
-  vax_data = vax_data %>%
-    filter(date == today)
-}else{
-  vax_data = vax_data %>%
-    filter(date == today-1)
-}
 
-
-#Drop rows where date is min date, since there might not be an observation
-#for all 3143 counties
-vax_data <-
-  vax_data %>%
-  select(date,
-         fips,
-         series_complete_yes,
-         administered_dose1_recip)
+# #Drop rows where date is min date, since there might not be an observation
+# #for all 3143 counties
+# vax_data <-
+#   vax_data %>%
+#   select(date,
+#          fips,
+#          series_complete_yes,
+#          administered_dose1_recip)
 
 #Left join into covid data, treat as metric
 covid <-
@@ -122,28 +129,30 @@ covid <-
   ) %>%
   select(
     date:deaths,
-    series_complete_yes,
-    administered_dose1_recip
+    Series_Complete_Yes,
+    Administered_Dose1_Recip
   ) %>%
   # Pivot and rename the data
-  pivot_longer('cases':'administered_dose1_recip',
+  pivot_longer('cases':'Administered_Dose1_Recip',
                names_to = 'metric',
-               values_to = 'n')
+               values_to = 'n') %>%
+  #Change metric names to make reactive text work better
+  mutate(metric = 
+           case_when(metric == 'Series_Complete_Yes' ~ 'completed vaccinations',
+                     metric == 'Administered_Dose1_Recip' ~ 'first doses received',
+                     metric %in% c('cases','deaths') ~ metric))
 
 # Read in shapefiles:
 
 #Side note: thank you for providing the U.S. county shapefile!
 #I was going to go try and track one down, so thank you for saving me
-#the trouble
+#the trouble. This is the version I modified 
 us_counties <-
-    st_read('data/spatial/counties_with_mc_districts.shp') %>%
+    st_read('data/spatial/counties_with_mc_districts_small.shp') %>%
     #Rename GEOID to fips for clarity
     rename(fips = GEOID) %>%
     #Transform to 4326 so it plays nice w/ tmap
-    st_transform(crs = 4326) %>%
-    #Maybe this left join is unnecessary.
-    left_join(population_counties,
-              by = 'fips')
+    st_transform(crs = 4326)
 
 #Define rescaling function
 range01 <- function(x){
@@ -193,6 +202,14 @@ ui <-
             #   start = min(covid$date),
             #   end = max(covid$date))
           ),
+          radioButtons(
+            inputId = 'counties_districts',
+            label = 'Geography',
+            choiceNames = c('Counties Only',
+                            'Counties and Multi-County Districts'),
+            choiceValues = c('counties',
+                             'both')
+          ),
             
             selectInput(
               inputId = 'state_selector',
@@ -209,8 +226,8 @@ ui <-
                                 'At Least 1 Vaccine Dose'),
                 choiceValues = c('cases',
                                  'deaths',
-                                 'series_complete_yes',
-                                 'administered_dose1_recip')),
+                                 'completed vaccinations',
+                                 'first doses received')),
             
             checkboxInput(
                 inputId = 'population_adjust',
@@ -503,7 +520,7 @@ server <-
         daterangeUI <-
           reactive({
             if(input$metric %in% c('completed vaccinations',
-                                   'first vaccine doses administered')){
+                                   'first doses received')){
               dateRangeInput(
                 inputId = 'date_range',
                 label = 'Select a range of dates',
@@ -564,6 +581,7 @@ server <-
         #interval
         summary_data <-
             reactive({
+              #Cumulative vs date range
               if(input$date_or_daterange == 'daterange'){
                 covid_adjusted <-
                   covid_adjusted() %>%
@@ -573,6 +591,7 @@ server <-
                 covid_adjusted <-
                   covid_adjusted()
               }
+              
                 covid_adjusted %>%
                     #Left join with social media data
                     left_join(tw_fb_data,
@@ -591,10 +610,6 @@ server <-
                     left_join(population_counties,
                               by = c('fips' = 'fips',
                                      'state_full' = 'STNAME')) %>%
-                    left_join(vax_data,
-                              by = 'fips') %>%
-                    rename('Fully Vaccinated' = series_complete_yes,
-                           'First Dose' = administered_dose1_recip) %>%
                     #Remove cases where data is recorded for units other than county
                     filter(!is.na(fips)) %>%
                 left_join(
@@ -661,12 +676,27 @@ server <-
         #Filter the shapefile based on the selected state
         shapefile_covid <-
             reactive({
-                if(input$state_selector == 'Show All'){
-                    us_counties
-                }else{
-                    us_counties %>%
-                        filter(STNAME == input$state_selector)
-                }
+              if(input$state_selector == 'Show All') {
+                us_counties1 <-
+                  us_counties
+              } else{
+                us_counties1 <-
+                  us_counties %>%
+                  filter(STNAME == input$state_selector)
+              }
+              if (input$counties_districts == 'counties') {
+                us_counties2 <-
+                  us_counties1 %>%
+                  filter(is_dstr != 1)
+              }
+              if (input$counties_districts == 'both') {
+                us_counties2 <-
+                  us_counties1 %>%
+                  filter(in_dstr != 1)
+                
+              }
+              
+              us_counties2
             })
         
         
@@ -1013,8 +1043,6 @@ server <-
                 `Social Media` = socmed,
                 !!str_to_title(input$metric) := n,
                 Population = population,
-                `Fully Vaccinated`,
-                `First Dose`,
                 `% Hispanic` = hispanic_prop,
                 `% White` = white_prop,
                 `% Black` = black_prop,

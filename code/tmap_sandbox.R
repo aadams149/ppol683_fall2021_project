@@ -284,3 +284,44 @@ us_counties %>%
               #Legend title = currently active metric
               title = 'Cases',
               alpha = 0.3) 
+
+
+
+# Address invalid geometries ------------------------------------------
+
+#For some reason using rmapshaper on my edited shapefile produced 
+#an invalid polygon for Hitchcock County, Nebraska. The code below was used
+#to assess the issue and fix it.
+
+# us_counties <-
+#   st_read('data/spatial/counties_with_mc_districts_small.shp')
+# 
+# test <-
+#   st_is_valid(us_counties, reason = TRUE)
+# 
+# test = data.frame(test)
+# 
+# test = cbind.data.frame(us_counties %>%
+#                           select(GEOID,
+#                                  name_1,
+#                                  distrct,
+#                                  in_dstr,
+#                                  is_dstr),
+#                         test)
+# 
+# hitchcock <- 
+#   us_counties %>%
+#   filter(GEOID == 31087)
+# 
+# hitchcock <-
+#   st_make_valid(hitchcock)
+# 
+# us_counties[us_counties$GEOID == 31087,] <- hitchcock
+#
+# st_write(
+#      us_counties,
+#      'data/spatial',
+#      'counties_with_mc_districts_small',
+#      driver = "ESRI Shapefile",
+#      append = FALSE
+#    )
