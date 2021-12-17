@@ -165,3 +165,96 @@ district_data <-
 
 # write_csv(tw_fb_data,
 #           'data/raw/counties_with_tweets.csv')
+
+
+
+# Make COVID-19 district-level data -----------------------------------
+
+covid <-
+  vroom(
+    'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
+  ) %>%
+  filter(date <= '2021-12-14')
+
+vax_data <-
+  vroom('data/raw/vax_data.csv') %>%
+  mutate(date = 
+           lubridate::mdy(date))
+
+county_names <-
+  tw_fb_data %>%
+  select(fips, 
+         name,
+         district)
+
+covid_all <-
+  covid %>%
+  left_join(
+    vax_data,
+    by = c('fips',
+           'date')
+  ) %>%
+  left_join(
+    county_names,
+    by = 'fips'
+  ) %>%
+  drop_na(fips,
+          name)
+
+covid_all[c('deaths',
+            'Series_Complete_Yes',
+            'Administered_Dose1_Recip')][is.na(covid_all[c('deaths',
+                                                           'Series_Complete_Yes',
+                                                           'Administered_Dose1_Recip')])] <- 0
+
+covid_all1 <-
+  covid_all %>%
+  drop_na(district)
+
+#Generate aggregated COVID-19 statistics for each multi-county health
+#district
+
+#No worries about population or proportions, that will be taken care of 
+#in the app
+
+#THIS LOOP TAKES SEVERAL MINUTES TO RUN AND I DON'T KNOW WHY
+#But I ran it, and now I've saved the output as a .csv and no longer 
+#need to run it
+covid_district_data = data.frame()
+for(ii in unique(covid_all1$district)) {
+  df_subset <-
+    covid_all1 %>%
+    filter(district == ii)
+  
+  date_df = data.frame()
+  for (jj in unique(df_subset$date)) {
+    date_subset <-
+      df_subset %>%
+      filter(date == jj)
+    
+    newrow <-
+      data.frame(
+        date = unique(df_subset$date)[1],
+        county = unique(df_subset$district)[1],
+        state = unique(df_subset$state)[1],
+        fips = district_data[district_data$district == unique(df_subset$district)[1], ]$fips,
+        cases = sum(df_subset$cases),
+        deaths = sum(df_subset$deaths),
+        Series_Complete_Yes = sum(df_subset$Series_Complete_Yes),
+        Administered_Dose1_Recip = sum(df_subset$Administered_Dose1_Recip)
+      )
+    
+    date_df <-
+      rbind.data.frame(date_df,
+                       newrow)
+    
+  }
+  covid_district_data <-
+    rbind.data.frame(covid_district_data,
+                     date_df)  
+}
+
+# write_csv(
+#   covid_district_data,
+#   'data/raw/covid_district_data.csv'
+# )
