@@ -74,7 +74,18 @@ tw_fb_data <-
   tw_fb_data %>%
   bind_rows(
     tw_fb_data_districts
-  )
+  ) %>%
+  mutate(`Most Recent Tweet` =
+           case_when(!is.na(tweet) ~ paste0("<a href = ",
+                                            link,
+                                            "/>",
+                                            name,
+                                            " (",
+                                            tweet_date,
+                                            ")",
+                                            "</a>"),
+                     is.na(tweet) ~ 'No Available Tweets'))
+
 
 racedata <-
   vroom('data/raw/county_race_data.csv') %>%
@@ -95,8 +106,23 @@ population_counties <-
     rename('population' = POPESTIMATE2020) %>%
     #Create a fips column for easy merging
     mutate('fips' = paste0(STATE,COUNTY)) %>%
-    select(fips, STNAME, population)
+    select(fips, 
+           STNAME,
+           population)
 
+district_pops <-
+  tw_fb_data_districts %>%
+  select(
+    fips,
+    STNAME = state_full,
+    population
+  )
+
+population_counties <-
+  bind_rows(
+    population_counties,
+    district_pops
+  )
 #Read in vaccination data from CDC API
 #(I wanted to have the app retrieve data from the API, but
 #it takes so long to read in that I just manually downloaded the file
@@ -553,7 +579,11 @@ server <-
                         left_join(population_counties,
                                   by = 'fips') %>%
                         mutate(n =
-                                   n / population * 100)
+                                   n / population * 100) %>%
+                    #Some counties have weird, likely erroneous data
+                        mutate(n = 
+                                 case_when(n >= 1 ~ 1,
+                                           n < 1 ~ n))
                 } else {
                     covid_filtered()
                 }
@@ -586,7 +616,8 @@ server <-
                            Twitter = twitterYN,
                            Facebook = facebookYN,
                            socmed,
-                           n = n
+                           n = n,
+                           `Most Recent Tweet`
                     ) %>%
                     #Add in population data
                     left_join(population_counties,
@@ -816,7 +847,9 @@ server <-
                     #Fill with the COVID-19 indicator
                     tm_polygons(col = 'n',
                                 #Tooltip = county name and state abbreviation
-                                id = 'place',
+                                id = 'name',
+                                popup.vars = c('Jurisdiction: ' = 'place',
+                                               'Rate: ' = 'n'),
                                 #Legend title = currently active metric
                                 title = str_to_title(input$metric)) +
                     #Use filtered shapefile to set bbox (sorry Alaska)
@@ -918,10 +951,6 @@ server <-
                   range01(population),
                  n = 
                    range01(n),
-                `Fully Vaccinated` = 
-                  range01(`Fully Vaccinated`),
-                `First Dose` = 
-                  range01(`First Dose`),
                 hispanic_prop = 
                   range01(hispanic_prop),
                 white_prop = 
@@ -1113,37 +1142,28 @@ server <-
         
         # Social Media Map Data Processing ------------------------------------
         
-        #Select a shapefile based on the input of the state selector on the
-        #social media tab
-        shapefile_socmed <-
-            reactive({
-                if(input$state_selector == 'Show All'){
-                    us_counties
-                }else{
-                    us_counties %>%
-                        filter(STNAME == input$state_selector)
-                }
-            })
-        
-        
         # Social Media Map Output ---------------------------------------------
         
         #Create and render an interactive map of the selected state
         output$socialmedia_map <-
             renderTmap(
-                shapefile_socmed() %>%
-                    left_join(summary_data(),
+                shapefile_covid() %>%
+                    left_join(tw_fb_data,
                               by = 'fips') %>%
                     tm_shape() +
                     #Polygon fill based on which social media the county public
                     #health department has
                     tm_polygons(col = 'socmed',
                                 #Tooltip = county name and state abbreviation
-                                id = 'place',
+                                id = 'name',
+                                popup.vars = c('Jurisdiction: ' = 'place',
+                                               'Social Media: ' = 'socmed',
+                                               'Most Recent Tweet: ' = 'Most Recent Tweet'),
+                                popup.format = list(html.escape = F),
                                 #Set legend title
                                 title = 'Social Media') +
                     #Use shapefile slice to set bounding box
-                    tm_view(bbox = st_bbox(shapefile_socmed())))    
+                    tm_view(bbox = st_bbox(shapefile_covid())))    
         
         
         # Social Media Map Dynamic Text ---------------------------------------
