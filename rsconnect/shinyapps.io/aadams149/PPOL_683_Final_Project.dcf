@@ -5,10 +5,10 @@ account: aadams149
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5343682
-bundleId: 5386415
+bundleId: 5386519
 url: https://aadams149.shinyapps.io/PPOL_683_Final_Project/
-when: 1639779310.64893
-lastSyncTime: 1639779310.64893
+when: 1639781571.51996
+lastSyncTime: 1639781571.51996
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .ipynb_checkpoints/twitter_doublecheck-checkpoint.ipynb|Adams_FinalProject_Data.zip|Adams_Project_Data_Explained.R|code|presentation_files
+ignoredFiles: .ipynb_checkpoints/twitter_doublecheck-checkpoint.ipynb|Adams_FinalProject_Data.zip|Adams_Project_Data_Explained.R|archive|code|presentation_files

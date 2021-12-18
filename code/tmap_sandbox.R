@@ -1,3 +1,8 @@
+#I used this script to test out some stuff with Tmap
+
+
+# Read in data --------------------------------------------------------
+
 covid <-
   vroom(
     'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv'
@@ -34,8 +39,7 @@ tw_fb_data <-
       facebookYN == 0 &
         twitterYN == 1 ~ "Twitter but no Facebook"
     )
-  ) %>%
-  rename('tweet_date' = date)
+  )
 
 racedata <-
   vroom('data/raw/county_race_data.csv') %>%
@@ -58,24 +62,12 @@ population_counties <-
   mutate('fips' = paste0(STATE,COUNTY)) %>%
   select(fips, STNAME, population)
 
-#Read in vaccination data from CDC API
-#I'm incorporating vaccine data from the past two months into this app.
-#(I've tested different lengths of time, and this is the most I can get
-#without it taking an absurdly long time to download.)
+#Read in vaccination data
 
-#61 days * 3143 counties is 191723 rows of data
 vax_data <-
-  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$limit=7000')
-
-today <- Sys.Date()
-
-if (length(vax_data[vax_data$date == today,]) >= 3143){
-  vax_data = vax_data %>%
-    filter(date == today)
-}else{
-  vax_data = vax_data %>%
-    filter(date == today-1)
-}
+  vroom('data/raw/vax_data.csv') %>%
+  mutate(date = 
+           lubridate::mdy(date))
 
 
 #Drop rows where date is min date, since there might not be an observation
@@ -106,10 +98,6 @@ covid <-
                values_to = 'n')
 
 # Read in shapefiles:
-
-#Side note: thank you for providing the U.S. county shapefile!
-#I was going to go try and track one down, so thank you for saving me
-#the trouble
 us_counties <-
   st_read('data/spatial/counties_with_mc_districts.shp') %>%
   #Rename GEOID to fips for clarity
@@ -202,6 +190,13 @@ summary_data <-
             Total_Other,
             Total_Multiracial))
 
+
+# District level data -------------------------------------------------
+
+
+#Generate data for each multi county district
+#Don't bother running, I didn't end up using this in my
+#app
 district_df_full = data.frame()
 district_fips = us_counties %>%
   filter(is_dstr == 1) %>%
@@ -258,6 +253,8 @@ for (ii in unique(summary_data$district)) {
 colnames(district_df_full) <-
   colnames(summary_data)
 
+
+#Tmap testing----
 summary_data = rbind.data.frame(summary_data, district_df_full)
 
 summary_data_WV = summary_data %>%

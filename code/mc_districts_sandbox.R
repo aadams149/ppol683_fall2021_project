@@ -1,11 +1,14 @@
 #This script generates a dataframe of social media data for 
 #multicounty health districts which can be connected to the main, county-level
-#data set using rbind
+#data set using bind_rows
 
 #Load libraries
 library(sf)
 library(tidyverse)
 library(vroom)
+
+# Read in data --------------------------------------------------------
+
 
 #Some of the necessary info is contained in the shapefile
 us_counties <-
@@ -46,8 +49,7 @@ tw_fb_data <-
       facebookYN == 0 &
         twitterYN == 1 ~ "Twitter but no Facebook"
     )
-  ) %>%
-  rename('tweet_date' = date)
+  ) 
 
 #Read in pop
 population_counties <-
@@ -72,6 +74,9 @@ tw_fb_data <-
     population,
     twitterYN:socmed
   )
+
+
+# Create district-level social media data -----------------------------
 
 #This whole section is bad and I know it's bad and also it's finals
 #week and I'm tired and it works and that's good enough
@@ -161,6 +166,9 @@ district_data <-
            round(twitterYN),
          facebookYN = 
            round(facebookYN))
+
+#I didn't end up using many of these columns but I'm glad to have them
+#for future use
 
 #Export as csv
 #write_csv(district_data,

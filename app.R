@@ -33,6 +33,50 @@ covid <-
     ) %>%
   filter(date <= '2021-12-14')
 
+vax_data <-
+  vroom('data/raw/vax_data.csv') %>%
+  mutate(date = 
+           lubridate::mdy(date))
+
+#Read in data for multicounty districts
+covid_district_data <-
+  vroom('data/raw/covid_district_data.csv') %>%
+  mutate(
+    fips =
+      as.character(fips)
+  )
+
+#Left join into covid data, treat as metric
+covid <-
+  covid %>%
+  left_join(
+    vax_data,
+    by = c('fips' = 'fips',
+           'date' = 'date')
+  ) %>%
+  bind_rows(
+    covid_district_data
+  ) %>%
+  select(
+    date:deaths,
+    Series_Complete_Yes,
+    Administered_Dose1_Recip
+  ) %>%
+  # Pivot and rename the data
+  pivot_longer('cases':'Administered_Dose1_Recip',
+               names_to = 'metric',
+               values_to = 'n') %>%
+  #Change metric names to make reactive text work better
+  mutate(metric = 
+           case_when(metric == 'Series_Complete_Yes' ~ 'completed vaccinations',
+                     metric == 'Administered_Dose1_Recip' ~ 'first doses received',
+                     metric %in% c('cases','deaths') ~ metric))
+
+covid$n[is.na(covid$n)] <- 0
+
+rm(vax_data)
+rm(covid_district_data)
+
 # Read in my project data from my project GitHub
 tw_fb_data <-
     vroom(
@@ -130,46 +174,6 @@ population_counties <-
 #and subset to relevant columns, and I've decided to have the app only
 #use data from Jan 2020 to Dec 14 2021 to make things easier.)
 #This data contains all relevant columns for this app.
-vax_data <-
-  vroom('data/raw/vax_data.csv') %>%
-  mutate(date = 
-           lubridate::mdy(date))
-
-#Read in data for multicounty districts
-covid_district_data <-
-  vroom('data/raw/covid_district_data.csv') %>%
-  mutate(
-    fips =
-      as.character(fips)
-  )
-
-#Left join into covid data, treat as metric
-covid <-
-  covid %>%
-  left_join(
-    vax_data,
-    by = c('fips' = 'fips',
-           'date' = 'date')
-  ) %>%
-  bind_rows(
-    covid_district_data
-  ) %>%
-  select(
-    date:deaths,
-    Series_Complete_Yes,
-    Administered_Dose1_Recip
-  ) %>%
-  # Pivot and rename the data
-  pivot_longer('cases':'Administered_Dose1_Recip',
-               names_to = 'metric',
-               values_to = 'n') %>%
-  #Change metric names to make reactive text work better
-  mutate(metric = 
-           case_when(metric == 'Series_Complete_Yes' ~ 'completed vaccinations',
-                     metric == 'Administered_Dose1_Recip' ~ 'first doses received',
-                     metric %in% c('cases','deaths') ~ metric))
-
-covid$n[is.na(covid$n)] <- 0
 
 # Read in shapefiles:
 
@@ -196,10 +200,6 @@ moran_I <-
 
 #Set tmap mode
 tmap_mode('view')
-
-#Remove large unneeded files
-rm(vax_data)
-rm(covid_district_data)
 
 # user interface ----------------------------------------------------------
 
@@ -245,7 +245,7 @@ ui <-
           ),
           radioButtons(
             inputId = 'counties_districts',
-            label = 'Geography',
+            label = 'Geography:',
             choiceNames = c('Counties Only',
                             'Counties and Multi-County Districts'),
             choiceValues = c('counties',

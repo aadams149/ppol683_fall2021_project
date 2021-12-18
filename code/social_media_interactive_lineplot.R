@@ -78,6 +78,8 @@ covid_all <-
   drop_na(fips)
 
 #fill na with 0
+#Why? Bc NA values are at start of data
+#(Just means COVID hadn't gotten there yet)
 covid_all[c('deaths',
             'Series_Complete_Yes',
             'Administered_Dose1_Recip')][is.na(covid_all[c('deaths',
@@ -123,6 +125,7 @@ covid_mean_data <-
     date,
     socmed
   ) %>%
+  #Find mean of each category
   summarise(
     case_rate = 
       mean(cases_adjusted, na.rm = TRUE),
@@ -133,6 +136,7 @@ covid_mean_data <-
     dose1_rate = 
       mean(first_dose_adjusted, na.rm = TRUE)
   ) %>%
+  #Ungroup bc plotly doesn't like grouped df
   ungroup() %>%
   drop_na()
 
@@ -156,5 +160,5 @@ lineplot <- lineplot %>% plot_ly(
       title = 'Case Rate'
     ))
 
-  
+#Display  
 lineplot

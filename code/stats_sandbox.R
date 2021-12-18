@@ -1,6 +1,21 @@
-library(tidyverse)
+#This script is just a large, unorganized sandbox for testing
+#different snippets of code. I ran a lot of linear models here
+#and made my correlation map, but overall this script isn't 
+#really an example of data processing
 
-counties = readr::read_csv('data/raw/counties_with_tweets.csv') %>%
+
+# Read in libraries ---------------------------------------------------
+
+library(sjPlot)
+library(tidyverse)
+library(vroom)
+
+
+# Read in data --------------------------------------------------------
+
+#Read in counties
+counties <-
+  vroom('data/raw/counties_with_tweets.csv') %>%
   #Change the fips column to character so it plays nice with the other data sets
   mutate(fips =
            as.character(fips)) %>%
@@ -11,40 +26,41 @@ counties = readr::read_csv('data/raw/counties_with_tweets.csv') %>%
               5,
               pad = '0'))
 
-tweets = readr::read_csv('data/most_recent_tweets/most_recent_tweets_2021_11_30.csv')
+#Read in raw tweets
+tweets = readr::read_csv(
+  'data/raw/most_recent_tweets/most_recent_tweets_2021-12-10.csv')
 
-newdf = data.frame()
-for (ii in unique(tweets$username)){
+#Select most recent tweets from each account
+newdf <-
+  data.frame()
+for (ii in unique(tweets$username)) {
   print(ii)
-  rows = tweets %>%
-    filter(username == ii,
-           date == max(date),
-           time == max(time))
-  newdf = rbind.data.frame(newdf, rows)
+  rows =
+    tweets %>%
+    filter(username == ii) %>%
+    filter(date == max(date)) %>%
+    filter(time == max(time))
+  newdf =
+    rbind.data.frame(newdf, rows)
 }
 
-racedata = readr::read_csv('data/raw/county_race_data.csv')
+#Read in race data
+racedata <-
+  vroom('data/raw/county_race_data.csv') %>%
+  select(id,
+         Total_Hispanic:Total_Multiracial) %>%
+  mutate(fips = 
+           str_sub(id,-5,-1)) %>%
+  select(!id)
 
-vax_data1 <-
-  vroom('https://data.cdc.gov/resource/8xkx-amqh.csv?$')
-
-today <- Sys.Date()
-
-if (length(vax_data[vax_data$date == today,]) >= 3143){
-  vax_data = vax_data %>%
-    filter(date == today)
-}else{
-  vax_data = vax_data %>%
-    filter(date == today-1)
-}
-
+#Read in vaccine data
 vax_data <-
-  vax_data %>%
-  select(fips,
-         series_complete_pop_pct,
-         administered_dose1_pop_pct
-  )
+  vroom('data/raw/vax_data.csv') %>%
+  mutate(date = 
+           lubridate::mdy(date)) %>%
+  filter(date == '2021-12-14')
 
+#Distinct rows
 newdf1 <-
   newdf %>%
   distinct(across(c(date,
@@ -55,40 +71,27 @@ newdf1 <-
                     tweet)),
            .keep_all = TRUE)
 
-newdf1 = 
-  newdf1 %>%
-  select(user_id,
-         username,
-         tweet,
-         date,
-         time,
-         link)
+#Make twitter handles lowercase
+counties$twitter <-
+  tolower(counties$twitter)
 
-counties$twitter = tolower(counties$twitter)
-
+#Select relevant counties
 counties <-
   counties %>%
   select(fips:district)
 
-counties = 
+#Merge in most recent tweets
+counties <- 
   counties %>%
   left_join(newdf1,
-            by = c('twitter' = 'username'))
-
-counties =
-  counties %>%
+            by = c('twitter' = 'username')) %>%
   distinct(
-    across(fips
-    ),
-    .keep_all = TRUE
-  )
-
-write_csv(counties, 'data/raw/counties_with_tweets.csv')
-
-counties = counties %>%
+    across(fips),
+    .keep_all = TRUE) %>%
   rename('name' = name.x,
          'twitter_display_name' = name.y)
 
+#Read in population data
 population = readr::read_csv('data/raw/co-est2020.csv') %>%
   #Exclude state total populations
   filter(COUNTY != '000') %>%
@@ -98,72 +101,49 @@ population = readr::read_csv('data/raw/co-est2020.csv') %>%
   mutate('fips' = paste0(STATE,COUNTY)) %>%
   select(fips, STNAME, population)
 
+#Read in COVID data
 covid <-
   readr::read_csv(
     url('https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv')
   ) %>%
-  # Pivot and rename the data
-  pivot_longer('cases':'deaths',
-               names_to = 'metric',
-               values_to = 'n')
-
-covid_today <-
-  covid %>%
-  filter(date == max(date)) %>%
-  pivot_wider(
-              names_from = 'metric',
-              values_from = 'n')
-
-rm(covid)
-
-df = 
-  # counties %>%
-  # left_join(
-  #   population,
-  #   by = 'fips'
-  # ) %>%
-  df %>%
+  #Use cumulative metrics for modeling,
+  #so only need most recent date
+  filter(date == '2021-12-14') %>%
+  mutate(
+    fips = 
+      as.character(fips)
+  )
+  
+counties <-
+  counties %>%
   left_join(
-    covid_today,
+    covid,
     by = 'fips'
-  )
-
-df$twitter_active_COVID =
-  case_when(
-            df$date.x >= '03-11-2020' ~ 1,
-            df$date.x < '03-11-2020' ~ 0,
-            !is.na(df$twitter) & is.na(df$date.x) ~ 0)
-
-df$twitter_active_last60 = 
-  case_when(
-    df$date.x >= lubridate::mdy('10-01-2021') ~ 1,
-    df$date.x < lubridate::mdy('10-01-2021') ~ 0,
-    !is.na(df$twitter) & is.na(df$date.x) ~ 0
-  )
-
-df$twitter_active_COVID[df$twitter_active_COVID == 'Outdated-Add District'] <- NA
-
-df$cases_normalized = df$cases/df$population
-df$cases_per_100k = df$cases/(df$population/100000)
-df$deaths_normalized = df$deaths/df$population
-df$deaths_per_100k = df$deaths/(df$population/100000)
-
-df$twitter_active_COVID_all = df$twitter_active_COVID
-df$twitter_active_COVID_all[is.na(df$twitter_active_COVID_all)] <- 0
-
-df$twitter_active_last60_all = df$twitter_active_last60
-df$twitter_active_last60_all[is.na(df$twitter_active_last60_all)] <- 0
-
+  ) %>%
+  left_join(
+    vax_data,
+    by = 'fips'
+  ) %>%
+  mutate(
+    twitter_active_COVID = 
+      ifelse(twitter_active_COVID == 'Yes',1,0),
+    twitter_active_last60 = 
+      ifelse(twitter_active_last60 == 'Yes',1,0),
+    cases_normalized = cases/population,
+    deaths_normalized = deaths/population,
+    vax_normalized = Series_Complete_Yes/population,
+    dose1_normalized = Administered_Dose1_Recip/population)
+ 
 
 # Is twitter associated with population -------------------------------
 
 
 twittermodel = lm(
   population ~ twitterYN,
-  data = df
+  data = counties
 )
 
-summary(twittermodel)
+tab_model(twittermodel)
 
 
 
@@ -172,39 +152,42 @@ summary(twittermodel)
 
 facebookmodel = lm(
   population ~ facebookYN,
-  data = df
+  data = counties
 )
 
-summary(facebookmodel)
+tab_model(facebookmodel)
 
 
 
 # Is twitter activity associated w/ population ------------------------
 
+#Did more populous areas have more twitter activity during COVID
 covid_pop_model =
   lm(
     population ~ twitter_active_COVID,
-    data = df
+    data = counties
   )
 
-summary(covid_pop_model)
+tab_model(covid_pop_model)
 
+#Did more populous areas have more twitter activity in the last 2 months
 covid_recent_model = 
   lm(population ~ twitter_active_last60,
-     data = df
+     data = counties
      )
 
-summary(covid_recent_model)
+tab_model(covid_recent_model)
 
+#Multivariate model of population----
 multivariate_model_population = 
   lm(
-    population ~ facebookYN+twitter_active_COVID+twitter_active_last60,
-    data = df
+    population ~ facebookYN+
+      twitter_active_COVID+
+      twitter_active_last60,
+    data = counties
   )
 
-summary(multivariate_model_population)
-
-
+tab_model(multivariate_model_population)
 
 # covid outcomes ------------------------------------------------------
 
@@ -215,90 +198,33 @@ covid_model_cases <-
       facebookYN+
       twitter_active_COVID+
       twitter_active_last60,
-    data = df
+    data = counties
   )
 
-summary(covid_model_cases)
+tab_model(covid_model_cases)
+
+#Results: health department twitter account being active 
+#in last 60 days is associated with 0.8% lower COVID case rates
 
 #Effect of social media on deaths normalized by population
 covid_model_deaths <-
   lm(
     deaths_normalized ~ twitterYN+
       facebookYN+
-      factor(twitter_active_COVID)+twitter_active_last60,
-    data = df
-  )
-
-summary(covid_model_deaths)
-
-#Effect of social media on cases (non-normalized)
-covid_model_cases_nn <-
-  lm(
-    cases ~ twitterYN+
-      facebookYN+
       twitter_active_COVID+
-      twitter_active_last60+
-      population,
-    data = df
+      twitter_active_last60,
+    data = counties
   )
-
-summary(covid_model_cases_nn)
-
-#Effect of social media on deaths (non-normalized)
-covid_model_deaths_nn <-
-  lm(
-    deaths ~ twitterYN+
-      facebookYN+
-      twitter_active_COVID+
-      twitter_active_last60+
-      population,
-    data = df
-  )
-
-summary(covid_model_deaths_nn)
-
-library(sjPlot)
-
-tab_model(covid_model_cases)
 
 tab_model(covid_model_deaths)
 
-tab_model(covid_model_cases_nn)
+#Results: no comparable effect for deaths
 
-tab_model(covid_model_deaths_nn)
+# Evaluate effects of race data ---------------------------------------
 
-cases_100k <-
-  lm(
-    cases_per_100k ~ twitterYN+
-      facebookYN+
-      twitter_active_COVID+
-      twitter_active_last60,
-    data = df
-  )
-
-deaths_100k <-
-  lm(
-    deaths_per_100k ~ twitterYN+
-      facebookYN+
-      twitter_active_COVID+
-      twitter_active_last60,
-    data = df
-  )
-
-summary(deaths_100k)
-
-racedata = readr::read_csv('data/raw/county_race_data.csv') %>%
-  select(id:Total_Multiracial) %>%
-  mutate(fips = 
-           str_sub(
-             id,
-             -5,
-             -1
-           )) %>%
-  select(Total_Hispanic:fips)
-
-df <-
-  df %>%
+#Add in race data and calculate proportions
+counties <-
+  counties %>%
   left_join(
     racedata,
     by = 'fips'
@@ -322,12 +248,13 @@ df <-
       Total_Multiracial/population
   )
 
+#Add race to case rates model
 cases_w_race <-
   lm(
     cases_normalized ~ twitterYN +
       facebookYN +
-      twitter_active_COVID_all+
-      twitter_active_last60_all+
+      twitter_active_COVID+
+      twitter_active_last60+
       hispanic_prop +
       white_prop +
       black_prop +
@@ -336,53 +263,72 @@ cases_w_race <-
       nhawaiian_prop+
       other_prop+
       multi_prop,
-    data = df
+    data = counties
   )
 
 tab_model(cases_w_race)
 
+#Results: twitter is barely significant, almost all
+#race data is significant
 
 deaths_w_race <-
   lm(
-    cases_normalized ~ twitterYN +
-      facebookYN, #+
-      #twitter_active_COVID_all+
-      #twitter_active_last60_all+
-      #hispanic_prop +
-      #white_prop +
-      #black_prop +
-      #AmInd_prop +
-      #asian_prop +
-      #nhawaiian_prop+
-      #other_prop+
-      #multi_prop,
-    data = df
+    deaths_normalized ~ twitterYN +
+      facebookYN +
+      twitter_active_COVID+
+      twitter_active_last60+
+      hispanic_prop +
+      white_prop +
+      black_prop +
+      AmInd_prop +
+      asian_prop +
+      nhawaiian_prop+
+      other_prop+
+      multi_prop,
+    data = counties
   )
 
 tab_model(deaths_w_race)
-
-
-
+#effect sizes are all basically zero
+#print summary in console to see more detail
+summary(deaths_w_race)
 
 # Correlation matrix --------------------------------------------------
 
+#Subset variables of interest
 corr_df <-
-  df1 %>%
+  counties %>%
   select(
     twitterYN,
     facebookYN,
     population,
     cases_normalized,
     deaths_normalized,
-    hispanic_prop:twitter_active_last60_all,
-    Series_Complete_Pop_Pct,
-    
+    vax_normalized,
+    dose1_normalized,
+    hispanic_prop:multi_prop,
+    twitter_active_COVID,
+    twitter_active_last60
   )
 
+#Preprocess for correlation plot
 corr = round(cor(corr_df, method = 'pearson', use = 'complete.obs'),1)
 
 melted = reshape2::melt(corr)
 
+get_lower_tri <- function(cormat){
+  cormat[lower.tri(cormat)]<- NA
+  return(cormat)
+}
+
+melted_upper <-
+  get_lower_tri(corr)
+
+melted_upper <-
+  reshape2::melt(melted_upper)
+
+
+#Correlation plot
 ggplot(data = melted_upper,
        aes(x=Var2,
            y=Var1,
@@ -397,8 +343,8 @@ ggplot(data = melted_upper,
   coord_fixed()+
   geom_text(aes(Var2, Var1, label = value), color = "black", size = 4) +
   scale_y_discrete(labels = c(
-    'twitter_active_last60_all' = 'Twitter Active Last 60 Days',
-    'twitter_active_COVID_all' = 'Twitter Active During COVID',
+    'twitter_active_last60' = 'Twitter Active Last 60 Days',
+    'twitter_active_COVID' = 'Twitter Active During COVID',
     'multi_prop' = 'Multiracial Percent',
     'other_prop' = 'Other Race Percent',
     'nhawaiian_prop' = 'Native Hawaiian Percent',
@@ -412,11 +358,12 @@ ggplot(data = melted_upper,
     'population' = 'Population',
     'facebookYN' = 'Facebook',
     'twitterYN' = 'Twitter',
-    'Series_Complete_Pop_Pct' = '% Fully Vaccinated'
+    'vax_normalized' = '% Fully Vaccinated',
+    'dose1_normalized' = '% First Dose'
   ))+
   scale_x_discrete(labels = c(
-    'twitter_active_last60_all' = 'Twitter Active Last 60 Days',
-    'twitter_active_COVID_all' = 'Twitter Active During COVID',
+    'twitter_active_last60' = 'Twitter Active Last 60 Days',
+    'twitter_active_COVID' = 'Twitter Active During COVID',
     'multi_prop' = 'Multiracial Percent',
     'other_prop' = 'Other Race Percent',
     'nhawaiian_prop' = 'Native Hawaiian Percent',
@@ -430,7 +377,8 @@ ggplot(data = melted_upper,
     'population' = 'Population',
     'facebookYN' = 'Facebook',
     'twitterYN' = 'Twitter',
-    'Series_Complete_Pop_Pct' = '% Fully Vaccinated'
+    'vax_normalized' = '% Fully Vaccinated',
+    'dose1_normalized' = '% First Dose'
   ))+
   ggtitle('Pearson Correlation Coefficients for Relevant Variables') +
   theme(
@@ -446,32 +394,24 @@ ggplot(data = melted_upper,
   guides(fill = guide_colorbar(barwidth = 1, barheight = 7,
                                title.position = "top", title.hjust = 0.5))
 
-get_lower_tri <- function(cormat){
-  cormat[upper.tri(cormat)]<- NA
-  return(cormat)
-}
 
-melted_upper <-
-  get_upper_tri(corr)
-
-melted_upper <-
-  reshape2::melt(melted_upper)
 
 
 
 # polished LM models --------------------------------------------------
 
-deaths_twfb_race <-
+#Run some polished models and format nicely for presentation
+cases_twfb_race <-
   lm(
-    deaths_normalized*100 ~ twitterYN+
+    cases_normalized ~ twitterYN+
       facebookYN +
       white_prop +
       black_prop +
       hispanic_prop +
       asian_prop +
-      twitter_active_COVID_all +
-      twitter_active_last60_all,
-    data = df
+      twitter_active_COVID +
+      twitter_active_last60,
+    data = counties
   )
 
 tab_model(cases_twfb_race,
@@ -483,28 +423,55 @@ tab_model(cases_twfb_race,
             'Black Percent',
             'Hispanic Percent',
             'Asian Percent',
-            'Native American Percent',
-            'Pacific Islander Percent',
             'Twitter Active During COVID-19',
             'Twitter Active in Last 60 Days'
           ),
           dv.labels = 'Cases Adjusted For Population')
 
-
-vaxx_rates_model <-
+deaths_twfb_race <-
   lm(
-    Series_Complete_Pop_Pct ~ twitterYN+
+    deaths_normalized ~ twitterYN+
       facebookYN +
       white_prop +
       black_prop +
       hispanic_prop +
       asian_prop +
-      twitter_active_COVID_all +
-      twitter_active_last60_all,
-    data = df
+      twitter_active_COVID +
+      twitter_active_last60,
+    data = counties
   )
 
-tab_model(list(vaxx_18_65_model,
+tab_model(deaths_twfb_race,
+          pred.labels = c(
+            'Intercept',
+            'Twitter',
+            'Facebook',
+            'White Percent',
+            'Black Percent',
+            'Hispanic Percent',
+            'Asian Percent',
+            'Twitter Active During COVID-19',
+            'Twitter Active in Last 60 Days'
+          ),
+          dv.labels = 'Deaths Adjusted For Population')
+
+
+vaxx_rates_model <-
+  lm(
+    vax_normalized ~ twitterYN+
+      facebookYN +
+      white_prop +
+      black_prop +
+      hispanic_prop +
+      asian_prop +
+      twitter_active_COVID +
+      twitter_active_last60,
+    data = counties
+  )
+
+
+tab_model(list(cases_twfb_race,
+               deaths_twfb_race,
                vaxx_rates_model),
           pred.labels = c(
             'Intercept',
@@ -518,13 +485,29 @@ tab_model(list(vaxx_18_65_model,
             'Twitter Active in Last 60 Days'
           ),
           dv.labels = c(
-            '% At Least One Dose',
-            '% Fully Vaccinated'
-          ))
+            'Cases, Pop. Adjusted',
+            'Deaths, Pop. Adjusted',
+            'Vaccinations, Pop. Adjusted'
+            ))
+
+dose1_rates_model <-
+  lm(
+    dose1_normalized ~ twitterYN+
+      facebookYN +
+      white_prop +
+      black_prop +
+      hispanic_prop +
+      asian_prop +
+      twitter_active_COVID +
+      twitter_active_last60,
+    data = counties
+  )
 
 
 tab_model(list(cases_twfb_race,
-               deaths_twfb_race),
+               deaths_twfb_race,
+               vaxx_rates_model,
+               dose1_rates_model),
           pred.labels = c(
             'Intercept',
             'Twitter',
@@ -538,257 +521,7 @@ tab_model(list(cases_twfb_race,
           ),
           dv.labels = c(
             'Cases, Pop. Adjusted',
-            'Deaths, Pop. Adjusted'
-            ))
-
-
-df$vaccination_young = df$Series_Complete_18PlusPop_Pct - df$Series_Complete_65PlusPop_Pct
-
-vaxx_18_65_model <-
-  lm(
-      Administered_Dose1_Pop_Pct ~ twitterYN+
-      facebookYN +
-      white_prop +
-      black_prop +
-      hispanic_prop +
-      asian_prop +
-      twitter_active_COVID_all +
-      twitter_active_last60_all,
-    data = df
-  )
-
-summary(vaxx_18_65_model)
-# vaccination data preprocessing --------------------------------------
-
-
-# vaccination_data <-
-#   readr::read_csv('vaccine_data.csv') %>%
-#   mutate(Date = 
-#            str_replace_all(Date,'/','-')) %>%
-#   mutate(Date = 
-#            as.Date(Date)) %>%
-#   filter(lubridate::year(Date) == 2021) %>%
-#   group_by('FIPS') %>%
-#   filter(Date == max(Date))
-# 
-# newdf = data.frame()
-# for (ii in df$fips){
-#   data = vaccination_data %>%
-#     filter(FIPS == ii)
-#   data = head(data, 1)
-#   newdf = rbind.data.frame(newdf, data)
-#   
-# }
-# 
-# write_csv(newdf, 'data/raw/vaccination_rates.csv')
-# 
-# rm(vaccination_data)
-
-vaccination_rates <-
-  readr::read_csv('data/raw/vaccination_rates.csv')
-
-df = df %>%
-  left_join(
-    vax_data,
-    by = 'fips')
-  
-
-cases_engagement <-
-  lm(cases_normalized ~ twitterYN+
-       twitter_active_COVID_all+
-       twitter_active_last60_all+
-       likes_count+
-       retweets_count+
-       replies_count,
-     data = df1
-       )
-summary(cases_engagement)
-
-deaths_engagement <-
-  lm(deaths_normalized ~ twitterYN+
-       twitter_active_COVID_all+
-       twitter_active_last60_all+
-       likes_count+
-       retweets_count+
-       replies_count,
-     data = df1
-  )
-summary(deaths_engagement)
-
-vaxx_engagement <-
-  lm(Series_Complete_Pop_Pct ~ #twitterYN+
-       #twitter_active_COVID_all+
-       #twitter_active_last60_all+
-       likes_count+
-       retweets_count+
-       replies_count+
-       facebookYN+
-       white_prop +
-       black_prop +
-       hispanic_prop +
-       asian_prop,
-     data = df1
-  )
-summary(vaxx_engagement)
-
-
-vaxx_engagement <-
-  lm(Series_Complete_Pop_Pct ~ twitterYN+
-       twitter_active_COVID_all+
-       twitter_active_last60_all+
-       likes_count+
-       retweets_count+
-       replies_count+
-       facebookYN +
-       white_prop +
-       black_prop +
-       hispanic_prop +
-       asian_prop+
-       in_multicountydistrict,
-     data = df1
-  )
-summary(vaxx_engagement)
-
-racedata = racedata %>%
-  rename(fips = id)
-
-df1 = df1 %>%
-  left_join(
-    racedata,
-    by = 'fips'
-  ) %>%
-  mutate(
-    white_prop = 
-      Total_White/population,
-    black_prop = 
-      Total_Black/population,
-    hispanic_prop = 
-      Total_Hispanic/population,
-    asian_prop = 
-      Total_Asian/population,
-    AmInd_prop = 
-      Total_AmIndian/population,
-    nhawaiian_prop = 
-      Total_NativeHawaiian/population,
-    other_prop = 
-      Total_Other/population,
-    multi_prop = 
-      Total_Multiracial/population
-  )
-
-vaxxadmin_engagement <-
-  lm(Administered_Dose1_Pop_Pct ~ #twitterYN+
-       #twitter_active_COVID_all+
-       #twitter_active_last60_all+
-       likes_count+
-       retweets_count+
-       replies_count+
-       facebookYN+
-       white_prop +
-       black_prop +
-       hispanic_prop +
-       asian_prop+
-       in_multicountydistrict,
-     data = df1
-  )
-summary(vaxxadmin_engagement)
-
-
-df1$in_multicountydistrict = ifelse(!is.na(df1$district),1,0)
-
-
-# maps ----------------------------------------------------------------
-
-library(RANN)
-
-nn_data = df %>%
-  select(fips,
-         name = name.x,
-         state_full,
-         twitterYN,
-         twitter_active_COVID_all,
-         twitter_active_last60_all,
-         facebookYN,
-         population,
-         cases_normalized,
-         deaths_normalized,
-         hispanic_prop:multi_prop,
-         Series_Complete_Pop_Pct,
-         Administered_Dose1_Pop_Pct
-         ) %>%
-  drop_na()
-
-nn_info = nn_data %>% select(fips,name,state_full)
-
-abc = RANN::nn2(data = nn_data %>% select(!c(fips,name,state_full)))
-
-nn_output = as.data.frame(abc$nn.idx)
-nn_output = cbind.data.frame(nn_info, nn_output)
-
-
-# tweet_counts_model --------------------------------------------------
-
-tweet_counts_cases <-
-  lm(cases_normalized ~ total_tweets+
-       tweets_COVID+
-       tweets_last60+
-       white_prop+
-       black_prop+
-       hispanic_prop+
-       asian_prop+
-       AmInd_prop+
-       nhawaiian_prop+
-       other_prop+
-       multi_prop,
-     data = df)
-
-summary(tweet_counts_cases)
-
-tweet_counts_deaths <-
-  lm(deaths_normalized ~ total_tweets+
-       tweets_COVID+
-       tweets_last60+
-       white_prop+
-       black_prop+
-       hispanic_prop+
-       asian_prop+
-       AmInd_prop+
-       nhawaiian_prop+
-       other_prop+
-       multi_prop,
-     data = df)
-
-summary(tweet_counts_deaths)
-
-
-tweet_counts_fullvax <-
-  lm(series_complete_pop_pct ~ total_tweets+
-       tweets_COVID+
-       tweets_last60+
-       white_prop+
-       black_prop+
-       hispanic_prop+
-       asian_prop+
-       AmInd_prop+
-       nhawaiian_prop+
-       other_prop+
-       multi_prop,
-     data = df)
-
-summary(tweet_counts_fullvax)
-
-tweet_counts_vax1 <-
-  lm(administered_dose1_pop_pct*100 ~ total_tweets+
-       tweets_COVID+
-       tweets_last60+
-       white_prop+
-       black_prop+
-       hispanic_prop+
-       asian_prop+
-       AmInd_prop+
-       nhawaiian_prop+
-       other_prop+
-       multi_prop,
-     data = df)
-
-summary(tweet_counts_vax1)
+            'Deaths, Pop. Adjusted',
+            'Vaccinations, Pop. Adjusted',
+            'First Doses, Pop. Adjusted'
+          ))

@@ -1,0 +1,189 @@
+---
+title: "A_Adams_Final_Project_Markdown"
+author: "Alexander Adams"
+date: "12/17/2021"
+output: html_document
+---
+
+This document is going to be relatively general, since the 8 different
+sandbox scripts I'm submitting with this assignment each go into more detail.
+Instead, I'm going to give a brief overview of each sandbox script and data
+source.
+
+## Data Sources
+
+####COVID-19 cases and deaths
+
+I access this data by reading it in from the New York Times COVID-19 Data GitHub. 
+I use the us-counties.csv file, which contains historical data on cases and 
+deaths at the county level, going back to the first reported case in Snohomish
+County, Washington, on January 21, 2020. I subset the data to end on
+December 14, 2021, to facilitate merging with vaccine data. I combine this 
+data with vaccine data (see below). 
+
+####COVID-19 Vaccine data
+
+I downloaded this data as a (very large) .csv from the Centers for Disease 
+Control and Prevention (CDC) COVID-19 Vaccinations by County API. For the 
+purposes of this project, I saved a local copy with only four columns: 
+date, FIPS code, Series_Complete_Yes (number of completed vaccination 
+sequences in that county as of that date), and Administered_Dose1_Recip 
+(number of first doses administered). This data set starts when vaccines 
+first became available to the general public, and ends on December 14, 2021.
+I merge this with the cases and deaths data by date and FIPS code, and then 
+pivot the four metric columns to create one very long data frame.
+
+This data set is available at `data/raw/vax_data.csv`.
+
+####Social Media Data
+
+I gathered this data manually by searching on Facebook and Twitter. For each
+county in the United States, I have recorded if I was able to find a Facebook
+account for that county's health department, if I was able to find a Twitter
+account, the handle of that Twitter account, and (if applicable) the 
+multi-county health district to which that county belongs. 
+
+I also used the Twitter handles to scrape tweets, and was able to generate
+a data frame of all the tweets I scraped. I incorporated the most recent
+tweet for each account in my app, but otherwise did not have time to 
+incorporate much of this data into my project.
+
+I read this data in from my GitHub repository for this project. It is also
+available at `data/raw/counties_with_tweets.csv`.
+
+####County Population
+
+This data was sourced from the U.S. Census Bureau, and is the county-level
+redistricting data intended for use in the 2020 U.S. redistricting cycle.
+
+This data is available at `data/raw/co-est2020.csv`.
+
+
+####County Race Data
+
+This data was also sourced from the U.S. Census Bureau, and contains
+county level counts of different racial groups as of the 2020 U.S. Census.
+I divide each of those counts by county population to generate proportions.
+
+This data is available at `data/raw/county_race_data.csv`.
+
+####Shapefile
+
+The base shapefile I used for this project was a shapefile of U.S. counties
+accessible through the `tigris` package. This shapefile is projected using
+the NAD83 coordinate reference system, which I convert to WGS84 so it
+is compatible with the `tmap` package, which I use for plotting. 
+
+I also modified this shapefile (see `shapefile_sandbox.R`) to produce
+polygons of the 87 multi-county public health districts in my data set.
+I then added these polygons to the data set, generated synthetic FIPS
+codes, and created two new variables: is_dstr, which encodes whether or not
+a polygon is a multi-county district, and in_dstr, which encodes whether or
+not a polygon is part of a multi-county district.
+
+I also calculated total COVID-19 cases, deaths, completed vaccinations,
+and first doses administered for each multi-county district, as well
+as that district's total population and social media presence.
+
+The original shapefile is available at `data/spatial/us_counties.shp`. The
+full-size version of the my modified shapefile is available at
+`data/spatial/counties_with_mc_districts.shp`. The reduced-size version of that
+file is available at `data/spatial/counties_with_mc_districts_small.shp`, 
+and this is the version used in my Shiny app.
+
+---
+
+
+##Scripts
+
+(I'm sorry there are so many of them. I like to have each task in its own
+separate space like this.)
+
+I've commented out all of the various write functions in these
+scripts, so they can be run as-is without producing or overwriting
+any files.
+
+####`knn_sandbox.R`
+
+This script was used to test and experiment with the K-Nearest Neighbors
+algorithm from the `RANN` package, which receives a data frame of numeric
+variables and returns, for each observation, the indices of the other 
+most similar observations. I used this code in the 'Similarity Table' tab 
+of my Shiny app. That table allows users to select a county and 
+displays the 5 most similar counties in the U.S. (or within the selected
+state, if desired).[^1] 
+
+[^1]:Honestly that aspect of this project was less analytical and 
+more for fun/as a personal challenge.
+
+####`mc_districts_sandbox.R`
+
+This script produces social media data and COVID-19 data files for 
+the multi-county districts. This mainly consists of `group_by` and `summarize`,
+and results in two .csv files.
+
+The district social media data is available at `data/raw/mc_district_socmed_data.csv`,
+and the district COVID-19 data is available at `data/raw/covid_district_data.csv`.
+
+####`moran_I_sandbox.R`
+
+This script calculates the Moran's I statistic for each of the four
+COVID-19 metrics used in this project. The values used are the rates of each
+metric as of December 14, 2021. This script also outputs a small (4x5)
+data frame of Moran's I statistics and p-values, which I embed into the 
+homepage of my Shiny app. All four COVID-19 metrics (cases, deaths,
+completed vaccinations, and first doses) are spatially autocorrelated.
+
+The output table is available at `data/raw/moran_i.csv`.
+
+####`shapefile_sandbox.R`
+
+This script uses the `st_union` function from the `sf` package to produce
+polygons of 87 different multi-county health districts. It also assigns
+each polygon an arbitrary FIPS code, and encodes each polygon as either being
+a district or in a district. The script also includes a call to the 
+`ms_simplify` function from the `rmapshaper` package, to reduce the file
+size. When I initially ran this script, it returned an invalid polygon
+for Hitchcock County, Nebraska. There is a commented-out section of code
+at the end of the script which identifies and resolves this issue.
+
+####`social_media_interactive_lineplot.R`
+
+This script was a test sandbox to experiment with an interactive line plot
+using the `plotly` package. The line plot shows average COVID-19 case rates
+for each category of health department social media (Facebook, Twitter, both,
+and neither). This is where I workshopped the code which produces the line plot
+on the "Line Plot" tab in the "Social Media" page of my Shiny app.
+
+####`stats_sandbox.R`
+
+This script was a general sandbox I used to prepare for the in-class presentation.
+It prepares the data and runs several linear models, and also produces
+a plot of Pearson's R coefficients. This script uses the `sjPlot` package
+to produce aesthetically-appealing, professional regression outputs. The 
+comments at the top say it's disorganized, but that's me being self-critical.
+
+####`tmap_sandbox.R`
+
+This script was a test sandbox to experiment with interactive maps of 
+multi-county health districts using the `tmap` package. The produced plot
+is a map of COVID-19 cases across several states in the upper Midwest. 
+Michigan in particular has several multi-county districts, which are visible
+on the map. I tested modifications to the pop-up, as well as plotting
+my generated polygons, using this script. Much of this code informed the maps
+used in my Shiny app.
+
+####`tweets_sandbox.R`
+
+This script produces statistics regarding scraped tweets, including
+number of tweets per account, number of tweets during the COVID-19 pandemic,
+number of tweets in the past two months, and certain aggregate measures of 
+engagement. Unfortunately, I ran out of time to effectively incorporate
+any of these variables in my project, so this script ultimately has 
+a minimal role in this project.
+
+####`twitter_doublecheck.ipynb`
+
+This is a Python script which uses the `twint` library to scrape tweets 
+using the Twitter handles I collected.
+

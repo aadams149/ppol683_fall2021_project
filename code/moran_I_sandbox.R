@@ -1,3 +1,7 @@
+#This script calculates Moran's I for my 4 COVID-19 metrics of 
+#interest, to see if there is spatial autocorrelation
+#present in the data
+
 
 #Load required libraries
 library(ape)
@@ -148,6 +152,6 @@ moran_i <-
     'Case Rates':'First Dose Rates'
   )
 
-#Export as .csv
-write.csv(moran_i,
-          'data/raw/moran_i.csv')  
+# #Export as .csv
+# write.csv(moran_i,
+#           'data/raw/moran_i.csv')  
